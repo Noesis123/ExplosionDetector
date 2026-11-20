@@ -1,0 +1,138 @@
+{
+  "base_val": {
+    "tp": 59,
+    "fp": 29,
+    "tn": 91,
+    "fn": 11,
+    "precision": 0.6704545454545454,
+    "recall": 0.8428571428571429,
+    "f1": 0.7468354430379747,
+    "accuracy": 0.7894736842105263,
+    "clean_negatives": "91/120 (75.8%)",
+    "fp_by_cat": {
+      "industrial_machinery": 2,
+      "thunder": 3,
+      "vehicle_backfires": 3,
+      "fireworks": 2,
+      "positives": 1,
+      "artillery_firing": 2,
+      "distant": 1,
+      "doors_slamming_falling": 1,
+      "aerial_burst": 6,
+      "firecrackers": 1,
+      "barrage": 2,
+      "gunfire": 2,
+      "construction_impacts": 3
+    }
+  },
+  "base_hist": {
+    "tp": 22,
+    "fp": 19,
+    "tn": 49,
+    "fn": 2,
+    "recall": 0.9166666666666666,
+    "precision": 0.5365853658536586,
+    "f1": 0.676923076923077,
+    "accuracy": 0.7717391304347826,
+    "missed": [
+      "alex_jauk-distant-explosion-192022.mp3",
+      "bbc_demolition_07022510.mp3"
+    ],
+    "fp_by_cat": {
+      "gunfire": 4,
+      "bioacoustics": 1,
+      "vehicle_backfires": 3,
+      "fireworks": 1,
+      "thunder": 2,
+      "artillery_firing": 5,
+      "shouting_screaming": 1,
+      "silence_ambience": 1,
+      "household_ambience": 1
+    }
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.5616363028685252,
+      "ce_loss": 0.5616361753145853,
+      "anc_loss": 0.0002558152332433868,
+      "val_recall": 0.8428571428571429,
+      "val_prec": 0.6704545454545454,
+      "val_f1": 0.7468354430379747,
+      "val_clean_neg": "91/120 (75.8%)",
+      "hist_recall": 0.9166666666666666,
+      "hist_tp": 22,
+      "hist_fp": 19,
+      "hist_prec": 0.5365853658536586,
+      "hist_f1": 0.676923076923077,
+      "hist_missed": [
+        "alex_jauk-distant-explosion-192022.mp3",
+        "bbc_demolition_07022510.mp3"
+      ]
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.5529825818538666,
+      "ce_loss": 0.5529819333553314,
+      "anc_loss": 0.0012990386597812175,
+      "val_recall": 0.8285714285714286,
+      "val_prec": 0.6666666666666666,
+      "val_f1": 0.7388535031847134,
+      "val_clean_neg": "91/120 (75.8%)",
+      "hist_recall": 0.8333333333333334,
+      "hist_tp": 20,
+      "hist_fp": 19,
+      "hist_prec": 0.5128205128205128,
+      "hist_f1": 0.6349206349206349,
+      "hist_missed": [
+        "alex_jauk-distant-explosion-192022.mp3",
+        "bbc_demolition_07022508.mp3",
+        "bbc_demolition_07022510.mp3",
+        "fs_367622_fxkid2.mp3"
+      ]
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.563661847114563,
+      "ce_loss": 0.5636602771282196,
+      "anc_loss": 0.003140417644754052,
+      "val_recall": 0.8142857142857143,
+      "val_prec": 0.6627906976744186,
+      "val_f1": 0.7307692307692307,
+      "val_clean_neg": "91/120 (75.8%)",
+      "hist_recall": 0.8333333333333334,
+      "hist_tp": 20,
+      "hist_fp": 19,
+      "hist_prec": 0.5128205128205128,
+      "hist_f1": 0.6349206349206349,
+      "hist_missed": [
+        "alex_jauk-distant-explosion-192022.mp3",
+        "bbc_demolition_07022508.mp3",
+        "bbc_demolition_07022510.mp3",
+        "fs_367622_fxkid2.mp3"
+      ]
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.5515513408184052,
+      "ce_loss": 0.5515485962231954,
+      "anc_loss": 0.005492440735300382,
+      "val_recall": 0.8142857142857143,
+      "val_prec": 0.6627906976744186,
+      "val_f1": 0.7307692307692307,
+      "val_clean_neg": "91/120 (75.8%)",
+      "hist_recall": 0.8333333333333334,
+      "hist_tp": 20,
+      "hist_fp": 19,
+      "hist_prec": 0.5128205128205128,
+      "hist_f1": 0.6349206349206349,
+      "hist_missed": [
+        "alex_jauk-distant-explosion-192022.mp3",
+        "bbc_demolition_07022508.mp3",
+        "bbc_demolition_07022510.mp3",
+        "fs_367622_fxkid2.mp3"
+      ]
+    }
+  ],
+  "best_epoch": 0
+}

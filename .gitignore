@@ -1,0 +1,25 @@
+# Virtual environments
+.venv/
+.venv*/
+venv/
+env/
+
+# Python byte-code and caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Large precomputed training tensor pools (>100 MB, exceeds GitHub file limit)
+training/data/*.pt
+
+# Temporary diagnostic logs and test archives
+*.tmp
+temp_restore_verify/
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

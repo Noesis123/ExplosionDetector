@@ -1,0 +1,36 @@
+{
+  "model_checkpoint": "candidate_expF_accuracy_optimized_best.pt",
+  "decision_logic": "AEV Config E (High-Precision Blast Verification)",
+  "historical_benchmark_92": {
+    "recall": 0.9166666666666666,
+    "precision": 0.8461538461538461,
+    "f1": 0.8799999999999999,
+    "tp": 22,
+    "fp": 4,
+    "tn": 64,
+    "fn": 2,
+    "fp_breakdown": {
+      "gunfire": 1,
+      "thunder": 2,
+      "artillery_firing": 1
+    },
+    "missed": [
+      "alex_jauk-distant-explosion-192022.mp3",
+      "bbc_demolition_07022510.mp3"
+    ],
+    "latency_ms_mean": 2.71862229583108,
+    "latency_ms_p95": 3.5647049866383895
+  },
+  "source_isolated_val_190": {
+    "recall": 0.8428571428571429,
+    "precision": 0.6704545454545454,
+    "f1": 0.7468354430379747,
+    "tp": 59,
+    "fp": 29,
+    "tn": 91,
+    "fn": 11
+  },
+  "room_ambient_noise_3": {
+    "alerts_count": 0
+  }
+}

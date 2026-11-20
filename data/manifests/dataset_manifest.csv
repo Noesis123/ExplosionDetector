@@ -1,0 +1,198 @@
+file_path,label,source_dataset,original_recording_id,duration_seconds,sample_rate,channels,split,validation_status,notes
+C:\Users\User\Downloads\Music\11325622-big-cine-boom-sound-effect-245851.mp3,explosion,Pixabay Audio Library,PIXABAY_245851,8.1853,44100,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\49053354-explosion-3-307469.mp3,explosion,Pixabay Audio Library,PIXABAY_307469,7.4531,44100,2,train,valid,Severe clipping (3264 samples saturated)
+C:\Users\User\Downloads\Music\alban_gogh-dynamite-sound-effect-205859.mp3,explosion,Pixabay Audio Library,PIXABAY_205859,12.072,48000,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\alex_jauk-distant-explosion-192022.mp3,explosion,Pixabay Audio Library,PIXABAY_192022,3.936,48000,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\alex_jauk-slow-explosion-190430.mp3,explosion,Pixabay Audio Library,PIXABAY_190430,6.864,48000,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\bbc_chimpanzee_nhu0509523.mp3,non_explosion,Local / Web Download (Unverified Source),LOCAL_bbc_chimpanzee_nhu0509523,37.6018,44100,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\bbc_comedy--ra_07071054.mp3,non_explosion,BBC Sound Effects Library,BBC_07071054,15.5733,44100,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\bbc_comedy-sou_07005099.mp3,non_explosion,BBC Sound Effects Library,BBC_07005099,9.3304,44100,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\bbc_comedy-sou_07005104.mp3,non_explosion,BBC Sound Effects Library,BBC_07005104,10.6501,44100,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\bbc_comedy-sou_07005147.mp3,non_explosion,BBC Sound Effects Library,BBC_07005147,12.4759,44100,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\bbc_crashes--g_07022504.mp3,non_explosion,BBC Sound Effects Library,BBC_07022504,8.9721,44100,2,train,valid,High silence ratio (77%)
+C:\Users\User\Downloads\Music\bbc_demolition_07022507.mp3,non_explosion,BBC Sound Effects Library,BBC_07022507,13.4144,44100,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\bbc_demolition_07022508.mp3,non_explosion,BBC Sound Effects Library,BBC_07022508,11.8063,44100,2,train,valid,High silence ratio (89%)
+C:\Users\User\Downloads\Music\bbc_demolition_07022510.mp3,non_explosion,BBC Sound Effects Library,BBC_07022510,16.2511,44100,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\bbc_explosions_07023354.mp3,explosion,BBC Sound Effects Library,BBC_07023354,7.7373,44100,2,test,valid,High silence ratio (89%)
+C:\Users\User\Downloads\Music\bbc_explosions_07074164.mp3,explosion,BBC Sound Effects Library,BBC_07074164,13.96,44100,2,test,valid,Clean recording
+C:\Users\User\Downloads\Music\bbc_fireworks-_07019107.mp3,non_explosion,BBC Sound Effects Library,BBC_07019107,14.41,44100,2,train,valid,High silence ratio (80%)
+C:\Users\User\Downloads\Music\bbc_guns--gunf_07027149.mp3,non_explosion,BBC Sound Effects Library,BBC_07027149,160.0434,44100,2,test,valid,High silence ratio (94%)
+C:\Users\User\Downloads\Music\bbc_guns--gunf_07027150.mp3,non_explosion,BBC Sound Effects Library,BBC_07027150,17.2494,44100,2,test,valid,High silence ratio (74%)
+C:\Users\User\Downloads\Music\bbc_guns--gunf_07027151.mp3,non_explosion,BBC Sound Effects Library,BBC_07027151,126.2573,44100,2,test,valid,High silence ratio (88%)
+C:\Users\User\Downloads\Music\bbc_heavy-expl_07037319.mp3,explosion,BBC Sound Effects Library,BBC_07037319,6.2949,44100,2,val,valid,BBC Heavy Explosion sound effect series
+C:\Users\User\Downloads\Music\bbc_heavy-expl_07037320.mp3,explosion,BBC Sound Effects Library,BBC_07037320,9.84,44100,2,val,valid,BBC Heavy Explosion sound effect series
+C:\Users\User\Downloads\Music\bbc_heavy-expl_07037321.mp3,explosion,BBC Sound Effects Library,BBC_07037321,6.7082,44100,2,val,valid,BBC Heavy Explosion sound effect series
+C:\Users\User\Downloads\Music\bbc_heavy-expl_07037322.mp3,explosion,BBC Sound Effects Library,BBC_07037322,14.68,44100,2,val,valid,BBC Heavy Explosion sound effect series
+C:\Users\User\Downloads\Music\bbc_heavy-expl_07037324.mp3,explosion,BBC Sound Effects Library,BBC_07037324,13.8041,44100,2,val,valid,BBC Heavy Explosion sound effect series
+C:\Users\User\Downloads\Music\bbc_heavy-expl_07037326.mp3,explosion,BBC Sound Effects Library,BBC_07037326,4.68,44100,2,val,valid,BBC Heavy Explosion sound effect series
+C:\Users\User\Downloads\Music\bbc_heavy-expl_07037327.mp3,explosion,BBC Sound Effects Library,BBC_07037327,5.16,44100,2,val,valid,BBC Heavy Explosion sound effect series
+C:\Users\User\Downloads\Music\bbc_heavy-expl_07037328.mp3,explosion,BBC Sound Effects Library,BBC_07037328,14.0,44100,2,val,valid,BBC Heavy Explosion sound effect series
+C:\Users\User\Downloads\Music\bbc_heavy-expl_07037329.mp3,explosion,BBC Sound Effects Library,BBC_07037329,18.24,44100,2,val,valid,BBC Heavy Explosion sound effect series
+C:\Users\User\Downloads\Music\bbc_heavy-expl_07037330.mp3,explosion,BBC Sound Effects Library,BBC_07037330,5.9512,44100,2,val,valid,BBC Heavy Explosion sound effect series
+C:\Users\User\Downloads\Music\bbc_world-war-_07008006.mp3,non_explosion,BBC Sound Effects Library,BBC_07008006,7.04,44100,2,train,valid,"Complex multi-source historical montage (sirens, aircraft, distant impacts)"
+C:\Users\User\Downloads\Music\bbc_world-war-_07008008.mp3,non_explosion,BBC Sound Effects Library,BBC_07008008,21.38,44100,2,train,valid,"Complex multi-source historical montage (sirens, aircraft, distant impacts); High silence ratio (75%)"
+C:\Users\User\Downloads\Music\bbc_world-war-_07008010.mp3,non_explosion,BBC Sound Effects Library,BBC_07008010,13.72,44100,2,train,valid,"Complex multi-source historical montage (sirens, aircraft, distant impacts)"
+C:\Users\User\Downloads\Music\bbc_world-war-_07008011.mp3,non_explosion,BBC Sound Effects Library,BBC_07008011,14.12,44100,2,train,valid,"Complex multi-source historical montage (sirens, aircraft, distant impacts)"
+C:\Users\User\Downloads\Music\bbc_world-war-_07008013.mp3,non_explosion,BBC Sound Effects Library,BBC_07008013,17.76,44100,2,train,valid,"Complex multi-source historical montage (sirens, aircraft, distant impacts)"
+C:\Users\User\Downloads\Music\bbc_world-war-_07008014.mp3,non_explosion,BBC Sound Effects Library,BBC_07008014,17.72,44100,2,train,valid,"Complex multi-source historical montage (sirens, aircraft, distant impacts)"
+C:\Users\User\Downloads\Music\bbc_world-war-_07008015.mp3,non_explosion,BBC Sound Effects Library,BBC_07008015,16.88,44100,2,train,valid,"Complex multi-source historical montage (sirens, aircraft, distant impacts); High silence ratio (83%)"
+C:\Users\User\Downloads\Music\bbc_world-war-_07041210.mp3,non_explosion,BBC Sound Effects Library,BBC_07041210,255.258,44100,2,val,valid,"Complex multi-source historical montage (sirens, aircraft, distant impacts)"
+C:\Users\User\Downloads\Music\bbc_world-war-_07041211.mp3,non_explosion,BBC Sound Effects Library,BBC_07041211,41.0951,44100,2,val,valid,"Complex multi-source historical montage (sirens, aircraft, distant impacts)"
+C:\Users\User\Downloads\Music\bbc_world-war-_07041212.mp3,non_explosion,BBC Sound Effects Library,BBC_07041212,43.2922,44100,2,val,valid,"Complex multi-source historical montage (sirens, aircraft, distant impacts)"
+C:\Users\User\Downloads\Music\bbc_world-war-_07041213.mp3,non_explosion,BBC Sound Effects Library,BBC_07041213,44.2917,44100,2,val,valid,"Complex multi-source historical montage (sirens, aircraft, distant impacts)"
+C:\Users\User\Downloads\Music\bbc_world-war-_07041214.mp3,non_explosion,BBC Sound Effects Library,BBC_07041214,44.0223,44100,2,val,valid,"Complex multi-source historical montage (sirens, aircraft, distant impacts)"
+C:\Users\User\Downloads\Music\bbc_world-war-_07046187.mp3,non_explosion,BBC Sound Effects Library,BBC_07046187,253.9067,44100,2,train,valid,"Complex multi-source historical montage (sirens, aircraft, distant impacts)"
+C:\Users\User\Downloads\Music\bbc_world-war-_07046188.mp3,non_explosion,BBC Sound Effects Library,BBC_07046188,43.2933,44100,2,train,valid,"Complex multi-source historical montage (sirens, aircraft, distant impacts)"
+C:\Users\User\Downloads\Music\bbc_world-war-_07046189.mp3,non_explosion,BBC Sound Effects Library,BBC_07046189,44.8667,44100,2,train,valid,"Complex multi-source historical montage (sirens, aircraft, distant impacts)"
+C:\Users\User\Downloads\Music\bbc_world-war-_07046191.mp3,non_explosion,BBC Sound Effects Library,BBC_07046191,10.8,44100,2,train,valid,"Complex multi-source historical montage (sirens, aircraft, distant impacts)"
+C:\Users\User\Downloads\Music\bbc_world-war-_07046193.mp3,non_explosion,BBC Sound Effects Library,BBC_07046193,25.0933,44100,2,train,valid,"Complex multi-source historical montage (sirens, aircraft, distant impacts); High silence ratio (80%)"
+C:\Users\User\Downloads\Music\bbc_world-war-_07046194.mp3,non_explosion,BBC Sound Effects Library,BBC_07046194,16.2667,44100,2,train,valid,"Complex multi-source historical montage (sirens, aircraft, distant impacts); High silence ratio (73%)"
+C:\Users\User\Downloads\Music\bbc_world-war-_07046195.mp3,non_explosion,BBC Sound Effects Library,BBC_07046195,18.44,44100,2,train,valid,"Complex multi-source historical montage (sirens, aircraft, distant impacts); High silence ratio (76%)"
+C:\Users\User\Downloads\Music\bbc_world-war-_07046196.mp3,non_explosion,BBC Sound Effects Library,BBC_07046196,21.3333,44100,2,train,valid,"Complex multi-source historical montage (sirens, aircraft, distant impacts)"
+C:\Users\User\Downloads\Music\bbc_world-war-_07046197.mp3,non_explosion,BBC Sound Effects Library,BBC_07046197,19.6,44100,2,train,valid,"Complex multi-source historical montage (sirens, aircraft, distant impacts); High silence ratio (91%)"
+C:\Users\User\Downloads\Music\bruhmomentozei-explosion-123793.mp3,explosion,Pixabay Audio Library,PIXABAY_123793,0.624,48000,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\d4xx-huge-explosion-2-612676.mp3,explosion,Pixabay Audio Library,PIXABAY_612676,3.8965,44100,2,val,valid,Clean recording
+C:\Users\User\Downloads\Music\dragon-studio-boom-425459.mp3,explosion,Pixabay Audio Library,PIXABAY_425459,2.904,48000,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\dragon-studio-explosion-fx-425453.mp3,explosion,Pixabay Audio Library,PIXABAY_425453,2.904,48000,2,train,valid,Severe clipping (1408 samples saturated)
+C:\Users\User\Downloads\Music\dragon-studio-explosion-sound-effect-425455.mp3,explosion,Pixabay Audio Library,PIXABAY_425455,2.904,48000,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\dragon-studio-loud-explosion-425457.mp3,explosion,Pixabay Audio Library,PIXABAY_425457,2.904,48000,2,train,valid,Severe clipping (2401 samples saturated)
+C:\Users\User\Downloads\Music\dragon-studio-loud-explosion-sound-425458.mp3,explosion,Pixabay Audio Library,PIXABAY_425458,2.904,48000,2,train,valid,Severe clipping (521 samples saturated)
+C:\Users\User\Downloads\Music\dragon-studio-massive-explosion-1-397985.mp3,explosion,Pixabay Audio Library,PIXABAY_397985,3.6873,44100,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\dragon-studio-massive-explosion-2-397983.mp3,explosion,Pixabay Audio Library,PIXABAY_397983,3.6088,44100,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\dragon-studio-massive-explosion-3-397984.mp3,explosion,Pixabay Audio Library,PIXABAY_397984,3.3473,44100,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\dragon-studio-nuclear-explosion-386181.mp3,explosion,Pixabay Audio Library,PIXABAY_386181,7.5838,44100,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\dragon-studio-underwater-explosion-386175.mp3,explosion,Pixabay Audio Library,PIXABAY_386175,7.5838,44100,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\flutie8211-bomb-and-echo-2-540400.mp3,explosion,Pixabay Audio Library,PIXABAY_540400,6.144,48000,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\flutie8211-bomb-and-echo-3-590449.mp3,explosion,Pixabay Audio Library,PIXABAY_590449,6.144,48000,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\freesound_community-blast-37988.mp3,explosion,Freesound.org (community),FREESOUND_37988,2.112,24000,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\freesound_community-bomb-dropping-101151.mp3,explosion,Freesound.org (community),FREESOUND_101151,5.424,48000,1,train,valid,Clean recording
+C:\Users\User\Downloads\Music\freesound_community-explosion-107629.mp3,explosion,Freesound.org (community),FREESOUND_107629,5.976,24000,2,train,valid,High silence ratio (70%)
+C:\Users\User\Downloads\Music\freesound_community-explosion-47821.mp3,explosion,Freesound.org (community),FREESOUND_47821,7.248,24000,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\freesound_community-explosion-80108.mp3,explosion,Freesound.org (community),FREESOUND_80108,4.9164,44100,1,train,valid,Severe clipping (2903 samples saturated)
+C:\Users\User\Downloads\Music\freesound_community-explosion-91872.mp3,explosion,Freesound.org (community),FREESOUND_91872,1.8829,44100,1,train,valid,Clean recording
+C:\Users\User\Downloads\Music\freesound_community-hq-explosion-6288.mp3,explosion,Freesound.org (community),FREESOUND_6288,2.8243,44100,1,train,valid,Severe clipping (565 samples saturated)
+C:\Users\User\Downloads\Music\freesound_community-large-explosion-100420.mp3,explosion,Freesound.org (community),FREESOUND_100420,5.664,24000,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\freesound_community-launch-85216.mp3,non_explosion,Freesound.org (community),FREESOUND_85216,4.368,24000,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\freesound_community-medium-explosion-40472.mp3,explosion,Freesound.org (community),FREESOUND_40472,2.16,24000,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\freesound_community-nuclear-explosion-63470.mp3,explosion,Freesound.org (community),FREESOUND_63470,58.92,24000,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\freesound_community-r24-20-bombs-exploding-58636.mp3,explosion,Freesound.org (community),FREESOUND_58636,122.208,48000,1,train,ambiguous_long_recording,Long recording with multiple events / background
+C:\Users\User\Downloads\Music\freesound_gamestudio-explosion-408449.mp3,explosion,Freesound.org (gamestudio),FREESOUND_408449,2.4838,22050,1,train,valid,Clean recording
+C:\Users\User\Downloads\Music\freesounds-4u-explosion-2-422785.mp3,explosion,Freesound.org (4u),FREESOUND_422785,3.635,44100,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\kalsstockmedia-2-blast-explosion-sounds-heavy-bass-246901.mp3,explosion,Pixabay Audio Library,PIXABAY_246901,8.5253,44100,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\kalsstockmedia-double-blast-double-lightning-301708.mp3,explosion,Pixabay Audio Library,PIXABAY_301708,20.8686,44100,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\kalsstockmedia-explosion-3-274684.mp3,explosion,Pixabay Audio Library,PIXABAY_274684,15.0892,44100,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\kalsstockmedia-explosion-4-274685.mp3,explosion,Pixabay Audio Library,PIXABAY_274685,15.0892,44100,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\kave_msri-big-explosion-sfx-369789.mp3,explosion,Pixabay Audio Library,PIXABAY_369789,5.2563,44100,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\kave_msri-bomb-explosion-sfx-352274.mp3,explosion,Pixabay Audio Library,PIXABAY_352274,4.1319,44100,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\magiazzz-massive-building-548236.mp3,non_explosion,Pixabay Audio Library,PIXABAY_548236,5.112,48000,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\professionalsfx-nuclear-explosion-507442.mp3,explosion,Pixabay Audio Library,PIXABAY_507442,7.7407,44100,2,train,valid,Severe clipping (64916 samples saturated)
+C:\Users\User\Downloads\Music\ribhavagrawal-bomb-explosion-type-01-265510.mp3,explosion,Pixabay Audio Library,PIXABAY_265510,14.0955,44100,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\ribhavagrawal-bomb-explosion-type-02-265506.mp3,explosion,Pixabay Audio Library,PIXABAY_265506,1.0983,44100,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\ribhavagrawal-bomb-explosion-type-04-265508.mp3,explosion,Pixabay Audio Library,PIXABAY_265508,12.108,44100,2,train,valid,High silence ratio (74%)
+C:\Users\User\Downloads\Music\rsf_studios-big-explosion-592670.mp3,explosion,Pixabay Audio Library,PIXABAY_592670,5.52,48000,2,test,valid,Clean recording
+C:\Users\User\Downloads\Music\scottishperson-sound-effect-ww2-uk-air-raid-bomb-blasts-164347.mp3,explosion,Pixabay Audio Library,PIXABAY_164347,58.7878,44100,2,test,valid,Clean recording
+C:\Users\User\Downloads\Music\scottishperson-sound-effect-ww2-uk-bomb-blast-164351.mp3,explosion,Pixabay Audio Library,PIXABAY_164351,9.3359,44100,2,test,valid,Clean recording
+C:\Users\User\Downloads\Music\soumages-nuke-333673.mp3,explosion,Pixabay Audio Library,PIXABAY_333673,8.1068,44100,2,test,valid,Clean recording
+C:\Users\User\Downloads\Music\soundreality-a-bomb-139689.mp3,explosion,Pixabay Audio Library,PIXABAY_139689,10.704,48000,2,train,valid,High silence ratio (75%)
+C:\Users\User\Downloads\Music\soundreality-explosion-fx-343683.mp3,explosion,Pixabay Audio Library,PIXABAY_343683,5.496,48000,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\u_n1up2g5sdg-33-5-598139.mp3,non_explosion,Pixabay Audio Library,PIXABAY_598139,1.8829,44100,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\u_xg7ssi08yr-bomb-explosion-2-369633.mp3,explosion,Pixabay Audio Library,PIXABAY_369633,19.2472,44100,2,train,valid,High silence ratio (83%)
+C:\Users\User\Downloads\Music\u_xg7ssi08yr-bomb-explosion-2-381970.mp3,explosion,Pixabay Audio Library,PIXABAY_381970,6.0932,44100,2,train,valid,High silence ratio (77%)
+C:\Users\User\Downloads\Music\voicebosch-missile-explosion-168600.mp3,explosion,Pixabay Audio Library,PIXABAY_168600,6.0409,44100,2,train,valid,Clean recording
+C:\Users\User\Downloads\Music\wings_of_freedom-bomb-explosion-469038.mp3,explosion,Pixabay Audio Library,PIXABAY_469038,5.0472,44100,1,train,valid,Severe clipping (2132 samples saturated)
+C:\Users\User\Downloads\Music\youssefmizani-boom-hit-399201.mp3,explosion,Pixabay Audio Library,PIXABAY_399201,8.1068,44100,2,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\door_slam_001.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_door_slam_001,1.7115,22050,1,train,valid,High silence ratio (96%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\door_slam_002.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_door_slam_002,1.3116,22050,1,train,valid,High silence ratio (94%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\door_slam_003.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_door_slam_003,1.2695,22050,1,train,valid,High silence ratio (94%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\door_slam_004.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_door_slam_004,1.3861,22050,1,train,valid,High silence ratio (94%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\door_slam_005.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_door_slam_005,1.761,22050,1,train,valid,High silence ratio (96%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\door_slam_006.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_door_slam_006,1.8475,22050,1,train,valid,High silence ratio (96%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\door_slam_007.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_door_slam_007,1.538,22050,1,train,valid,High silence ratio (95%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\door_slam_008.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_door_slam_008,1.4693,22050,1,train,valid,High silence ratio (95%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\door_slam_009.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_door_slam_009,1.4751,22050,1,train,valid,High silence ratio (95%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\door_slam_010.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_door_slam_010,1.629,22050,1,train,valid,High silence ratio (95%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\desk_bang_001.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_desk_bang_001,1.6539,22050,1,train,valid,High silence ratio (97%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\desk_bang_002.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_desk_bang_002,1.5888,22050,1,train,valid,High silence ratio (97%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\desk_bang_003.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_desk_bang_003,1.6261,22050,1,train,valid,High silence ratio (95%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\desk_bang_004.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_desk_bang_004,1.5802,22050,1,train,valid,High silence ratio (97%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\desk_bang_005.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_desk_bang_005,1.8979,22050,1,train,valid,High silence ratio (97%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\desk_bang_006.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_desk_bang_006,1.9431,22050,1,train,valid,High silence ratio (97%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\desk_bang_007.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_desk_bang_007,1.5192,22050,1,train,valid,High silence ratio (97%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\desk_bang_008.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_desk_bang_008,1.6141,22050,1,train,valid,High silence ratio (95%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\desk_bang_009.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_desk_bang_009,1.2512,22050,1,train,valid,High silence ratio (96%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\desk_bang_010.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_desk_bang_010,1.3841,22050,1,train,valid,High silence ratio (96%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\dropped_object_001.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_dropped_object_001,1.2543,22050,1,train,valid,High silence ratio (94%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\dropped_object_002.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_dropped_object_002,1.9532,22050,1,train,valid,High silence ratio (97%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\dropped_object_003.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_dropped_object_003,1.6756,22050,1,train,valid,High silence ratio (97%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\dropped_object_004.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_dropped_object_004,1.7259,22050,1,train,valid,High silence ratio (94%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\dropped_object_005.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_dropped_object_005,1.9478,22050,1,train,valid,High silence ratio (97%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\dropped_object_006.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_dropped_object_006,1.4513,22050,1,train,valid,High silence ratio (95%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\dropped_object_007.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_dropped_object_007,1.7373,22050,1,train,valid,High silence ratio (94%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\dropped_object_008.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_dropped_object_008,1.9432,22050,1,train,valid,High silence ratio (97%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\dropped_object_009.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_dropped_object_009,1.6969,22050,1,train,valid,High silence ratio (97%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\dropped_object_010.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_dropped_object_010,1.2586,22050,1,train,valid,High silence ratio (96%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\clap_001.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_clap_001,1.8259,22050,1,train,valid,High silence ratio (97%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\clap_002.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_clap_002,1.8912,22050,1,train,valid,High silence ratio (97%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\clap_003.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_clap_003,1.8299,22050,1,train,valid,High silence ratio (97%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\clap_004.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_clap_004,1.231,22050,1,train,valid,High silence ratio (96%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\clap_005.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_clap_005,1.8532,22050,1,train,valid,High silence ratio (97%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\clap_006.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_clap_006,1.8564,22050,1,train,valid,High silence ratio (97%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\clap_007.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_clap_007,1.728,22050,1,train,valid,High silence ratio (96%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\clap_008.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_clap_008,1.8915,22050,1,train,valid,High silence ratio (97%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\clap_009.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_clap_009,1.7132,22050,1,train,valid,High silence ratio (96%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\loud_impacts\clap_010.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_clap_010,1.8749,22050,1,train,valid,High silence ratio (96%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\ambient_negatives\speech_001.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_speech_001,1.6926,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\ambient_negatives\speech_002.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_speech_002,2.3742,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\ambient_negatives\speech_003.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_speech_003,1.7069,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\ambient_negatives\speech_004.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_speech_004,2.3872,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\ambient_negatives\speech_005.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_speech_005,1.3161,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\ambient_negatives\speech_006.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_speech_006,1.68,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\ambient_negatives\speech_007.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_speech_007,2.3196,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\ambient_negatives\speech_008.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_speech_008,1.6976,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\ambient_negatives\speech_009.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_speech_009,1.7,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\ambient_negatives\speech_010.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_speech_010,1.3746,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\ambient_negatives\room_noise_001.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_room_noise_001,1.8088,22050,1,train,valid,High silence ratio (100%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\ambient_negatives\room_noise_002.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_room_noise_002,2.0898,22050,1,train,valid,High silence ratio (100%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\ambient_negatives\room_noise_003.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_room_noise_003,1.805,22050,1,train,valid,High silence ratio (100%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\ambient_negatives\room_noise_004.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_room_noise_004,1.4909,22050,1,train,valid,High silence ratio (100%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\ambient_negatives\room_noise_005.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_room_noise_005,2.002,22050,1,train,valid,High silence ratio (100%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\ambient_negatives\room_noise_006.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_room_noise_006,1.7097,22050,1,train,valid,High silence ratio (100%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\ambient_negatives\room_noise_007.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_room_noise_007,2.0647,22050,1,train,valid,High silence ratio (100%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\ambient_negatives\room_noise_008.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_room_noise_008,2.3471,22050,1,train,valid,High silence ratio (100%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\ambient_negatives\room_noise_009.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_room_noise_009,1.2393,22050,1,train,valid,High silence ratio (100%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\ambient_negatives\room_noise_010.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_room_noise_010,1.6569,22050,1,train,valid,High silence ratio (100%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\ambient_negatives\fan_hum_001.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_fan_hum_001,2.0877,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\ambient_negatives\fan_hum_002.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_fan_hum_002,1.8907,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\ambient_negatives\fan_hum_003.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_fan_hum_003,1.7613,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\ambient_negatives\fan_hum_004.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_fan_hum_004,1.5472,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\ambient_negatives\fan_hum_005.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_fan_hum_005,1.9594,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\ambient_negatives\keyboard_001.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_keyboard_001,1.9028,22050,1,train,valid,High silence ratio (84%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\ambient_negatives\keyboard_002.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_keyboard_002,1.2244,22050,1,train,valid,High silence ratio (74%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\ambient_negatives\keyboard_003.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_keyboard_003,2.1199,22050,1,train,valid,High silence ratio (90%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\ambient_negatives\keyboard_004.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_keyboard_004,2.4155,22050,1,train,valid,High silence ratio (89%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\ambient_negatives\keyboard_005.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_keyboard_005,1.642,22050,1,train,valid,High silence ratio (83%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\continuous_environmental\rain_001.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_rain_001,2.2685,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\continuous_environmental\rain_002.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_rain_002,2.2552,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\continuous_environmental\rain_003.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_rain_003,2.1939,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\continuous_environmental\rain_004.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_rain_004,2.4195,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\continuous_environmental\rain_005.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_rain_005,2.4573,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\continuous_environmental\rain_006.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_rain_006,1.6678,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\continuous_environmental\rain_007.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_rain_007,2.2338,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\continuous_environmental\rain_008.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_rain_008,1.691,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\continuous_environmental\rain_009.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_rain_009,2.0504,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\continuous_environmental\rain_010.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_rain_010,2.0341,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\continuous_environmental\train_rumble_001.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_train_rumble_001,1.8474,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\continuous_environmental\train_rumble_002.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_train_rumble_002,2.0421,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\continuous_environmental\train_rumble_003.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_train_rumble_003,2.3513,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\continuous_environmental\train_rumble_004.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_train_rumble_004,2.4273,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\continuous_environmental\train_rumble_005.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_train_rumble_005,2.2937,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\continuous_environmental\train_rumble_006.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_train_rumble_006,1.6214,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\continuous_environmental\train_rumble_007.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_train_rumble_007,1.6389,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\continuous_environmental\train_rumble_008.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_train_rumble_008,1.5263,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\continuous_environmental\train_rumble_009.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_train_rumble_009,1.8689,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\continuous_environmental\train_rumble_010.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_train_rumble_010,2.0516,22050,1,train,valid,Clean recording
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\continuous_environmental\water_drops_001.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_water_drops_001,2.2591,22050,1,train,valid,High silence ratio (94%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\continuous_environmental\water_drops_002.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_water_drops_002,2.2599,22050,1,train,valid,High silence ratio (91%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\continuous_environmental\water_drops_003.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_water_drops_003,1.8028,22050,1,train,valid,High silence ratio (85%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\continuous_environmental\water_drops_004.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_water_drops_004,2.3642,22050,1,train,valid,High silence ratio (95%)
+C:\Users\User\Desktop\CogniLearn\Spray\backend\data\raw\continuous_environmental\water_drops_005.wav,non_explosion,Spray Benchmark Negatives (Curated subset),SPRAY_BENCH_water_drops_005,2.2918,22050,1,train,valid,High silence ratio (94%)

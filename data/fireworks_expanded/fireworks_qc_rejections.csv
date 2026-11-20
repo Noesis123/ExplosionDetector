@@ -1,0 +1,34 @@
+candidate_id,title,source,license,rejection_reason,details
+wm_Handel_Fireworks,Music for the Royal Fireworks,Wikimedia Commons,Public domain,REJECTED_MUSIC,Orchestral musical performance of Handel Fireworks
+wm_Paul_Ayres_Fireworks,Handel's Music for the Royal Fireworks (Organ),Wikimedia Commons,CC-BY-SA 3.0,REJECTED_MUSIC,Organ music piece
+fs_709288,Rain from house entrance with drops,Freesound,CC0 1.0,REJECTED_NON_TARGET,Rain weather recording without fireworks
+fs_686385,Children playing soccer in city outskirt,Freesound,CC-BY,REJECTED_NON_TARGET,"Children voices and soccer game, speech/sports"
+fs_140719,metalimpact_2.wav,Freesound,CC0 1.0,REJECTED_NON_TARGET,"Physical metal strike impact sound, not pyrotechnic"
+fs_140718,metalimpact.wav,Freesound,CC0 1.0,REJECTED_NON_TARGET,"Physical metal strike impact sound, not pyrotechnic"
+fs_140722,metalimpact_4.wav,Freesound,CC0 1.0,REJECTED_NON_TARGET,"Physical metal strike impact sound, not pyrotechnic"
+fs_140714,Metal Impact,Freesound,CC0 1.0,REJECTED_NON_TARGET,"Physical metal strike impact sound, not pyrotechnic"
+fs_25041,ScreamersAndFirecrackers.flac,Freesound,CC-BY-NC 3.0,REJECTED_LICENSE,Non-commercial restrictive license (CC-BY-NC)
+fs_768383,ManifestacionMexico_43_Ayotzinapa8,Freesound,CC-BY-NC 3.0,REJECTED_LICENSE,Non-commercial restrictive license (CC-BY-NC)
+fs_49137,FireCrackers.wav,Freesound,CC-BY-NC 3.0,REJECTED_LICENSE,Non-commercial restrictive license (CC-BY-NC)
+fs_612269,FRWKRec_Distant Explosion,Freesound,CC-BY-NC 3.0,REJECTED_LICENSE,Non-commercial restrictive license (CC-BY-NC)
+fs_372179,Year_End_2016_Fireworks.wav,Freesound,CC-BY-NC 3.0,REJECTED_LICENSE,Non-commercial restrictive license (CC-BY-NC)
+fs_25774,fusillade_fireworks_mkh3040_061105.wav,Freesound,CC-BY-NC 3.0,REJECTED_LICENSE,Non-commercial restrictive license (CC-BY-NC)
+fs_56608,fireworks_well_I_guess_you_missed_it.wav,Freesound,CC-BY-NC 3.0,REJECTED_LICENSE,Non-commercial restrictive license (CC-BY-NC)
+fs_410347,"Fireworks, Close, A (H1).wav",Freesound,CC-BY,REJECTED_DATA_LEAKAGE,Production HOLDOUT recording strictly isolated from training
+fs_140350,New Years Eve in Peru fireworks,Freesound,CC0 1.0,REJECTED_DATA_LEAKAGE,Production HOLDOUT recording strictly isolated from training
+fs_198355,fireworks impact25.wav,Freesound,CC0 1.0,REJECTED_DATA_LEAKAGE,Production HOLDOUT recording strictly isolated from training
+Firework.mp3,Firework.mp3,Production Test Set,Test Only,REJECTED_DATA_LEAKAGE,Production challenge TEST recording strictly isolated from training
+fs_117616,fireworks exploding 1.wav,Freesound,CC0 1.0,REJECTED_DATA_LEAKAGE,Production VALIDATION recording strictly reserved for evaluation
+fs_56579,fireworks 3bursts sizzle.wav,Freesound,CC-BY,REJECTED_DATA_LEAKAGE,Production VALIDATION recording strictly reserved for evaluation
+fs_126566,firecracker tablet.aif,Freesound,CC0 1.0,REJECTED_DATA_LEAKAGE,Production VALIDATION recording strictly reserved for evaluation
+fs_637525,"firecracker sparkler ignite, burn, fizzle out1.flac",Freesound,CC0 1.0,REJECTED_LOW_SNR,Sparkler hiss without impulse bursts (RMS -46.5 dBFS)
+wm_Firecracker_sounds_2022-12-31T23-25-40,Firecracker sounds 2022-12-31T23-25-40.ogg,Wikimedia Commons,CC0 1.0,REJECTED_LOW_SNR,Near-silent outdoor recording (RMS -58.6 dBFS)
+wm_1_minute_silvester_at_2_30_am_in_berlin,1 minute silvester at 2 30 am in berlin.ogg,Wikimedia Commons,Public domain,REJECTED_DECODE_ERROR,Corrupted audio stream / unimplemented ogg bitstream format
+wm_Fireworks_piece,Fireworks piece.ogg,Wikimedia Commons,Public domain,REJECTED_DECODE_ERROR,Unimplemented Ogg bitstream codec
+wm_Fireworks_in_distance_1,Fireworks in distance 1.ogg,Wikimedia Commons,Public domain,REJECTED_DECODE_ERROR,Unimplemented Ogg bitstream codec
+wm_Rome_11,Fireworks in Rome 11.ogg,Wikimedia Commons,CC-BY-SA 3.0,REJECTED_HTTP_429,Wikimedia Commons HTTP 429 rate limit block
+fs_332148,Fireworks city periphery reverberation,Freesound,CC-BY 3.0,DOWNLOAD_FAILED,Failed to download from https://cdn.freesound.org/previews/332/332148_739478-hq.mp3
+fs_784618,Fireworks in the park celebration,Freesound,CC-BY 4.0,DOWNLOAD_FAILED,Failed to download from https://cdn.freesound.org/previews/784/784618_5828667-hq.mp3
+fs_824721,Slow dying fireworks with crackles,Freesound,CC-BY 4.0,DOWNLOAD_FAILED,Failed to download from https://cdn.freesound.org/previews/824/824721_1648170-hq.mp3
+fs_160614,July 4 fireworks celebration,Freesound,CC0 1.0,DOWNLOAD_FAILED,Failed to download from https://cdn.freesound.org/previews/160/160614_111413-hq.mp3
+fs_845792,Fireworks long sequence New Year,Freesound,CC-BY 4.0,DOWNLOAD_FAILED,Failed to download from https://cdn.freesound.org/previews/845/845792_1648170-hq.mp3

@@ -1,0 +1,47 @@
+# ==============================================================================
+# ACOUSTIC EXPLOSION SOUND DETECTION SYSTEM — DEFAULT CONFIGURATION
+# ==============================================================================
+
+project:
+  name: "explosion_detection"
+  version: "0.1.0"
+  target_class: "explosion"
+  negative_class: "non_explosion"
+
+# Candidate Preprocessing Baseline (Subject to Validation in Phase 3/4)
+audio:
+  target_sample_rate: 22050
+  window_duration_sec: 1.0
+  window_samples: 22050
+  hop_duration_sec: 0.25
+  hop_samples: 5512
+  n_fft: 1024
+  hop_length: 512
+  n_mels: 64
+  f_min: 20.0
+  f_max: 11025.0
+  expected_time_frames: 44
+  normalization: "per_spectrogram_z_norm"
+
+# Detection & Gating Thresholds (To be calibrated on validation split)
+detection:
+  confidence_threshold: 0.80
+  temporal_confirmation_frames: 1
+  min_coda_duration_sec: 0.20
+  rearming_cooldown_sec: 2.0
+  transient_crest_factor_min: 3.0
+
+# Hardware & System
+system:
+  device: "cpu"
+  num_threads: 4
+  ring_buffer_duration_sec: 5.0
+  default_mic_index: null
+
+# Data & Storage Paths
+paths:
+  manifest_csv: "data/manifests/dataset_manifest.csv"
+  audit_json: "data/manifests/audit_detailed.json"
+  previews_dir: "data/previews"
+  reports_dir: "reports"
+

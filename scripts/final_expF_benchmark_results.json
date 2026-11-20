@@ -1,0 +1,4298 @@
+{
+  "benchmark_summary": {
+    "baseline_075": {
+      "accuracy": 0.8043478260869565,
+      "precision": 0.59375,
+      "recall": 0.7916666666666666,
+      "f1": 0.6785714285714286,
+      "specificity": 0.8088235294117647,
+      "tp": 19,
+      "fp": 13,
+      "tn": 55,
+      "fn": 5,
+      "total_positives": 24,
+      "total_negatives": 68,
+      "confusion_matrix": [
+        [
+          55,
+          13
+        ],
+        [
+          5,
+          19
+        ]
+      ],
+      "total_dispatched_alerts": 113,
+      "false_positive_alerts": 80,
+      "false_positive_files_by_category": {
+        "gunfire": 3,
+        "fireworks": 1,
+        "thunder": 2,
+        "artillery_firing": 3,
+        "vehicle_backfires": 3,
+        "silence_ambience": 1
+      }
+    },
+    "expD_070": {
+      "accuracy": 0.717391304347826,
+      "precision": 0.4782608695652174,
+      "recall": 0.9166666666666666,
+      "f1": 0.6285714285714286,
+      "specificity": 0.6470588235294118,
+      "tp": 22,
+      "fp": 24,
+      "tn": 44,
+      "fn": 2,
+      "total_positives": 24,
+      "total_negatives": 68,
+      "confusion_matrix": [
+        [
+          44,
+          24
+        ],
+        [
+          2,
+          22
+        ]
+      ],
+      "total_dispatched_alerts": 153,
+      "false_positive_alerts": 116,
+      "false_positive_files_by_category": {
+        "gunfire": 6,
+        "industrial_impacts": 2,
+        "bioacoustics": 1,
+        "vehicle_backfires": 4,
+        "fireworks": 1,
+        "thunder": 2,
+        "artillery_firing": 5,
+        "shouting_screaming": 1,
+        "silence_ambience": 1,
+        "traffic_horns_engines": 1
+      }
+    },
+    "expE_070": {
+      "accuracy": 0.7282608695652174,
+      "precision": 0.4888888888888889,
+      "recall": 0.9166666666666666,
+      "f1": 0.6376811594202899,
+      "specificity": 0.6617647058823529,
+      "tp": 22,
+      "fp": 23,
+      "tn": 45,
+      "fn": 2,
+      "total_positives": 24,
+      "total_negatives": 68,
+      "confusion_matrix": [
+        [
+          45,
+          23
+        ],
+        [
+          2,
+          22
+        ]
+      ],
+      "total_dispatched_alerts": 130,
+      "false_positive_alerts": 93,
+      "false_positive_files_by_category": {
+        "gunfire": 5,
+        "industrial_impacts": 2,
+        "bioacoustics": 1,
+        "vehicle_backfires": 4,
+        "fireworks": 1,
+        "thunder": 2,
+        "artillery_firing": 5,
+        "shouting_screaming": 1,
+        "silence_ambience": 1,
+        "household_ambience": 1
+      }
+    },
+    "expE_aev_070": {
+      "accuracy": 0.75,
+      "precision": 0.5116279069767442,
+      "recall": 0.9166666666666666,
+      "f1": 0.6567164179104478,
+      "specificity": 0.6911764705882353,
+      "tp": 22,
+      "fp": 21,
+      "tn": 47,
+      "fn": 2,
+      "total_positives": 24,
+      "total_negatives": 68,
+      "confusion_matrix": [
+        [
+          47,
+          21
+        ],
+        [
+          2,
+          22
+        ]
+      ],
+      "total_dispatched_alerts": 126,
+      "false_positive_alerts": 89,
+      "false_positive_files_by_category": {
+        "gunfire": 5,
+        "industrial_impacts": 1,
+        "bioacoustics": 1,
+        "vehicle_backfires": 3,
+        "fireworks": 1,
+        "thunder": 2,
+        "artillery_firing": 5,
+        "shouting_screaming": 1,
+        "silence_ambience": 1,
+        "household_ambience": 1
+      }
+    },
+    "expF_070": {
+      "accuracy": 0.7391304347826086,
+      "precision": 0.5,
+      "recall": 0.9166666666666666,
+      "f1": 0.6470588235294118,
+      "specificity": 0.6764705882352942,
+      "tp": 22,
+      "fp": 22,
+      "tn": 46,
+      "fn": 2,
+      "total_positives": 24,
+      "total_negatives": 68,
+      "confusion_matrix": [
+        [
+          46,
+          22
+        ],
+        [
+          2,
+          22
+        ]
+      ],
+      "total_dispatched_alerts": 126,
+      "false_positive_alerts": 89,
+      "false_positive_files_by_category": {
+        "gunfire": 5,
+        "industrial_impacts": 2,
+        "bioacoustics": 1,
+        "vehicle_backfires": 3,
+        "fireworks": 1,
+        "thunder": 2,
+        "artillery_firing": 5,
+        "shouting_screaming": 1,
+        "silence_ambience": 1,
+        "household_ambience": 1
+      }
+    },
+    "expF_aev_070": {
+      "accuracy": 0.75,
+      "precision": 0.5116279069767442,
+      "recall": 0.9166666666666666,
+      "f1": 0.6567164179104478,
+      "specificity": 0.6911764705882353,
+      "tp": 22,
+      "fp": 21,
+      "tn": 47,
+      "fn": 2,
+      "total_positives": 24,
+      "total_negatives": 68,
+      "confusion_matrix": [
+        [
+          47,
+          21
+        ],
+        [
+          2,
+          22
+        ]
+      ],
+      "total_dispatched_alerts": 123,
+      "false_positive_alerts": 86,
+      "false_positive_files_by_category": {
+        "gunfire": 5,
+        "industrial_impacts": 1,
+        "bioacoustics": 1,
+        "vehicle_backfires": 3,
+        "fireworks": 1,
+        "thunder": 2,
+        "artillery_firing": 5,
+        "shouting_screaming": 1,
+        "silence_ambience": 1,
+        "household_ambience": 1
+      }
+    },
+    "expF_aev_075": {
+      "accuracy": 0.7934782608695652,
+      "precision": 0.5757575757575758,
+      "recall": 0.7916666666666666,
+      "f1": 0.6666666666666667,
+      "specificity": 0.7941176470588235,
+      "tp": 19,
+      "fp": 14,
+      "tn": 54,
+      "fn": 5,
+      "total_positives": 24,
+      "total_negatives": 68,
+      "confusion_matrix": [
+        [
+          54,
+          14
+        ],
+        [
+          5,
+          19
+        ]
+      ],
+      "total_dispatched_alerts": 89,
+      "false_positive_alerts": 54,
+      "false_positive_files_by_category": {
+        "gunfire": 2,
+        "industrial_impacts": 1,
+        "bioacoustics": 1,
+        "vehicle_backfires": 3,
+        "fireworks": 1,
+        "thunder": 2,
+        "artillery_firing": 2,
+        "shouting_screaming": 1,
+        "silence_ambience": 1
+      }
+    }
+  },
+  "gain_robustness": {
+    "0.0dB": {
+      "accuracy": 0.75,
+      "precision": 0.5116279069767442,
+      "recall": 0.9166666666666666,
+      "f1": 0.6567164179104478,
+      "specificity": 0.6911764705882353,
+      "tp": 22,
+      "fp": 21,
+      "tn": 47,
+      "fn": 2,
+      "total_positives": 24,
+      "total_negatives": 68,
+      "confusion_matrix": [
+        [
+          47,
+          21
+        ],
+        [
+          2,
+          22
+        ]
+      ],
+      "false_positive_alerts": 85
+    },
+    "-6.0dB": {
+      "accuracy": 0.7608695652173914,
+      "precision": 0.5238095238095238,
+      "recall": 0.9166666666666666,
+      "f1": 0.6666666666666667,
+      "specificity": 0.7058823529411765,
+      "tp": 22,
+      "fp": 20,
+      "tn": 48,
+      "fn": 2,
+      "total_positives": 24,
+      "total_negatives": 68,
+      "confusion_matrix": [
+        [
+          48,
+          20
+        ],
+        [
+          2,
+          22
+        ]
+      ],
+      "false_positive_alerts": 71
+    },
+    "-12.0dB": {
+      "accuracy": 0.7717391304347826,
+      "precision": 0.5384615384615384,
+      "recall": 0.875,
+      "f1": 0.6666666666666667,
+      "specificity": 0.7352941176470589,
+      "tp": 21,
+      "fp": 18,
+      "tn": 50,
+      "fn": 3,
+      "total_positives": 24,
+      "total_negatives": 68,
+      "confusion_matrix": [
+        [
+          50,
+          18
+        ],
+        [
+          3,
+          21
+        ]
+      ],
+      "false_positive_alerts": 61
+    }
+  },
+  "latency_profiling": {
+    "mel_preprocessor_p95_ms": 1.5153400090639475,
+    "cnn_forward_p95_ms": 4.48762500018347,
+    "aev_verification_p95_ms": 1.3449999940348787,
+    "total_hop_p95_ms": 6.895479999366216,
+    "budget_ms": 250.0,
+    "budget_utilization_percent": 2.7581919997464865
+  },
+  "file_records": [
+    {
+      "file_name": "Firework.mp3",
+      "label": "fireworks",
+      "is_explosion": 0,
+      "category": "fireworks",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.5622778534889221,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.6551287770271301,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.598801851272583,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.598801851272583,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.600807785987854,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.600807785987854,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.600807785987854,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "bbc_gunfire---_07034194.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "gunfire",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.9321422576904297,
+          "dispatched_alerts": 29,
+          "detected": true
+        },
+        "expD_070": {
+          "max_p": 0.85517418384552,
+          "dispatched_alerts": 32,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.8236915469169617,
+          "dispatched_alerts": 19,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.8236915469169617,
+          "dispatched_alerts": 19,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.8219348788261414,
+          "dispatched_alerts": 17,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.8219348788261414,
+          "dispatched_alerts": 17,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.8219348788261414,
+          "dispatched_alerts": 6,
+          "detected": true
+        }
+      }
+    },
+    {
+      "file_name": "bbc_gunfire---_07034195.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "gunfire",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.7369874119758606,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.6469330191612244,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.5809946060180664,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.5809946060180664,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.5537261366844177,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.5537261366844177,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.5537261366844177,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "bbc_gunfire---_07034197.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "gunfire",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.7752784490585327,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expD_070": {
+          "max_p": 0.7196847200393677,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.6552333235740662,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.6552333235740662,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.637538492679596,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.637538492679596,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.637538492679596,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "bbc_gunfire---_07034199.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "gunfire",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.31867438554763794,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.5428930521011353,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.467962384223938,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.467962384223938,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.4353492558002472,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.4353492558002472,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.4353492558002472,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "bbc_gunfire---_07034201.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "gunfire",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.6156910061836243,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.7696284651756287,
+          "dispatched_alerts": 9,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.7875401377677917,
+          "dispatched_alerts": 11,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.7875401377677917,
+          "dispatched_alerts": 11,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.791696310043335,
+          "dispatched_alerts": 11,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.791696310043335,
+          "dispatched_alerts": 11,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.791696310043335,
+          "dispatched_alerts": 8,
+          "detected": true
+        }
+      }
+    },
+    {
+      "file_name": "bbc_gunfire---_07034203.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "gunfire",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.4803990423679352,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.6468544602394104,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.5492187738418579,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.5492187738418579,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.5193588733673096,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.5193588733673096,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.5193588733673096,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "bbc_gunfire---_07034204.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "gunfire",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.5096087455749512,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.6707412004470825,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.5970410108566284,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.5970410108566284,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.5766441822052002,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.5766441822052002,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.5766441822052002,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "bbc_gunfire---_07034205.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "gunfire",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.24793317914009094,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.44455552101135254,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.4142642319202423,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.4142642319202423,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.38684549927711487,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.38684549927711487,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.38684549927711487,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "bbc_gunfire---_07034208.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "gunfire",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.6854557394981384,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.6734605431556702,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.6365705728530884,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.6365705728530884,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.623101532459259,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.623101532459259,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.623101532459259,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "bbc_building-u_07007001.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "industrial_impacts",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.3712133765220642,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.7189549207687378,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.742191731929779,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.742191731929779,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.7384807467460632,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.7384807467460632,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.7384807467460632,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "bbc_industry--_07076034.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "industrial_impacts",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.6216804385185242,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.7814086675643921,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.7794475555419922,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.7794475555419922,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.7691210508346558,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.7691210508346558,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.7691210508346558,
+          "dispatched_alerts": 1,
+          "detected": true
+        }
+      }
+    },
+    {
+      "file_name": "clink2.wav",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "industrial_impacts",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.044601161032915115,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.28698256611824036,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.3092239797115326,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.3092239797115326,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.32265910506248474,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.32265910506248474,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.32265910506248474,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "clink3.wav",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "industrial_impacts",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.11463621258735657,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.48525476455688477,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.5043752789497375,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.5043752789497375,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.5183219313621521,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.5183219313621521,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.5183219313621521,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "thunder-rain-and-thunder-in-a-tent-sfxjar.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "thunder",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.0674210861325264,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.4547715187072754,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.45153921842575073,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.45153921842575073,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.4572429060935974,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.4572429060935974,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.4572429060935974,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "bbc_right-whal_nhu0501613.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "bioacoustics",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.40704062581062317,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.688329815864563,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.6847410202026367,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.6847410202026367,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.6841462850570679,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.6841462850570679,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.6841462850570679,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "bbc_right-whal_nhu0501615.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "bioacoustics",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.7072787284851074,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.8199707865715027,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.8176641464233398,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.8176641464233398,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.8097624778747559,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.8097624778747559,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.8097624778747559,
+          "dispatched_alerts": 1,
+          "detected": true
+        }
+      }
+    },
+    {
+      "file_name": "bbc_space-trav_07038031.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "synthesizer_telemetry",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.321695476770401,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.6375220417976379,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.631904125213623,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.631904125213623,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.6275463104248047,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.6275463104248047,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.6275463104248047,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "bbc_space-trav_07038032.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "synthesizer_telemetry",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.061494894325733185,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.4792180359363556,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.507206380367279,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.507206380367279,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.4962701201438904,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.4962701201438904,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.4962701201438904,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "bbc_transport-_07012036.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "vehicle_backfires",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.6733333468437195,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.8323053121566772,
+          "dispatched_alerts": 3,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.8364963531494141,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.8364963531494141,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.8461217880249023,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.8461217880249023,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.8461217880249023,
+          "dispatched_alerts": 1,
+          "detected": true
+        }
+      }
+    },
+    {
+      "file_name": "alex_jauk-distant-explosion-192022.mp3",
+      "label": "explosion",
+      "is_explosion": 1,
+      "category": "positives",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.44864338636398315,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.46571195125579834,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.39094629883766174,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.39094629883766174,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.38789188861846924,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.38789188861846924,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.38789188861846924,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "alex_jauk-slow-explosion-190430.mp3",
+      "label": "explosion",
+      "is_explosion": 1,
+      "category": "positives",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.7289540767669678,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.8386551737785339,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.8127080202102661,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.8127080202102661,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.8183086514472961,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.8183086514472961,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.8183086514472961,
+          "dispatched_alerts": 1,
+          "detected": true
+        }
+      }
+    },
+    {
+      "file_name": "bbc_demolition_07022507.mp3",
+      "label": "explosion",
+      "is_explosion": 1,
+      "category": "positives",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.8013209104537964,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expD_070": {
+          "max_p": 0.8469334244728088,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.8739804029464722,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.8739804029464722,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.8701604604721069,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.8701604604721069,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.8701604604721069,
+          "dispatched_alerts": 1,
+          "detected": true
+        }
+      }
+    },
+    {
+      "file_name": "bbc_demolition_07022508.mp3",
+      "label": "explosion",
+      "is_explosion": 1,
+      "category": "positives",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.7576862573623657,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expD_070": {
+          "max_p": 0.7793484330177307,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.7134798765182495,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.7134798765182495,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.7022256255149841,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.7022256255149841,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.7022256255149841,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "bbc_demolition_07022510.mp3",
+      "label": "explosion",
+      "is_explosion": 1,
+      "category": "positives",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.0697907879948616,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.5727527737617493,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.501015305519104,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.501015305519104,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.49961477518081665,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.49961477518081665,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.49961477518081665,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "bbc_explosions_07023354.mp3",
+      "label": "explosion",
+      "is_explosion": 1,
+      "category": "positives",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.8583406805992126,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expD_070": {
+          "max_p": 0.7622901201248169,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.7787471413612366,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.7787471413612366,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.7770581245422363,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.7770581245422363,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.7770581245422363,
+          "dispatched_alerts": 1,
+          "detected": true
+        }
+      }
+    },
+    {
+      "file_name": "flutie8211-bomb-and-echo-2-540400.mp3",
+      "label": "explosion",
+      "is_explosion": 1,
+      "category": "positives",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.9390255212783813,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expD_070": {
+          "max_p": 0.9096621870994568,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.893180251121521,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.893180251121521,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.8949545621871948,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.8949545621871948,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.8949545621871948,
+          "dispatched_alerts": 1,
+          "detected": true
+        }
+      }
+    },
+    {
+      "file_name": "flutie8211-bomb-and-echo-3-590449.mp3",
+      "label": "explosion",
+      "is_explosion": 1,
+      "category": "positives",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.9413466453552246,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expD_070": {
+          "max_p": 0.9078288078308105,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.8873674273490906,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.8873674273490906,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.8890881538391113,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.8890881538391113,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.8890881538391113,
+          "dispatched_alerts": 1,
+          "detected": true
+        }
+      }
+    },
+    {
+      "file_name": "freesound_community-explosion-107629.mp3",
+      "label": "explosion",
+      "is_explosion": 1,
+      "category": "positives",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.7598175406455994,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expD_070": {
+          "max_p": 0.8605962991714478,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.8659499883651733,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.8659499883651733,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.8612366914749146,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.8612366914749146,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.8612366914749146,
+          "dispatched_alerts": 2,
+          "detected": true
+        }
+      }
+    },
+    {
+      "file_name": "freesound_community-explosion-80108.mp3",
+      "label": "explosion",
+      "is_explosion": 1,
+      "category": "positives",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.8549066185951233,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expD_070": {
+          "max_p": 0.8405287265777588,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.8133474588394165,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.8133474588394165,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.814659595489502,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.814659595489502,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.814659595489502,
+          "dispatched_alerts": 1,
+          "detected": true
+        }
+      }
+    },
+    {
+      "file_name": "freesound_community-medium-explosion-40472.mp3",
+      "label": "explosion",
+      "is_explosion": 1,
+      "category": "positives",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.8057390451431274,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expD_070": {
+          "max_p": 0.8674577474594116,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.8560895323753357,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.8560895323753357,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.8529897928237915,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.8529897928237915,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.8529897928237915,
+          "dispatched_alerts": 1,
+          "detected": true
+        }
+      }
+    },
+    {
+      "file_name": "ribhavagrawal-bomb-explosion-type-01-265510.mp3",
+      "label": "explosion",
+      "is_explosion": 1,
+      "category": "positives",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.9722970128059387,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expD_070": {
+          "max_p": 0.9452103972434998,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.9399157762527466,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.9399157762527466,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.9399793744087219,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.9399793744087219,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.9399793744087219,
+          "dispatched_alerts": 2,
+          "detected": true
+        }
+      }
+    },
+    {
+      "file_name": "ribhavagrawal-bomb-explosion-type-02-265506.mp3",
+      "label": "explosion",
+      "is_explosion": 1,
+      "category": "positives",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.8350008130073547,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expD_070": {
+          "max_p": 0.8382519483566284,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.8354443311691284,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.8354443311691284,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.8282642960548401,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.8282642960548401,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.8282642960548401,
+          "dispatched_alerts": 1,
+          "detected": true
+        }
+      }
+    },
+    {
+      "file_name": "ribhavagrawal-bomb-explosion-type-04-265508.mp3",
+      "label": "explosion",
+      "is_explosion": 1,
+      "category": "positives",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.935077965259552,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expD_070": {
+          "max_p": 0.9276236295700073,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.9102782011032104,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.9102782011032104,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.9059526920318604,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.9059526920318604,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.9059526920318604,
+          "dispatched_alerts": 1,
+          "detected": true
+        }
+      }
+    },
+    {
+      "file_name": "scottishperson-sound-effect-ww2-uk-air-raid-bomb-blasts-164347.mp3",
+      "label": "explosion",
+      "is_explosion": 1,
+      "category": "positives",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.9417226314544678,
+          "dispatched_alerts": 11,
+          "detected": true
+        },
+        "expD_070": {
+          "max_p": 0.889374315738678,
+          "dispatched_alerts": 11,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.8744392991065979,
+          "dispatched_alerts": 12,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.8744392991065979,
+          "dispatched_alerts": 12,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.8764752745628357,
+          "dispatched_alerts": 12,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.8764752745628357,
+          "dispatched_alerts": 12,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.8764752745628357,
+          "dispatched_alerts": 12,
+          "detected": true
+        }
+      }
+    },
+    {
+      "file_name": "scottishperson-sound-effect-ww2-uk-bomb-blast-164351.mp3",
+      "label": "explosion",
+      "is_explosion": 1,
+      "category": "positives",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.9413629770278931,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expD_070": {
+          "max_p": 0.9006819128990173,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.8793809413909912,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.8793809413909912,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.8818164467811584,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.8818164467811584,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.8818164467811584,
+          "dispatched_alerts": 2,
+          "detected": true
+        }
+      }
+    },
+    {
+      "file_name": "soundreality-a-bomb-139689.mp3",
+      "label": "explosion",
+      "is_explosion": 1,
+      "category": "positives",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.853631854057312,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expD_070": {
+          "max_p": 0.8788290619850159,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.8704897165298462,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.8704897165298462,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.8643141388893127,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.8643141388893127,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.8643141388893127,
+          "dispatched_alerts": 1,
+          "detected": true
+        }
+      }
+    },
+    {
+      "file_name": "soundreality-explosion-fx-343683.mp3",
+      "label": "explosion",
+      "is_explosion": 1,
+      "category": "positives",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.9367474317550659,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expD_070": {
+          "max_p": 0.9062722325325012,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.8836691975593567,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.8836691975593567,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.8838098645210266,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.8838098645210266,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.8838098645210266,
+          "dispatched_alerts": 1,
+          "detected": true
+        }
+      }
+    },
+    {
+      "file_name": "u_xg7ssi08yr-bomb-explosion-2-369633.mp3",
+      "label": "explosion",
+      "is_explosion": 1,
+      "category": "positives",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.9358556866645813,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expD_070": {
+          "max_p": 0.9091842174530029,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.8982810378074646,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.8982810378074646,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.9003280997276306,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.9003280997276306,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.9003280997276306,
+          "dispatched_alerts": 2,
+          "detected": true
+        }
+      }
+    },
+    {
+      "file_name": "u_xg7ssi08yr-bomb-explosion-2-381970.mp3",
+      "label": "explosion",
+      "is_explosion": 1,
+      "category": "positives",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.9294206500053406,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expD_070": {
+          "max_p": 0.9019535183906555,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.8901183605194092,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.8901183605194092,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.8920717239379883,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.8920717239379883,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.8920717239379883,
+          "dispatched_alerts": 1,
+          "detected": true
+        }
+      }
+    },
+    {
+      "file_name": "fs_117616_soundmary.mp3",
+      "label": "fireworks",
+      "is_explosion": 0,
+      "category": "fireworks",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.3731808066368103,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.5789850354194641,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.5837169289588928,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.5837169289588928,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.5927402377128601,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.5927402377128601,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.5927402377128601,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "fs_410347_inspectorj.mp3",
+      "label": "fireworks",
+      "is_explosion": 0,
+      "category": "fireworks",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.9234708547592163,
+          "dispatched_alerts": 14,
+          "detected": true
+        },
+        "expD_070": {
+          "max_p": 0.8805253505706787,
+          "dispatched_alerts": 13,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.8502892851829529,
+          "dispatched_alerts": 13,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.8502892851829529,
+          "dispatched_alerts": 13,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.8517096638679504,
+          "dispatched_alerts": 13,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.8517096638679504,
+          "dispatched_alerts": 13,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.8517096638679504,
+          "dispatched_alerts": 10,
+          "detected": true
+        }
+      }
+    },
+    {
+      "file_name": "fs_56579_atomwrath.mp3",
+      "label": "fireworks",
+      "is_explosion": 0,
+      "category": "fireworks",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.6576647758483887,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.6574222445487976,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.5950851440429688,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.5950851440429688,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.586128830909729,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.586128830909729,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.586128830909729,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "fs_140350_felix_blume.mp3",
+      "label": "fireworks",
+      "is_explosion": 0,
+      "category": "fireworks",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.5903239846229553,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.5893826484680176,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.5399654507637024,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.5399654507637024,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.5344082713127136,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.5344082713127136,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.5344082713127136,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "fs_198355_schafferdavid.mp3",
+      "label": "fireworks",
+      "is_explosion": 0,
+      "category": "fireworks",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.13181112706661224,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.2561364471912384,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.22708551585674286,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.22708551585674286,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.23916268348693848,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.23916268348693848,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.23916268348693848,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "fs_126566_ikbenraar.mp3",
+      "label": "fireworks",
+      "is_explosion": 0,
+      "category": "fireworks",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.06819848716259003,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.22313803434371948,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.30584394931793213,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.30584394931793213,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.3089436888694763,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.3089436888694763,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.3089436888694763,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "fs_108641_juskiddink.mp3",
+      "label": "explosion",
+      "is_explosion": 1,
+      "category": "positives",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.7819463014602661,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expD_070": {
+          "max_p": 0.8981817364692688,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.8903852701187134,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.8903852701187134,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.8866407871246338,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.8866407871246338,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.8866407871246338,
+          "dispatched_alerts": 1,
+          "detected": true
+        }
+      }
+    },
+    {
+      "file_name": "fs_367622_fxkid2.mp3",
+      "label": "explosion",
+      "is_explosion": 1,
+      "category": "positives",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.39944157004356384,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.7189234495162964,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.7325344085693359,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.7325344085693359,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.7135958671569824,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.7135958671569824,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.7135958671569824,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "fs_97896_ohrwurm.mp3",
+      "label": "explosion",
+      "is_explosion": 1,
+      "category": "positives",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.9464792609214783,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expD_070": {
+          "max_p": 0.9232514500617981,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.9244505763053894,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.9244505763053894,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.9232801795005798,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.9232801795005798,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.9232801795005798,
+          "dispatched_alerts": 2,
+          "detected": true
+        }
+      }
+    },
+    {
+      "file_name": "fs_323316_alfrodou.mp3",
+      "label": "explosion",
+      "is_explosion": 1,
+      "category": "positives",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.7191985845565796,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.7479454874992371,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.7089797258377075,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.7089797258377075,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.7204523682594299,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.7204523682594299,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.7204523682594299,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "fs_36044_inchadney.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "thunder",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.9322099685668945,
+          "dispatched_alerts": 4,
+          "detected": true
+        },
+        "expD_070": {
+          "max_p": 0.892341136932373,
+          "dispatched_alerts": 4,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.8693411350250244,
+          "dispatched_alerts": 4,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.8693411350250244,
+          "dispatched_alerts": 4,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.8716131448745728,
+          "dispatched_alerts": 4,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.8716131448745728,
+          "dispatched_alerts": 4,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.8716131448745728,
+          "dispatched_alerts": 3,
+          "detected": true
+        }
+      }
+    },
+    {
+      "file_name": "fs_195529_klankbeeld.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "thunder",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.9079369902610779,
+          "dispatched_alerts": 6,
+          "detected": true
+        },
+        "expD_070": {
+          "max_p": 0.9137454628944397,
+          "dispatched_alerts": 6,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.8907259702682495,
+          "dispatched_alerts": 5,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.8907259702682495,
+          "dispatched_alerts": 5,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.886991560459137,
+          "dispatched_alerts": 5,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.886991560459137,
+          "dispatched_alerts": 5,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.886991560459137,
+          "dispatched_alerts": 6,
+          "detected": true
+        }
+      }
+    },
+    {
+      "file_name": "fs_579137_clagnar.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "thunder",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.6008941531181335,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.6990720629692078,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.6444627642631531,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.6444627642631531,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.6442915797233582,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.6442915797233582,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.6442915797233582,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "fs_570351_jpbillingsleyjr.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "thunder",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.7204964756965637,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.6238095760345459,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.5451981425285339,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.5451981425285339,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.5419484972953796,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.5419484972953796,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.5419484972953796,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "fs_161341_qubodup.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "artillery_firing",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.7670671939849854,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expD_070": {
+          "max_p": 0.8040398955345154,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.7436661720275879,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.7436661720275879,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.7355098724365234,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.7355098724365234,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.7355098724365234,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "fs_171475_2887679652.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "artillery_firing",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.9355586171150208,
+          "dispatched_alerts": 3,
+          "detected": true
+        },
+        "expD_070": {
+          "max_p": 0.9534354209899902,
+          "dispatched_alerts": 3,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.9500905871391296,
+          "dispatched_alerts": 3,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.9500905871391296,
+          "dispatched_alerts": 3,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.9513590931892395,
+          "dispatched_alerts": 3,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.9513590931892395,
+          "dispatched_alerts": 3,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.9513590931892395,
+          "dispatched_alerts": 3,
+          "detected": true
+        }
+      }
+    },
+    {
+      "file_name": "fs_184275_qubodup.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "artillery_firing",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.7829061150550842,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expD_070": {
+          "max_p": 0.8234568238258362,
+          "dispatched_alerts": 8,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.7935634851455688,
+          "dispatched_alerts": 4,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.7935634851455688,
+          "dispatched_alerts": 4,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.8002588152885437,
+          "dispatched_alerts": 4,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.8002588152885437,
+          "dispatched_alerts": 4,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.8002588152885437,
+          "dispatched_alerts": 1,
+          "detected": true
+        }
+      }
+    },
+    {
+      "file_name": "fs_184650_Isaac200000.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "artillery_firing",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.7176355123519897,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.7953839898109436,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.7425656318664551,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.7425656318664551,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.7406728863716125,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.7406728863716125,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.7406728863716125,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "fs_187542_qubodup.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "artillery_firing",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.22385750710964203,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.7347293496131897,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.7362046837806702,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.7362046837806702,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.745281994342804,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.745281994342804,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.745281994342804,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "ov_24efb8d4_LouiseBrown1981.oga",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "artillery_firing",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.2697732150554657,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.45448631048202515,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.4445289969444275,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.4445289969444275,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.4306006133556366,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.4306006133556366,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.4306006133556366,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "fs_149177_deathnsorrow.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "gunfire",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.15923936665058136,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.36199674010276794,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.3743758499622345,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.3743758499622345,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.37595027685165405,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.37595027685165405,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.37595027685165405,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "fs_213925_Diboz.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "gunfire",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.5196404457092285,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.7560831308364868,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.7299432158470154,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.7299432158470154,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.7377069592475891,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.7377069592475891,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.7377069592475891,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "fs_385785_Rijam.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "gunfire",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.18901732563972473,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.45929911732673645,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.42701664566993713,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.42701664566993713,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.431458979845047,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.431458979845047,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.431458979845047,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "fs_398348_EFlexMusic.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "gunfire",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.14179900288581848,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.33049631118774414,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.3224000632762909,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.3224000632762909,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.3324054777622223,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.3324054777622223,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.3324054777622223,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "fs_427597_michorvath.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "gunfire",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.41136038303375244,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.701804518699646,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.7330420613288879,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.7330420613288879,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.7268186807632446,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.7268186807632446,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.7268186807632446,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "fs_473846_MATRIXXX.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "gunfire",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.47707492113113403,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.6741915941238403,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.605998158454895,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.605998158454895,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.6228772401809692,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.6228772401809692,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.6228772401809692,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "wm_9_mm_gunshot-mike-koenig-123.wav",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "gunfire",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.7618257403373718,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expD_070": {
+          "max_p": 0.774313747882843,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.7132520079612732,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.7132520079612732,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.7213402986526489,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.7213402986526489,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.7213402986526489,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "fs_105351_CeebFrack.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "vehicle_backfires",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.892386794090271,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expD_070": {
+          "max_p": 0.8442838788032532,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.7952209711074829,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.7952209711074829,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.7867048382759094,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.7867048382759094,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.7867048382759094,
+          "dispatched_alerts": 1,
+          "detected": true
+        }
+      }
+    },
+    {
+      "file_name": "fs_123684_lonemonk.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "vehicle_backfires",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.34904375672340393,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.49750983715057373,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.4893937110900879,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.4893937110900879,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.49533385038375854,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.49533385038375854,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.49533385038375854,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "fs_350672_Dominik_W.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "vehicle_backfires",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.9428403377532959,
+          "dispatched_alerts": 15,
+          "detected": true
+        },
+        "expD_070": {
+          "max_p": 0.897689163684845,
+          "dispatched_alerts": 17,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.8701474666595459,
+          "dispatched_alerts": 16,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.8701474666595459,
+          "dispatched_alerts": 16,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.8661553263664246,
+          "dispatched_alerts": 15,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.8661553263664246,
+          "dispatched_alerts": 15,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.8661553263664246,
+          "dispatched_alerts": 11,
+          "detected": true
+        }
+      }
+    },
+    {
+      "file_name": "fs_675723_craigsmith.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "vehicle_backfires",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.46386730670928955,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.6420242786407471,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.6262466907501221,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.6262466907501221,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.6150074601173401,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.6150074601173401,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.6150074601173401,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "fs_705363_mudflea2.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "vehicle_backfires",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.8137456178665161,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expD_070": {
+          "max_p": 0.7668575048446655,
+          "dispatched_alerts": 2,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.7042927742004395,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.7042927742004395,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.6853087544441223,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.6853087544441223,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.6853087544441223,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "p19_speech_conversation_3_reitanna_b7b191e3.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "speech_conversation",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.13748346269130707,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.538097620010376,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.4705668091773987,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.4705668091773987,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.5018792152404785,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.5018792152404785,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.5018792152404785,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "p19_speech_conversation_4_qubodup_3c870465.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "speech_conversation",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.3585840165615082,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.6447389125823975,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.6387072801589966,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.6387072801589966,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.6393172740936279,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.6393172740936279,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.6393172740936279,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "p19_shouting_screaming_3_halgrimm_44e0bfe0.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "shouting_screaming",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.3556958734989166,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.7604345679283142,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.7839835286140442,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.7839835286140442,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.7825142741203308,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.7825142741203308,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.7825142741203308,
+          "dispatched_alerts": 1,
+          "detected": true
+        }
+      }
+    },
+    {
+      "file_name": "p19_shouting_screaming_4_jorickhoofd_f2734c12.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "shouting_screaming",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.05978938564658165,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.5602790117263794,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.48830485343933105,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.48830485343933105,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.5231566429138184,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.5231566429138184,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.5231566429138184,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "p19_crowds_cheering_3_quistard_1d134b41.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "crowds_cheering",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.21255674958229065,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.47700372338294983,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.4676048457622528,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.4676048457622528,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.4712999165058136,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.4712999165058136,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.4712999165058136,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "p19_crowds_cheering_4_dan_audiofile_95df8874.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "crowds_cheering",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.14276255667209625,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.4885548949241638,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.4846280515193939,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.4846280515193939,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.4756057858467102,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.4756057858467102,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.4756057858467102,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "p19_music_drums_percussion_3_tri_tachyon_22bd1e22.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "music_drums_percussion",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.5088928937911987,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.5846592783927917,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.494832843542099,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.494832843542099,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.47006553411483765,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.47006553411483765,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.47006553411483765,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "p19_music_drums_percussion_4_kaiodeleis_ac10b717.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "music_drums_percussion",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.0318441241979599,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.27181848883628845,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.29861220717430115,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.29861220717430115,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.3064485192298889,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.3064485192298889,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.3064485192298889,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "p19_silence_ambience_3_ahriik_cb1a0293.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "silence_ambience",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.0,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.0,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.0,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.0,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.0,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.0,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.0,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "p19_silence_ambience_4_frederik_sunne_0e4ca5cf.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "silence_ambience",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.8382528424263,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expD_070": {
+          "max_p": 0.9165982007980347,
+          "dispatched_alerts": 4,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.9143112301826477,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.9143112301826477,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.9185855984687805,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.9185855984687805,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.9185855984687805,
+          "dispatched_alerts": 1,
+          "detected": true
+        }
+      }
+    },
+    {
+      "file_name": "p19_doors_slamming_falling_3_actioncircus_ecb5d04a.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "doors_slamming_falling",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.6723563075065613,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.6294660568237305,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.5366115570068359,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.5366115570068359,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.5115314722061157,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.5115314722061157,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.5115314722061157,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "p19_doors_slamming_falling_4_omar_alvarado_8558db4e.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "doors_slamming_falling",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.6904510259628296,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.6669430732727051,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.5819923281669617,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.5819923281669617,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.5571638941764832,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.5571638941764832,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.5571638941764832,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "p19_traffic_horns_engines_3_vialgames_ad0fe441.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "traffic_horns_engines",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.5784649848937988,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.6804527640342712,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.6137298941612244,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.6137298941612244,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.625981867313385,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.625981867313385,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.625981867313385,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "p19_traffic_horns_engines_4_eaglechopper_ae9f3469.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "traffic_horns_engines",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.2221711277961731,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.7073822617530823,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_070": {
+          "max_p": 0.6732482314109802,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.6732482314109802,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.6828058362007141,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.6828058362007141,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.6828058362007141,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "p19_construction_impacts_3_xserra_6ad8f42d.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "construction_impacts",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.61789470911026,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.6341428756713867,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.544773519039154,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.544773519039154,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.51980060338974,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.51980060338974,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.51980060338974,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "p19_construction_impacts_4_breviceps_b2d8f845.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "construction_impacts",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.6804474592208862,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.6206650733947754,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.5475981831550598,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.5475981831550598,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.5345466732978821,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.5345466732978821,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.5345466732978821,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "p19_household_ambience_3_bdunis4_0be312d3.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "household_ambience",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.18967562913894653,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.6936419010162354,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.7381963729858398,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expE_aev_070": {
+          "max_p": 0.7381963729858398,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_070": {
+          "max_p": 0.7401649355888367,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_070": {
+          "max_p": 0.7401649355888367,
+          "dispatched_alerts": 1,
+          "detected": true
+        },
+        "expF_aev_075": {
+          "max_p": 0.7401649355888367,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "p19_household_ambience_4_joedeshon_ef97cb02.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "household_ambience",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.009168515913188457,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.48304057121276855,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.48396581411361694,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.48396581411361694,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.5035917162895203,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.5035917162895203,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.5035917162895203,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "p19_mixed_speech_noise_3_boilingsand_665f46f8.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "mixed_speech_noise",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.267629474401474,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.33993473649024963,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.2858965992927551,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.2858965992927551,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.27792811393737793,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.27792811393737793,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.27792811393737793,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    },
+    {
+      "file_name": "p19_mixed_speech_noise_4_craigsmith_5d01f11a.mp3",
+      "label": "non_target",
+      "is_explosion": 0,
+      "category": "mixed_speech_noise",
+      "results": {
+        "baseline_075": {
+          "max_p": 0.1261279284954071,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expD_070": {
+          "max_p": 0.39209526777267456,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_070": {
+          "max_p": 0.34167852997779846,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expE_aev_070": {
+          "max_p": 0.34167852997779846,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_070": {
+          "max_p": 0.3450740873813629,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_070": {
+          "max_p": 0.3450740873813629,
+          "dispatched_alerts": 0,
+          "detected": false
+        },
+        "expF_aev_075": {
+          "max_p": 0.3450740873813629,
+          "dispatched_alerts": 0,
+          "detected": false
+        }
+      }
+    }
+  ]
+}

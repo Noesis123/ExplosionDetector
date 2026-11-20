@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Acoustic Explosion Detection — Audio Dataset Inspector & Previews</title>
+    <style>
+        body {
+            background: #090d16;
+            color: #f1f5f9;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 30px;
+        }
+        h1 {
+            color: #38bdf8;
+            font-size: 1.8rem;
+            margin-bottom: 6px;
+        }
+        p.subtitle {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+        .filter-controls {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+        .btn {
+            background: #1e293b;
+            color: #cbd5e1;
+            border: 1px solid #334155;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+        .btn.active, .btn:hover {
+            background: #0284c7;
+            color: white;
+            border-color: #38bdf8;
+        }
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+            gap: 20px;
+        }
+        .audio-card {
+            background: #0f172a;
+            border: 1px solid #1e293b;
+            border-radius: 10px;
+            padding: 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+        }
+        .audio-card.explosion {
+            border-left: 4px solid #ef4444;
+        }
+        .audio-card.non_explosion {
+            border-left: 4px solid #10b981;
+        }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .card-title {
+            margin: 6px 0 2px 0;
+            font-size: 1.05rem;
+            color: #f8fafc;
+        }
+        .file-info {
+            font-size: 0.8rem;
+            color: #64748b;
+            font-family: monospace;
+        }
+        .badge {
+            font-size: 0.7rem;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .badge-explosion {
+            background: rgba(239, 68, 68, 0.2);
+            color: #f87171;
+            border: 1px solid rgba(239, 68, 68, 0.4);
+        }
+        .badge-negative {
+            background: rgba(16, 185, 129, 0.2);
+            color: #34d399;
+            border: 1px solid rgba(16, 185, 129, 0.4);
+        }
+        .subcat-tag {
+            font-size: 0.75rem;
+            color: #94a3b8;
+            background: #1e293b;
+            padding: 3px 6px;
+            border-radius: 4px;
+            margin-left: 6px;
+        }
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            background: #1e293b;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+        }
+        .m-label {
+            color: #94a3b8;
+        }
+        .m-val {
+            color: #38bdf8;
+            font-weight: 600;
+        }
+        .img-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            display: block;
+            border: 1px solid #334155;
+        }
+        .player-container audio {
+            width: 100%;
+            height: 38px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Acoustic Explosion Detection — Forensic Dataset Previews</h1>
+    <p class="subtitle">Audited Audio Recordings, Synchronized Waveforms & 64-Band Log-Mel Spectrograms</p>
+    
+    <div class="cards-grid">
+        
+        <div class="audio-card explosion">
+            <div class="card-header">
+                <div>
+                    <span class="badge badge-explosion">EXPLOSION</span>
+                    <span class="subcat-tag">standard_explosion</span>
+                    <h3 class="card-title">Explosion (Close Heavy Blast)</h3>
+                    <div class="file-info">dragon-studio-loud-explosion-425457.mp3 • 2.904s • 48000 Hz</div>
+                </div>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-item">
+                    <span class="m-label">Crest Factor:</span>
+                    <span class="m-val">2.51</span>
+                </div>
+                <div class="metric-item">
+                    <span class="m-label">Low Freq Ratio (&lt;250Hz):</span>
+                    <span class="m-val">0.931</span>
+                </div>
+            </div>
+
+            <div class="img-container">
+                <img src="preview_dragon-studio-loud-explosion-425457.png" alt="Explosion (Close Heavy Blast)" loading="lazy" />
+            </div>
+
+            <div class="player-container">
+                <audio controls preload="none">
+                    <source src="file:///C:/Users/User/Downloads/Music/dragon-studio-loud-explosion-425457.mp3">
+                    Your browser does not support audio element.
+                </audio>
+            </div>
+        </div>
+        
+        <div class="audio-card explosion">
+            <div class="card-header">
+                <div>
+                    <span class="badge badge-explosion">EXPLOSION</span>
+                    <span class="subcat-tag">distant_explosion</span>
+                    <h3 class="card-title">Explosion (Distant Artillery Blast)</h3>
+                    <div class="file-info">alex_jauk-distant-explosion-192022.mp3 • 3.936s • 48000 Hz</div>
+                </div>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-item">
+                    <span class="m-label">Crest Factor:</span>
+                    <span class="m-val">14.04</span>
+                </div>
+                <div class="metric-item">
+                    <span class="m-label">Low Freq Ratio (&lt;250Hz):</span>
+                    <span class="m-val">0.574</span>
+                </div>
+            </div>
+
+            <div class="img-container">
+                <img src="preview_alex_jauk-distant-explosion-192022.png" alt="Explosion (Distant Artillery Blast)" loading="lazy" />
+            </div>
+
+            <div class="player-container">
+                <audio controls preload="none">
+                    <source src="file:///C:/Users/User/Downloads/Music/alex_jauk-distant-explosion-192022.mp3">
+                    Your browser does not support audio element.
+                </audio>
+            </div>
+        </div>
+        
+        <div class="audio-card explosion">
+            <div class="card-header">
+                <div>
+                    <span class="badge badge-explosion">EXPLOSION</span>
+                    <span class="subcat-tag">bomb_blast</span>
+                    <h3 class="card-title">Explosion (Dynamite Blast)</h3>
+                    <div class="file-info">alban_gogh-dynamite-sound-effect-205859.mp3 • 12.072s • 48000 Hz</div>
+                </div>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-item">
+                    <span class="m-label">Crest Factor:</span>
+                    <span class="m-val">7.79</span>
+                </div>
+                <div class="metric-item">
+                    <span class="m-label">Low Freq Ratio (&lt;250Hz):</span>
+                    <span class="m-val">0.531</span>
+                </div>
+            </div>
+
+            <div class="img-container">
+                <img src="preview_alban_gogh-dynamite-sound-effect-205859.png" alt="Explosion (Dynamite Blast)" loading="lazy" />
+            </div>
+
+            <div class="player-container">
+                <audio controls preload="none">
+                    <source src="file:///C:/Users/User/Downloads/Music/alban_gogh-dynamite-sound-effect-205859.mp3">
+                    Your browser does not support audio element.
+                </audio>
+            </div>
+        </div>
+        
+        <div class="audio-card explosion">
+            <div class="card-header">
+                <div>
+                    <span class="badge badge-explosion">EXPLOSION</span>
+                    <span class="subcat-tag">heavy_explosion</span>
+                    <h3 class="card-title">Explosion (BBC Heavy Blast)</h3>
+                    <div class="file-info">bbc_heavy-expl_07037320.mp3 • 9.84s • 44100 Hz</div>
+                </div>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-item">
+                    <span class="m-label">Crest Factor:</span>
+                    <span class="m-val">7.51</span>
+                </div>
+                <div class="metric-item">
+                    <span class="m-label">Low Freq Ratio (&lt;250Hz):</span>
+                    <span class="m-val">0.32</span>
+                </div>
+            </div>
+
+            <div class="img-container">
+                <img src="preview_bbc_heavy-expl_07037320.png" alt="Explosion (BBC Heavy Blast)" loading="lazy" />
+            </div>
+
+            <div class="player-container">
+                <audio controls preload="none">
+                    <source src="file:///C:/Users/User/Downloads/Music/bbc_heavy-expl_07037320.mp3">
+                    Your browser does not support audio element.
+                </audio>
+            </div>
+        </div>
+        
+        <div class="audio-card explosion">
+            <div class="card-header">
+                <div>
+                    <span class="badge badge-explosion">EXPLOSION</span>
+                    <span class="subcat-tag">standard_explosion</span>
+                    <h3 class="card-title">Explosion (Double Blast Lightning)</h3>
+                    <div class="file-info">kalsstockmedia-double-blast-double-lightning-301708.mp3 • 20.8686s • 44100 Hz</div>
+                </div>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-item">
+                    <span class="m-label">Crest Factor:</span>
+                    <span class="m-val">5.79</span>
+                </div>
+                <div class="metric-item">
+                    <span class="m-label">Low Freq Ratio (&lt;250Hz):</span>
+                    <span class="m-val">0.936</span>
+                </div>
+            </div>
+
+            <div class="img-container">
+                <img src="preview_kalsstockmedia-double-blast-double-lightning-301708.png" alt="Explosion (Double Blast Lightning)" loading="lazy" />
+            </div>
+
+            <div class="player-container">
+                <audio controls preload="none">
+                    <source src="file:///C:/Users/User/Downloads/Music/kalsstockmedia-double-blast-double-lightning-301708.mp3">
+                    Your browser does not support audio element.
+                </audio>
+            </div>
+        </div>
+        
+        <div class="audio-card non_explosion">
+            <div class="card-header">
+                <div>
+                    <span class="badge badge-negative">NON_EXPLOSION</span>
+                    <span class="subcat-tag">fireworks</span>
+                    <h3 class="card-title">Negative (Fireworks Display)</h3>
+                    <div class="file-info">bbc_fireworks-_07019107.mp3 • 14.41s • 44100 Hz</div>
+                </div>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-item">
+                    <span class="m-label">Crest Factor:</span>
+                    <span class="m-val">29.79</span>
+                </div>
+                <div class="metric-item">
+                    <span class="m-label">Low Freq Ratio (&lt;250Hz):</span>
+                    <span class="m-val">0.177</span>
+                </div>
+            </div>
+
+            <div class="img-container">
+                <img src="preview_bbc_fireworks-_07019107.png" alt="Negative (Fireworks Display)" loading="lazy" />
+            </div>
+
+            <div class="player-container">
+                <audio controls preload="none">
+                    <source src="file:///C:/Users/User/Downloads/Music/bbc_fireworks-_07019107.mp3">
+                    Your browser does not support audio element.
+                </audio>
+            </div>
+        </div>
+        
+        <div class="audio-card non_explosion">
+            <div class="card-header">
+                <div>
+                    <span class="badge badge-negative">NON_EXPLOSION</span>
+                    <span class="subcat-tag">gunfire</span>
+                    <h3 class="card-title">Negative (Gunfire Bursts)</h3>
+                    <div class="file-info">bbc_guns--gunf_07027150.mp3 • 17.2494s • 44100 Hz</div>
+                </div>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-item">
+                    <span class="m-label">Crest Factor:</span>
+                    <span class="m-val">11.85</span>
+                </div>
+                <div class="metric-item">
+                    <span class="m-label">Low Freq Ratio (&lt;250Hz):</span>
+                    <span class="m-val">0.402</span>
+                </div>
+            </div>
+
+            <div class="img-container">
+                <img src="preview_bbc_guns--gunf_07027150.png" alt="Negative (Gunfire Bursts)" loading="lazy" />
+            </div>
+
+            <div class="player-container">
+                <audio controls preload="none">
+                    <source src="file:///C:/Users/User/Downloads/Music/bbc_guns--gunf_07027150.mp3">
+                    Your browser does not support audio element.
+                </audio>
+            </div>
+        </div>
+        
+        <div class="audio-card non_explosion">
+            <div class="card-header">
+                <div>
+                    <span class="badge badge-negative">NON_EXPLOSION</span>
+                    <span class="subcat-tag">door_slam</span>
+                    <h3 class="card-title">Negative (Loud Door Slam)</h3>
+                    <div class="file-info">door_slam_001.wav • 1.7115s • 22050 Hz</div>
+                </div>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-item">
+                    <span class="m-label">Crest Factor:</span>
+                    <span class="m-val">34.54</span>
+                </div>
+                <div class="metric-item">
+                    <span class="m-label">Low Freq Ratio (&lt;250Hz):</span>
+                    <span class="m-val">0.771</span>
+                </div>
+            </div>
+
+            <div class="img-container">
+                <img src="preview_door_slam_001.png" alt="Negative (Loud Door Slam)" loading="lazy" />
+            </div>
+
+            <div class="player-container">
+                <audio controls preload="none">
+                    <source src="file:///C:/Users/User/Desktop/CogniLearn/Spray/backend/data/raw/loud_impacts/door_slam_001.wav">
+                    Your browser does not support audio element.
+                </audio>
+            </div>
+        </div>
+        
+        <div class="audio-card non_explosion">
+            <div class="card-header">
+                <div>
+                    <span class="badge badge-negative">NON_EXPLOSION</span>
+                    <span class="subcat-tag">desk_bang</span>
+                    <h3 class="card-title">Negative (Loud Desk Bang)</h3>
+                    <div class="file-info">desk_bang_001.wav • 1.6539s • 22050 Hz</div>
+                </div>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-item">
+                    <span class="m-label">Crest Factor:</span>
+                    <span class="m-val">51.61</span>
+                </div>
+                <div class="metric-item">
+                    <span class="m-label">Low Freq Ratio (&lt;250Hz):</span>
+                    <span class="m-val">0.086</span>
+                </div>
+            </div>
+
+            <div class="img-container">
+                <img src="preview_desk_bang_001.png" alt="Negative (Loud Desk Bang)" loading="lazy" />
+            </div>
+
+            <div class="player-container">
+                <audio controls preload="none">
+                    <source src="file:///C:/Users/User/Desktop/CogniLearn/Spray/backend/data/raw/loud_impacts/desk_bang_001.wav">
+                    Your browser does not support audio element.
+                </audio>
+            </div>
+        </div>
+        
+        <div class="audio-card non_explosion">
+            <div class="card-header">
+                <div>
+                    <span class="badge badge-negative">NON_EXPLOSION</span>
+                    <span class="subcat-tag">dropped_object</span>
+                    <h3 class="card-title">Negative (Dropped Heavy Object)</h3>
+                    <div class="file-info">dropped_object_001.wav • 1.2543s • 22050 Hz</div>
+                </div>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-item">
+                    <span class="m-label">Crest Factor:</span>
+                    <span class="m-val">47.14</span>
+                </div>
+                <div class="metric-item">
+                    <span class="m-label">Low Freq Ratio (&lt;250Hz):</span>
+                    <span class="m-val">0.008</span>
+                </div>
+            </div>
+
+            <div class="img-container">
+                <img src="preview_dropped_object_001.png" alt="Negative (Dropped Heavy Object)" loading="lazy" />
+            </div>
+
+            <div class="player-container">
+                <audio controls preload="none">
+                    <source src="file:///C:/Users/User/Desktop/CogniLearn/Spray/backend/data/raw/loud_impacts/dropped_object_001.wav">
+                    Your browser does not support audio element.
+                </audio>
+            </div>
+        </div>
+        
+        <div class="audio-card non_explosion">
+            <div class="card-header">
+                <div>
+                    <span class="badge badge-negative">NON_EXPLOSION</span>
+                    <span class="subcat-tag">clap</span>
+                    <h3 class="card-title">Negative (Acoustic Hand Clap)</h3>
+                    <div class="file-info">clap_001.wav • 1.8259s • 22050 Hz</div>
+                </div>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-item">
+                    <span class="m-label">Crest Factor:</span>
+                    <span class="m-val">82.44</span>
+                </div>
+                <div class="metric-item">
+                    <span class="m-label">Low Freq Ratio (&lt;250Hz):</span>
+                    <span class="m-val">0.001</span>
+                </div>
+            </div>
+
+            <div class="img-container">
+                <img src="preview_clap_001.png" alt="Negative (Acoustic Hand Clap)" loading="lazy" />
+            </div>
+
+            <div class="player-container">
+                <audio controls preload="none">
+                    <source src="file:///C:/Users/User/Desktop/CogniLearn/Spray/backend/data/raw/loud_impacts/clap_001.wav">
+                    Your browser does not support audio element.
+                </audio>
+            </div>
+        </div>
+        
+        <div class="audio-card non_explosion">
+            <div class="card-header">
+                <div>
+                    <span class="badge badge-negative">NON_EXPLOSION</span>
+                    <span class="subcat-tag">ambient_speech</span>
+                    <h3 class="card-title">Negative (Human Speech Formants)</h3>
+                    <div class="file-info">speech_001.wav • 1.6926s • 22050 Hz</div>
+                </div>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-item">
+                    <span class="m-label">Crest Factor:</span>
+                    <span class="m-val">3.57</span>
+                </div>
+                <div class="metric-item">
+                    <span class="m-label">Low Freq Ratio (&lt;250Hz):</span>
+                    <span class="m-val">0.0</span>
+                </div>
+            </div>
+
+            <div class="img-container">
+                <img src="preview_speech_001.png" alt="Negative (Human Speech Formants)" loading="lazy" />
+            </div>
+
+            <div class="player-container">
+                <audio controls preload="none">
+                    <source src="file:///C:/Users/User/Desktop/CogniLearn/Spray/backend/data/raw/ambient_negatives/speech_001.wav">
+                    Your browser does not support audio element.
+                </audio>
+            </div>
+        </div>
+        
+        <div class="audio-card non_explosion">
+            <div class="card-header">
+                <div>
+                    <span class="badge badge-negative">NON_EXPLOSION</span>
+                    <span class="subcat-tag">continuous_rain</span>
+                    <h3 class="card-title">Negative (Low-Frequency Train Rumble)</h3>
+                    <div class="file-info">train_rumble_001.wav • 1.8474s • 22050 Hz</div>
+                </div>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-item">
+                    <span class="m-label">Crest Factor:</span>
+                    <span class="m-val">2.33</span>
+                </div>
+                <div class="metric-item">
+                    <span class="m-label">Low Freq Ratio (&lt;250Hz):</span>
+                    <span class="m-val">0.984</span>
+                </div>
+            </div>
+
+            <div class="img-container">
+                <img src="preview_train_rumble_001.png" alt="Negative (Low-Frequency Train Rumble)" loading="lazy" />
+            </div>
+
+            <div class="player-container">
+                <audio controls preload="none">
+                    <source src="file:///C:/Users/User/Desktop/CogniLearn/Spray/backend/data/raw/continuous_environmental/train_rumble_001.wav">
+                    Your browser does not support audio element.
+                </audio>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

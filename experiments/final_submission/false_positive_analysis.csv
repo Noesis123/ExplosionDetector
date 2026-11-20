@@ -1,0 +1,69 @@
+file_name,category,baseline_alerted,baseline_alerts_count,improved_alerted,improved_alerts_count,suppressed_in_improved,peak_confidence,rms_dbfs,lf_ratio,hf_ratio,sub_bass_ratio,crest_factor,rejection_reason
+fs_171475_2887679652.mp3,artillery_firing,True,3,True,3,False,0.9514,-19.1,0.99,0.0,0.977,4.489999771118164,Remaining Hard Negative
+fs_195529_klankbeeld.mp3,thunder,True,5,True,4,False,0.887,-20.3,0.982,0.0,0.895,5.659999847412109,Remaining Hard Negative
+fs_36044_inchadney.mp3,thunder,True,4,True,4,False,0.8716,-21.3,0.956,0.0,0.302,4.960000038146973,Remaining Hard Negative
+fs_350672_Dominik_W.mp3,vehicle_backfires,True,14,True,5,False,0.8662,-44.2,0.984,0.0,0.779,3.9600000381469727,Remaining Hard Negative
+fs_410347_inspectorj.mp3,fireworks,True,12,True,11,False,0.8517,-35.1,0.986,0.0,0.964,4.369999885559082,Remaining Hard Negative
+bbc_gunfire---_07034194.mp3,gunfire,True,17,True,17,False,0.8219,-19.5,0.996,0.0,0.957,4.010000228881836,Remaining Hard Negative
+fs_184275_qubodup.mp3,artillery_firing,True,4,True,4,False,0.8003,-22.0,0.921,0.0,0.148,5.269999980926514,Remaining Hard Negative
+bbc_gunfire---_07034201.mp3,gunfire,True,11,True,4,False,0.7917,-14.4,0.549,0.001,0.42,4.190000057220459,Remaining Hard Negative
+fs_105351_CeebFrack.mp3,vehicle_backfires,True,1,True,1,False,0.7867,-20.2,0.984,0.002,0.572,7.309999942779541,Remaining Hard Negative
+fs_213925_Diboz.mp3,gunfire,True,1,True,1,False,0.7377,-20.2,0.739,0.002,0.662,4.699999809265137,Remaining Hard Negative
+fs_161341_qubodup.mp3,artillery_firing,True,1,True,1,False,0.7355,-26.0,0.992,0.0,0.912,4.260000228881836,Remaining Hard Negative
+p19_silence_ambience_4_frederik_sunne_0e4ca5cf.mp3,silence_ambience,True,1,False,0,True,0.9186,-29.8,0.341,0.009,0.315,3.5199999809265137,Suppressed by Config D Physics
+bbc_transport-_07012036.mp3,vehicle_backfires,True,1,False,0,True,0.8461,-23.5,0.399,0.113,0.098,4.960000038146973,Suppressed by Config D Physics
+bbc_right-whal_nhu0501615.mp3,bioacoustics,True,1,False,0,True,0.8098,-42.0,0.905,0.006,0.74,13.239999771118164,Suppressed by Config D Physics
+p19_shouting_screaming_3_halgrimm_44e0bfe0.mp3,shouting_screaming,True,1,False,0,True,0.7825,-29.8,0.704,0.041,0.037,8.979999542236328,Suppressed by Config D Physics
+fs_187542_qubodup.mp3,artillery_firing,True,1,False,0,True,0.7453,-44.5,0.278,0.008,0.214,7.510000228881836,Suppressed by Config D Physics
+fs_184650_Isaac200000.mp3,artillery_firing,True,1,False,0,True,0.7407,-17.5,0.607,0.001,0.602,4.900000095367432,Suppressed by Config D Physics
+p19_household_ambience_3_bdunis4_0be312d3.mp3,household_ambience,True,1,False,0,True,0.7402,-19.8,0.709,0.131,0.001,8.489999771118164,Suppressed by Config D Physics
+fs_427597_michorvath.mp3,gunfire,True,1,False,0,True,0.7268,-7.7,0.591,0.072,0.079,2.5299999713897705,Suppressed by Config D Physics
+bbc_industry--_07076034.mp3,industrial_impacts,False,0,False,0,False,0.7691,-37.3,0.05,0.116,0.016,3.9600000381469727,Clean Negative
+bbc_building-u_07007001.mp3,industrial_impacts,False,0,False,0,False,0.7385,-23.6,0.281,0.459,0.16,11.020000457763672,Clean Negative
+wm_9_mm_gunshot-mike-koenig-123.wav,gunfire,False,0,False,0,False,0.7213,-20.3,0.148,0.0,0.12,3.609999895095825,Clean Negative
+fs_705363_mudflea2.mp3,vehicle_backfires,False,0,False,0,False,0.6853,-42.5,0.995,0.0,0.596,5.239999771118164,Clean Negative
+bbc_right-whal_nhu0501613.mp3,bioacoustics,False,0,False,0,False,0.6841,-14.8,0.689,0.02,0.017,5.019999980926514,Clean Negative
+p19_traffic_horns_engines_4_eaglechopper_ae9f3469.mp3,traffic_horns_engines,False,0,False,0,False,0.6828,-16.1,0.017,0.001,0.009,5.03000020980835,Clean Negative
+fs_579137_clagnar.mp3,thunder,False,0,False,0,False,0.6443,-18.5,0.896,0.0,0.089,4.5,Clean Negative
+p19_speech_conversation_4_qubodup_3c870465.mp3,speech_conversation,False,0,False,0,False,0.6393,-18.9,0.745,0.117,0.527,5.71999979019165,Clean Negative
+bbc_gunfire---_07034197.mp3,gunfire,False,0,False,0,False,0.6375,-42.3,0.982,0.002,0.919,5.179999828338623,Clean Negative
+bbc_space-trav_07038031.mp3,synthesizer_telemetry,False,0,False,0,False,0.6275,-13.4,0.278,0.001,0.004,3.390000104904175,Clean Negative
+p19_traffic_horns_engines_3_vialgames_ad0fe441.mp3,traffic_horns_engines,False,0,False,0,False,0.626,-30.4,0.754,0.001,0.191,3.7200000286102295,Clean Negative
+bbc_gunfire---_07034208.mp3,gunfire,False,0,False,0,False,0.6231,-28.7,0.67,0.058,0.474,25.670000076293945,Clean Negative
+fs_473846_MATRIXXX.mp3,gunfire,False,0,False,0,False,0.6229,-29.4,0.818,0.004,0.135,7.130000114440918,Clean Negative
+fs_675723_craigsmith.mp3,vehicle_backfires,False,0,False,0,False,0.615,-20.4,0.604,0.008,0.013,5.840000152587891,Clean Negative
+Firework.mp3,fireworks,False,0,False,0,False,0.6008,-21.7,0.978,0.0,0.024,6.190000057220459,Clean Negative
+fs_117616_soundmary.mp3,fireworks,False,0,False,0,False,0.5927,-17.1,0.464,0.231,0.13,6.360000133514404,Clean Negative
+fs_56579_atomwrath.mp3,fireworks,False,0,False,0,False,0.5861,-44.7,0.93,0.001,0.906,6.150000095367432,Clean Negative
+bbc_gunfire---_07034204.mp3,gunfire,False,0,False,0,False,0.5766,-32.5,0.219,0.109,0.056,37.029998779296875,Clean Negative
+p19_doors_slamming_falling_4_omar_alvarado_8558db4e.mp3,doors_slamming_falling,False,0,False,0,False,0.5572,-32.4,0.984,0.001,0.653,11.199999809265137,Clean Negative
+bbc_gunfire---_07034195.mp3,gunfire,False,0,False,0,False,0.5537,-34.8,0.951,0.006,0.121,29.850000381469727,Clean Negative
+fs_570351_jpbillingsleyjr.mp3,thunder,False,0,False,0,False,0.5419,-17.4,0.984,0.0,0.514,4.840000152587891,Clean Negative
+p19_construction_impacts_4_breviceps_b2d8f845.mp3,construction_impacts,False,0,False,0,False,0.5345,-24.3,0.999,0.0,0.677,4.440000057220459,Clean Negative
+fs_140350_felix_blume.mp3,fireworks,False,0,False,0,False,0.5344,-40.5,0.828,0.006,0.273,7.420000076293945,Clean Negative
+p19_shouting_screaming_4_jorickhoofd_f2734c12.mp3,shouting_screaming,False,0,False,0,False,0.5232,-17.3,0.641,0.049,0.0,3.2699999809265137,Clean Negative
+p19_construction_impacts_3_xserra_6ad8f42d.mp3,construction_impacts,False,0,False,0,False,0.5198,-26.8,0.992,0.001,0.831,3.799999952316284,Clean Negative
+bbc_gunfire---_07034203.mp3,gunfire,False,0,False,0,False,0.5194,-36.8,0.324,0.189,0.094,41.68000030517578,Clean Negative
+clink3.wav,industrial_impacts,False,0,False,0,False,0.5183,-21.9,0.093,0.38,0.001,11.399999618530273,Clean Negative
+p19_doors_slamming_falling_3_actioncircus_ecb5d04a.mp3,doors_slamming_falling,False,0,False,0,False,0.5115,-43.4,0.659,0.003,0.514,6.769999980926514,Clean Negative
+p19_household_ambience_4_joedeshon_ef97cb02.mp3,household_ambience,False,0,False,0,False,0.5036,-20.1,0.284,0.336,0.001,4.449999809265137,Clean Negative
+p19_speech_conversation_3_reitanna_b7b191e3.mp3,speech_conversation,False,0,False,0,False,0.5019,-19.4,0.844,0.015,0.0,5.679999828338623,Clean Negative
+bbc_space-trav_07038032.mp3,synthesizer_telemetry,False,0,False,0,False,0.4963,-40.7,0.136,0.009,0.012,5.190000057220459,Clean Negative
+fs_123684_lonemonk.mp3,vehicle_backfires,False,0,False,0,False,0.4953,-24.2,0.107,0.055,0.003,6.25,Clean Negative
+p19_crowds_cheering_4_dan_audiofile_95df8874.mp3,crowds_cheering,False,0,False,0,False,0.4756,-15.0,0.691,0.003,0.002,3.799999952316284,Clean Negative
+p19_crowds_cheering_3_quistard_1d134b41.mp3,crowds_cheering,False,0,False,0,False,0.4713,-18.9,0.615,0.005,0.003,4.349999904632568,Clean Negative
+p19_music_drums_percussion_3_tri_tachyon_22bd1e22.mp3,music_drums_percussion,False,0,False,0,False,0.4701,-15.2,0.996,0.001,0.821,4.559999942779541,Clean Negative
+thunder-rain-and-thunder-in-a-tent-sfxjar.mp3,thunder,False,0,False,0,False,0.4572,-23.4,0.268,0.185,0.001,9.449999809265137,Clean Negative
+bbc_gunfire---_07034199.mp3,gunfire,False,0,False,0,False,0.4353,-29.4,0.415,0.035,0.003,23.719999313354492,Clean Negative
+fs_385785_Rijam.mp3,gunfire,False,0,False,0,False,0.4315,-14.9,0.635,0.016,0.014,4.96999979019165,Clean Negative
+ov_24efb8d4_LouiseBrown1981.oga,artillery_firing,False,0,False,0,False,0.4306,-33.6,0.833,0.059,0.561,3.75,Clean Negative
+bbc_gunfire---_07034205.mp3,gunfire,False,0,False,0,False,0.3868,-39.5,0.584,0.057,0.113,25.84000015258789,Clean Negative
+fs_149177_deathnsorrow.mp3,gunfire,False,0,False,0,False,0.376,-24.4,0.206,0.28,0.067,16.59000015258789,Clean Negative
+p19_mixed_speech_noise_4_craigsmith_5d01f11a.mp3,mixed_speech_noise,False,0,False,0,False,0.3451,-21.2,0.857,0.006,0.017,4.610000133514404,Clean Negative
+fs_398348_EFlexMusic.mp3,gunfire,False,0,False,0,False,0.3324,-26.8,0.163,0.556,0.002,8.609999656677246,Clean Negative
+clink2.wav,industrial_impacts,False,0,False,0,False,0.3227,-23.7,0.042,0.069,0.0,13.119999885559082,Clean Negative
+fs_126566_ikbenraar.mp3,fireworks,False,0,False,0,False,0.3089,-28.6,0.438,0.081,0.237,12.210000038146973,Clean Negative
+p19_music_drums_percussion_4_kaiodeleis_ac10b717.mp3,music_drums_percussion,False,0,False,0,False,0.3064,-24.9,0.827,0.111,0.751,6.110000133514404,Clean Negative
+p19_mixed_speech_noise_3_boilingsand_665f46f8.mp3,mixed_speech_noise,False,0,False,0,False,0.2779,-30.4,0.977,0.001,0.089,6.980000019073486,Clean Negative
+fs_198355_schafferdavid.mp3,fireworks,False,0,False,0,False,0.2392,-39.5,0.217,0.007,0.045,9.930000305175781,Clean Negative
+p19_silence_ambience_3_ahriik_cb1a0293.mp3,silence_ambience,False,0,False,0,False,0.0,-99.9,0.0,0.0,0.0,0.0,Clean Negative

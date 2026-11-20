@@ -1,0 +1,79 @@
+file_name,original_filename,source,license,source_url,duration_sec,peak_dbfs,rms_dbfs,category,notes
+fw_exist_01_bbc_07019107.wav,bbc_fireworks-_07019107.mp3,BBC Sound Effects,BBC License,http://bbcsfx.acropolis.org.uk/,14.00,-1.50,-30.84,barrage,Approved Phase 20 baseline fireworks recording (trimmed 0.0s-14.0s)
+fw_exist_02_fs_140717.wav,fs_140717_j1987.mp3,Freesound,CC0 1.0,https://freesound.org/s/140717/,1.03,-1.50,-26.46,firecrackers,Firework cluster crackle pops
+fw_exist_03_fs_140716.wav,fs_140716_j1987.mp3,Freesound,CC0 1.0,https://freesound.org/s/140716/,4.40,-1.50,-23.52,fountain,Firecracker fountain crackle (trimmed 0.0s-4.4s)
+fw_exist_04_fs_140720.wav,fs_140720_j1987.mp3,Freesound,CC0 1.0,https://freesound.org/s/140720/,14.00,-1.50,-21.25,fountain,Spinning firecracker sparks (trimmed 0.0s-14.0s)
+fw_exist_05_fs_141086.wav,fs_141086_echocinematics.mp3,Freesound,CC0 1.0,https://freesound.org/s/141086/,14.00,-1.50,-17.44,barrage,Fireworks display barrage (trimmed 18.0s-32.0s)
+fw_exist_06_fs_380157.wav,fs_380157_lenguaverde.mp3,Freesound,CC0 1.0,https://freesound.org/s/380157/,14.00,-1.50,-15.16,firecrackers,Chinese firecrackers continuous pops (trimmed 14.5s-28.5s)
+fw_exist_07_fs_76151.wav,fs_76151_jobro.mp3,Freesound,CC-BY 3.0,https://freesound.org/s/76151/,9.05,-1.50,-19.68,aerial_burst,Bomb firework boom (trimmed 0.0s-9.0s)
+fw_exist_08_wm_Fire_crackers.wav,wm_Fire_crackers_-_New_Year_2023_-_2022-12-31T23-53-56.ogg,Wikimedia Commons,CC0 1.0,https://commons.wikimedia.org/wiki/File:Fire_crackers_-_New_Year_2023_-_2022-12-31T23-53-56.ogg,14.00,-1.50,-30.35,firecrackers,Outdoor NYE firecracker bursts (trimmed 81.5s-95.5s)
+fw_exist_09_fs_14742.wav,fs_14742_Mr_Sensible.mp3,Freesound,CC0 1.0,https://freesound.org/s/14742/,12.74,-1.50,-15.99,aerial_burst,Firework mortar shells (trimmed 0.0s-12.7s)
+fw_exist_10_fs_174493.wav,fs_174493_unfa.mp3,Freesound,CC0 1.0,https://freesound.org/s/174493/,14.00,-1.50,-20.66,crackle,Roman candle bursts with crackles (trimmed 10.5s-24.5s)
+fw_exist_11_fs_254834.wav,fs_254834_waxsocks.mp3,Freesound,CC0 1.0,https://freesound.org/s/254834/,14.00,-1.50,-20.45,aerial_burst,Firework bursts in air (trimmed 0.0s-14.0s)
+fw_exist_12_fs_27757.wav,fs_27757_Mr_Sensible.mp3,Freesound,CC0 1.0,https://freesound.org/s/27757/,14.00,-1.50,-17.31,barrage,Sustained fireworks display (trimmed 41.0s-55.0s)
+fw_exist_13_fs_717515.wav,fs_717515_MaoDin204.mp3,Freesound,CC0 1.0,https://freesound.org/s/717515/,14.00,-1.50,-21.81,aerial_burst,Big firework bursts (trimmed 1.5s-15.5s)
+fw_exist_14_wm_Rome_01.wav,wm_Fireworks_in_Rome_01.ogg,Wikimedia Commons,CC-BY-SA 3.0,https://commons.wikimedia.org/wiki/File:Fireworks_in_Rome_01.ogg,7.66,-1.50,-33.93,aerial_burst,Rome fireworks discrete bursts (trimmed 1.0s-8.7s)
+fw_exist_15_wm_MVI_0061.wav,wm_MVI_0061.ogg,Wikimedia Commons,CC-BY-SA 3.0,https://commons.wikimedia.org/wiki/File:MVI_0061.ogg,7.00,-1.50,-22.40,firecrackers,Close fireworks pops
+fw_exist_16_wm_Uetersen_01.wav,wm_Uetersen_Feuerwerksbatterie_Jahreswechsel_2011-2012_01.ogg,Wikimedia Commons,CC-BY-SA 3.0,https://commons.wikimedia.org/wiki/File:Uetersen_Feuerwerksbatterie_Jahreswechsel_2011-2012_01.ogg,14.00,-1.50,-17.12,barrage,NYE fireworks battery (trimmed 0.5s-14.5s)
+fw_exist_17_fs_332506.wav,fs_332506_inspectorj.mp3,Freesound,CC-BY 3.0,https://freesound.org/s/332506/,14.00,-1.50,-31.06,distant,InspectorJ distant fireworks rockets (trimmed 44.0s-58.0s)
+fw_exist_18_fs_141253.wav,fs_141253_oroborosnz.mp3,Freesound,CC0 1.0,https://freesound.org/s/141253/,14.00,-1.50,-24.60,barrage,New Years fireworks with crowd (trimmed 86.5s-100.5s)
+fw_exist_19_fs_609588.wav,fs_609588_unfa.mp3,Freesound,CC0 1.0,https://freesound.org/s/609588/,2.26,-1.50,-29.45,firecrackers,Concrete city echo firecracker explosion
+fw_exist_20_fs_212673.wav,fs_212673_monotraum.mp3,Freesound,CC0 1.0,https://freesound.org/s/212673/,14.00,-1.50,-28.08,barrage,Close New Year fireworks and firecrackers (trimmed 12.0s-26.0s)
+fw_exist_21_fs_455459.wav,fs_455459_milankovanda.mp3,Freesound,CC0 1.0,https://freesound.org/s/455459/,14.00,-1.50,-31.83,distant,Fireworks in background (trimmed 2.0s-16.0s)
+fw_exist_22_fs_9679.wav,fs_9679_dobroide.mp3,Freesound,CC-BY 3.0,https://freesound.org/s/9679/,4.31,-1.50,-29.91,firecrackers,Street firecracker burst
+fw_exist_23_fs_404996.wav,fs_404996_kyles.mp3,Freesound,CC0 1.0,https://freesound.org/s/404996/,14.00,-1.50,-28.86,crackle,Close fireworks fizzle and pops (trimmed 29.5s-43.5s)
+fw_exist_24_wm_Fireworks.wav,wm_Fireworks.ogg,Wikimedia Commons,Public Domain,https://commons.wikimedia.org/wiki/File:Fireworks.ogg,14.00,-1.50,-17.23,barrage,Neighborhood fireworks rockets and crackles (trimmed 9.5s-23.5s)
+fw_wm_25_Rome_10.wav,wm_Rome_10.ogg,Wikimedia Commons,CC-BY-SA 3.0,https://commons.wikimedia.org/wiki/File:Fireworks_in_Rome_10.ogg,14.00,-1.50,-8.89,aerial_burst,Rome NYE fireworks bursts with reverb
+fw_fs_26_fs_190700_redcrow1973.wav,fs_190700_redcrow1973.mp3,Freesound,CC0 1.0,https://freesound.org/s/190700/,14.00,-1.50,-17.31,aerial_burst,"Wichita Riverfest Fireworks 1 (trimmed 18.0s-32.0s, artist: redcrow1973)"
+fw_fs_27_fs_815449_designerschoice.wav,fs_815449_designerschoice.mp3,Freesound,CC-BY 4.0,https://freesound.org/s/815449/,13.20,-1.50,-18.29,aerial_burst,FRWKRec Samsung Smartphone Fireworks (artist: designerschoice)
+fw_fs_28_fs_46332_delphidebrain.wav,fs_46332_delphidebrain.mp3,Freesound,CC-BY 3.0,https://freesound.org/s/46332/,3.01,-1.50,-28.07,barrage,Fireworks continuous loop bursts (artist: delphidebrain)
+fw_fs_29_fs_140215_juskiddink.wav,fs_140215_juskiddink.mp3,Freesound,CC-BY 3.0,https://freesound.org/s/140215/,14.00,-1.50,-27.69,distant,"Village midnight fireworks display (trimmed 44.0s-58.0s, artist: juskiddink)"
+fw_fs_30_fs_328863_InspectorJ.wav,fs_328863_InspectorJ.mp3,Freesound,CC-BY 3.0,https://freesound.org/s/328863/,14.00,-1.50,-18.47,crackle,"Fireworks crackle and whistle burst (trimmed 34.5s-48.5s, artist: InspectorJ)"
+fw_fs_31_fs_668881_GregorQuendel.wav,fs_668881_GregorQuendel.mp3,Freesound,CC-BY 4.0,https://freesound.org/s/668881/,14.00,-1.50,-24.16,barrage,"New Years Eve fireworks full recording (trimmed 1206.0s-1220.0s, artist: GregorQuendel)"
+fw_fs_32_fs_255334_kwahmah_02.wav,fs_255334_kwahmah_02.mp3,Freesound,CC-BY 3.0,https://freesound.org/s/255334/,14.00,-1.50,-25.85,barrage,"Suburban fireworks display (trimmed 277.5s-291.5s, artist: kwahmah_02)"
+fw_fs_33_fs_158727_markedit.wav,fs_158727_markedit.mp3,Freesound,CC0 1.0,https://freesound.org/s/158727/,14.00,-1.50,-16.46,aerial_burst,"Large aerial firework burst (trimmed 64.0s-78.0s, artist: markedit)"
+fw_fs_34_fs_434225_ted.wav,fs_434225_ted.mp3,Freesound,CC0 1.0,https://freesound.org/s/434225/,14.00,-1.50,-19.23,distant,"Distant fireworks thuds and echoes (trimmed 1.0s-15.0s, artist: ted)"
+fw_fs_35_fs_244770_SyntaxSeed.wav,fs_244770_SyntaxSeed.mp3,Freesound,CC0 1.0,https://freesound.org/s/244770/,14.00,-1.50,-20.76,aerial_burst,"Outdoor firework mortar burst (trimmed 3.0s-17.0s, artist: SyntaxSeed)"
+fw_fs_36_fs_768538_klankbeeld.wav,fs_768538_klankbeeld.mp3,Freesound,CC-BY 4.0,https://freesound.org/s/768538/,14.00,-1.50,-31.24,firecrackers,"Small firework city pops (trimmed 22.5s-36.5s, artist: klankbeeld)"
+fw_fs_37_fs_251618_bmlake.wav,fs_251618_bmlake.mp3,Freesound,CC-BY 3.0,https://freesound.org/s/251618/,3.20,-1.50,-33.41,aerial_burst,Fireworks over lake valley boom (artist: bmlake)
+fw_fs_38_fs_861407_Posples.wav,fs_861407_Posples.mp3,Freesound,CC0 1.0,https://freesound.org/s/861407/,14.00,-1.50,-24.08,barrage,"Fireworks show finale bursts (trimmed 7.5s-21.5s, artist: Posples)"
+fw_fs_39_fs_213082_crosbychris.wav,fs_213082_crosbychris.mp3,Freesound,CC-BY 3.0,https://freesound.org/s/213082/,4.45,-1.50,-28.56,fountain,"Whistling rocket firework launch (trimmed 1.7s-6.2s, artist: crosbychris)"
+fw_fs_40_fs_62548_Sparrer.wav,fs_62548_Sparrer.mp3,Freesound,CC-BY 3.0,https://freesound.org/s/62548/,4.35,-1.50,-32.59,aerial_burst,Close fireworks burst and decay (artist: Sparrer)
+fw_fs_41_fs_695732_Bryce835.wav,fs_695732_Bryce835.mp3,Freesound,CC0 1.0,https://freesound.org/s/695732/,14.00,-1.50,-25.04,barrage,"Neighborhood fireworks multi-burst (trimmed 16.0s-30.0s, artist: Bryce835)"
+fw_fs_42_fs_347119_NovaSoundTechnology.wav,fs_347119_NovaSoundTechnology.mp3,Freesound,CC0 1.0,https://freesound.org/s/347119/,1.41,-1.50,-27.77,aerial_burst,Burst fireworks clean hit (artist: NovaSoundTechnology)
+fw_fs_43_fs_117617_soundmary.wav,fs_117617_soundmary.mp3,Freesound,CC0 1.0,https://freesound.org/s/117617/,13.85,-1.50,-16.21,aerial_burst,Field recording fireworks explosion (artist: soundmary)
+fw_fs_44_fs_332507_InspectorJ.wav,fs_332507_InspectorJ.mp3,Freesound,CC-BY 3.0,https://freesound.org/s/332507/,14.00,-1.50,-25.51,distant,"Distant fireworks rockets high report (trimmed 22.0s-36.0s, artist: InspectorJ)"
+fw_fs_45_fs_173336_toam.wav,fs_173336_toam.mp3,Freesound,CC-BY 3.0,https://freesound.org/s/173336/,14.00,-1.50,-19.81,aerial_burst,"Sylvester fireworks mortar burst (trimmed 207.0s-221.0s, artist: toam)"
+fw_fs_46_fs_607248_BassmanJourney.wav,fs_607248_BassmanJourney.mp3,Freesound,CC0 1.0,https://freesound.org/s/607248/,14.00,-1.50,-21.13,barrage,"Bonfire night fireworks display (trimmed 104.5s-118.5s, artist: BassmanJourney)"
+fw_fs_47_fs_349830_kingsrow.wav,fs_349830_kingsrow.mp3,Freesound,CC0 1.0,https://freesound.org/s/349830/,2.80,-1.50,-25.72,aerial_burst,"Fireworks single sharp burst (trimmed 0.2s-3.0s, artist: kingsrow)"
+fw_fs_48_fs_453131_kyles.wav,fs_453131_kyles.mp3,Freesound,CC0 1.0,https://freesound.org/s/453131/,14.00,-1.50,-28.33,firecrackers,"Fireworks small pops and crackles (trimmed 23.5s-37.5s, artist: kyles)"
+fw_fs_49_fs_569846_danlucaz.wav,fs_569846_danlucaz.mp3,Freesound,CC0 1.0,https://freesound.org/s/569846/,10.45,-1.50,-16.12,aerial_burst,"Fireworks aerial explosion (trimmed 0.0s-10.4s, artist: danlucaz)"
+fw_fs_50_fs_616286_Dan_AudioFile.wav,fs_616286_Dan_AudioFile.mp3,Freesound,CC-BY 4.0,https://freesound.org/s/616286/,1.46,-1.50,-22.81,distant,Fireworks single large distant report (artist: Dan_AudioFile)
+fw_fs_51_fs_611943_wagneric.wav,fs_611943_wagneric.mp3,Freesound,CC0 1.0,https://freesound.org/s/611943/,14.00,-1.50,-21.97,barrage,"Suburban fireworks multi-launch (trimmed 1.0s-15.0s, artist: wagneric)"
+fw_fs_52_fs_434284_JacksonML.wav,fs_434284_JacksonML.mp3,Freesound,CC0 1.0,https://freesound.org/s/434284/,14.00,-1.50,-22.86,aerial_burst,"Single heavy firework explosion (trimmed 117.0s-131.0s, artist: JacksonML)"
+fw_fs_53_fs_434411_Volterock.wav,fs_434411_Volterock.mp3,Freesound,CC-BY 3.0,https://freesound.org/s/434411/,10.46,-1.50,-32.95,aerial_burst,Volterock fireworks zoom burst (artist: Volterock)
+fw_fs_54_fs_736643_vialgames.wav,fs_736643_vialgames.mp3,Freesound,CC0 1.0,https://freesound.org/s/736643/,7.43,-1.50,-27.62,crackle,Fireworks aerial bursts with crackle (artist: vialgames)
+fw_fs_55_fs_840902_klankbeeld.wav,fs_840902_klankbeeld.mp3,Freesound,CC-BY 4.0,https://freesound.org/s/840902/,3.99,-1.50,-19.44,aerial_burst,Mortar bomb fireworks New Year (artist: klankbeeld)
+fw_fs_56_fs_523716_paudamiariera.wav,fs_523716_paudamiariera.mp3,Freesound,CC0 1.0,https://freesound.org/s/523716/,14.00,-1.50,-33.46,barrage,"Neighborhood fireworks ambience (trimmed 101.0s-115.0s, artist: paudamiariera)"
+fw_fs_57_fs_260665_lezaarth.wav,fs_260665_lezaarth.mp3,Freesound,CC0 1.0,https://freesound.org/s/260665/,14.00,-1.50,-35.77,aerial_burst,"Firework sharp mortar hit (trimmed 15.5s-29.5s, artist: lezaarth)"
+fw_fs_58_fs_367486_Andy_Gardner.wav,fs_367486_Andy_Gardner.mp3,Freesound,CC0 1.0,https://freesound.org/s/367486/,14.00,-1.50,-14.25,aerial_burst,"Firework aerial shell boom (trimmed 54.5s-68.5s, artist: Andy_Gardner)"
+fw_fs_59_fs_534908_Lucas_Schacht.wav,fs_534908_Lucas_Schacht.mp3,Freesound,CC0 1.0,https://freesound.org/s/534908/,14.00,-1.50,-27.32,firecrackers,"Firecrackers on New Year street pops (trimmed 39.5s-53.5s, artist: Lucas_Schacht)"
+fw_fs_60_fs_534907_Lucas_Schacht.wav,fs_534907_Lucas_Schacht.mp3,Freesound,CC0 1.0,https://freesound.org/s/534907/,14.00,-1.50,-23.93,firecrackers,"Firecrackers rapid pop burst (trimmed 543.5s-557.5s, artist: Lucas_Schacht)"
+fw_fs_61_fs_807534_designerschoice.wav,fs_807534_designerschoice.mp3,Freesound,CC-BY 4.0,https://freesound.org/s/807534/,11.59,-1.50,-23.08,crackle,"CU fireworks with sizzling crackle tail (trimmed 0.0s-11.6s, artist: designerschoice)"
+fw_fs_62_fs_140710_j1987.wav,fs_140710_j1987.mp3,Freesound,CC0 1.0,https://freesound.org/s/140710/,13.54,-1.50,-25.65,firecrackers,"Rope firecracker string explosions (trimmed 0.0s-13.5s, artist: j1987)"
+fw_fs_63_fs_126565_ikbenraar.wav,fs_126565_ikbenraar.mp3,Freesound,CC0 1.0,https://freesound.org/s/126565/,4.70,-1.50,-22.18,firecrackers,"Firecracker tablet bass thump (trimmed 0.4s-5.1s, artist: ikbenraar)"
+fw_fs_64_fs_140244_aesqe.wav,fs_140244_aesqe.mp3,Freesound,CC-BY 3.0,https://freesound.org/s/140244/,3.01,-1.50,-33.67,firecrackers,Single firecracker sharp crack (artist: aesqe)
+fw_fs_65_fs_9678_dobroide.wav,fs_9678_dobroide.mp3,Freesound,CC-BY 3.0,https://freesound.org/s/9678/,4.68,-1.50,-35.19,firecrackers,Firecracker street pop 03 (artist: dobroide)
+fw_fs_66_fs_9677_dobroide.wav,fs_9677_dobroide.mp3,Freesound,CC-BY 3.0,https://freesound.org/s/9677/,2.78,-1.50,-28.13,firecrackers,Firecracker street pop 00 (artist: dobroide)
+fw_fs_67_fs_435740_fdaxrealtime.wav,fs_435740_fdaxrealtime.mp3,Freesound,CC0 1.0,https://freesound.org/s/435740/,14.00,-1.50,-28.80,firecrackers,"Firecracker blast and echo (trimmed 8.5s-22.5s, artist: fdaxrealtime)"
+fw_fs_68_fs_140711_j1987.wav,fs_140711_j1987.mp3,Freesound,CC0 1.0,https://freesound.org/s/140711/,1.05,-1.50,-14.40,firecrackers,Firecracker discrete snap (artist: j1987)
+fw_fs_69_fs_455770_kyles.wav,fs_455770_kyles.mp3,Freesound,CC0 1.0,https://freesound.org/s/455770/,6.10,-1.50,-26.41,firecrackers,"Firecracker shoot and sharp explosion (trimmed 4.3s-10.4s, artist: kyles)"
+fw_fs_70_fs_180353_bpayri.wav,fs_180353_bpayri.mp3,Freesound,CC0 1.0,https://freesound.org/s/180353/,14.00,-1.50,-17.61,firecrackers,"Mascleta firecracker barrage (trimmed 276.5s-290.5s, artist: bpayri)"
+fw_fs_71_fs_263536_grobbd.wav,fs_263536_grobbd.mp3,Freesound,CC0 1.0,https://freesound.org/s/263536/,1.21,-1.50,-24.18,firecrackers,Firecracker quick detonation (artist: grobbd)
+fw_fs_72_fs_195213_bpayri.wav,fs_195213_bpayri.mp3,Freesound,CC-BY 3.0,https://freesound.org/s/195213/,14.00,-1.50,-19.07,firecrackers,"Mascleta plaza firecrackers (trimmed 235.5s-249.5s, artist: bpayri)"
+fw_fs_73_fs_140348_reinsamba.wav,fs_140348_reinsamba.mp3,Freesound,CC-BY 3.0,https://freesound.org/s/140348/,14.00,-1.50,-28.04,aerial_burst,"New Year fireworks aerial mortar (trimmed 71.5s-85.5s, artist: reinsamba)"
+fw_fs_74_fs_413212_317wurst.wav,fs_413212_317wurst.mp3,Freesound,CC0 1.0,https://freesound.org/s/413212/,1.47,-1.50,-17.09,firecrackers,Knall firecracker sharp impulse (artist: 317wurst)
+fw_fs_75_fs_372606_scorepion.wav,fs_372606_scorepion.mp3,Freesound,CC0 1.0,https://freesound.org/s/372606/,7.55,-1.50,-32.16,firecrackers,"Firecracker outdoor snap (trimmed 0.0s-7.5s, artist: scorepion)"
+fw_fs_76_fs_140729_j1987.wav,fs_140729_j1987.mp3,Freesound,CC0 1.0,https://freesound.org/s/140729/,4.05,-1.50,-28.72,fountain,"Spinning firework bee sound (trimmed 0.0s-4.0s, artist: j1987)"
+fw_fs_77_fs_140713_j1987.wav,fs_140713_j1987.mp3,Freesound,CC0 1.0,https://freesound.org/s/140713/,4.85,-1.50,-28.84,fountain,"Bee firework sparkler buzz (trimmed 0.1s-4.9s, artist: j1987)"
+fw_fs_78_fs_140712_j1987.wav,fs_140712_j1987.mp3,Freesound,CC0 1.0,https://freesound.org/s/140712/,13.69,-1.50,-27.26,firecrackers,"Cracker firecracker pop (trimmed 0.0s-13.7s, artist: j1987)"

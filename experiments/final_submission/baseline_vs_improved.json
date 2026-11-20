@@ -1,0 +1,149 @@
+{
+  "evaluation_timestamp": "2026-11-19T08:43:47Z",
+  "benchmark_dataset": "Phase 21 Expanded Historical Evaluation Set (92 recordings)",
+  "active_checkpoint": "candidate_expF_accuracy_optimized_best.pt",
+  "model_architecture": "ExplosionBinaryCNN (130,146 parameters)",
+  "threshold": 0.7,
+  "baseline_config_c": {
+    "description": "Historical Baseline: ExpF + AEV Config C (Squelch -45dBFS, LF>=0.35, HF<=0.15)",
+    "metrics": {
+      "confusion_matrix": [
+        [
+          49,
+          19
+        ],
+        [
+          2,
+          22
+        ]
+      ],
+      "tp": 22,
+      "fp": 19,
+      "tn": 49,
+      "fn": 2,
+      "total_positives": 24,
+      "total_negatives": 68,
+      "recall": 0.9166666666666666,
+      "precision": 0.5365853658536586,
+      "f1": 0.676923076923077,
+      "accuracy": 0.7717391304347826,
+      "specificity": 0.7205882352941176,
+      "total_fp_dispatched_events": 81,
+      "false_positive_categories": {
+        "gunfire": 4,
+        "bioacoustics": 1,
+        "vehicle_backfires": 3,
+        "fireworks": 1,
+        "thunder": 2,
+        "artillery_firing": 5,
+        "shouting_screaming": 1,
+        "silence_ambience": 1,
+        "household_ambience": 1
+      },
+      "missed_explosions": [
+        "alex_jauk-distant-explosion-192022.mp3",
+        "bbc_demolition_07022510.mp3"
+      ],
+      "detected_explosions": [
+        "alex_jauk-slow-explosion-190430.mp3",
+        "bbc_demolition_07022507.mp3",
+        "bbc_demolition_07022508.mp3",
+        "bbc_explosions_07023354.mp3",
+        "flutie8211-bomb-and-echo-2-540400.mp3",
+        "flutie8211-bomb-and-echo-3-590449.mp3",
+        "freesound_community-explosion-107629.mp3",
+        "freesound_community-explosion-80108.mp3",
+        "freesound_community-medium-explosion-40472.mp3",
+        "ribhavagrawal-bomb-explosion-type-01-265510.mp3",
+        "ribhavagrawal-bomb-explosion-type-02-265506.mp3",
+        "ribhavagrawal-bomb-explosion-type-04-265508.mp3",
+        "scottishperson-sound-effect-ww2-uk-air-raid-bomb-blasts-164347.mp3",
+        "scottishperson-sound-effect-ww2-uk-bomb-blast-164351.mp3",
+        "soundreality-a-bomb-139689.mp3",
+        "soundreality-explosion-fx-343683.mp3",
+        "u_xg7ssi08yr-bomb-explosion-2-369633.mp3",
+        "u_xg7ssi08yr-bomb-explosion-2-381970.mp3",
+        "fs_108641_juskiddink.mp3",
+        "fs_367622_fxkid2.mp3",
+        "fs_97896_ohrwurm.mp3",
+        "fs_323316_alfrodou.mp3"
+      ]
+    }
+  },
+  "improved_config_d": {
+    "description": "Production: ExpF + AEV Config D Enhanced (Squelch -38dBFS, LF>=0.40, HF<=0.08, Crest[2.5, 12], Adaptive LF 0.65, Vocal Rejection)",
+    "metrics": {
+      "confusion_matrix": [
+        [
+          57,
+          11
+        ],
+        [
+          2,
+          22
+        ]
+      ],
+      "tp": 22,
+      "fp": 11,
+      "tn": 57,
+      "fn": 2,
+      "total_positives": 24,
+      "total_negatives": 68,
+      "recall": 0.9166666666666666,
+      "precision": 0.6666666666666666,
+      "f1": 0.7719298245614035,
+      "accuracy": 0.8586956521739131,
+      "specificity": 0.8382352941176471,
+      "total_fp_dispatched_events": 55,
+      "false_positive_categories": {
+        "gunfire": 3,
+        "fireworks": 1,
+        "thunder": 2,
+        "artillery_firing": 3,
+        "vehicle_backfires": 2
+      },
+      "missed_explosions": [
+        "alex_jauk-distant-explosion-192022.mp3",
+        "bbc_demolition_07022510.mp3"
+      ],
+      "detected_explosions": [
+        "alex_jauk-slow-explosion-190430.mp3",
+        "bbc_demolition_07022507.mp3",
+        "bbc_demolition_07022508.mp3",
+        "bbc_explosions_07023354.mp3",
+        "flutie8211-bomb-and-echo-2-540400.mp3",
+        "flutie8211-bomb-and-echo-3-590449.mp3",
+        "freesound_community-explosion-107629.mp3",
+        "freesound_community-explosion-80108.mp3",
+        "freesound_community-medium-explosion-40472.mp3",
+        "ribhavagrawal-bomb-explosion-type-01-265510.mp3",
+        "ribhavagrawal-bomb-explosion-type-02-265506.mp3",
+        "ribhavagrawal-bomb-explosion-type-04-265508.mp3",
+        "scottishperson-sound-effect-ww2-uk-air-raid-bomb-blasts-164347.mp3",
+        "scottishperson-sound-effect-ww2-uk-bomb-blast-164351.mp3",
+        "soundreality-a-bomb-139689.mp3",
+        "soundreality-explosion-fx-343683.mp3",
+        "u_xg7ssi08yr-bomb-explosion-2-369633.mp3",
+        "u_xg7ssi08yr-bomb-explosion-2-381970.mp3",
+        "fs_108641_juskiddink.mp3",
+        "fs_367622_fxkid2.mp3",
+        "fs_97896_ohrwurm.mp3",
+        "fs_323316_alfrodou.mp3"
+      ]
+    }
+  },
+  "absolute_deltas": {
+    "recall_delta": 0.0,
+    "precision_delta": 0.1301,
+    "f1_delta": 0.095,
+    "accuracy_delta": 0.087,
+    "fp_files_suppressed": 8,
+    "fp_events_suppressed": 26
+  },
+  "relative_improvements": {
+    "precision_relative_gain_pct": 24.24,
+    "f1_relative_gain_pct": 14.04,
+    "false_positive_reduction_pct": 42.11
+  },
+  "status": "OUTCOME A \u2014 VERIFIED IMPROVEMENT"
+}

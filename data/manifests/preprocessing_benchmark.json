@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Config A (Standard 22kHz)",
+    "sr": 22050,
+    "window_duration_sec": 1.0,
+    "hop_duration_sec": 0.25,
+    "output_shape": "64 x 44",
+    "freq_resolution_hz": 21.5,
+    "time_resolution_ms": 23.2,
+    "resample_latency_ms": 3.43,
+    "log_mel_latency_ms": 2.51,
+    "total_dsp_latency_ms": 5.94
+  },
+  {
+    "name": "Config B (High-Res 22kHz)",
+    "sr": 22050,
+    "window_duration_sec": 1.0,
+    "hop_duration_sec": 0.1,
+    "output_shape": "128 x 87",
+    "freq_resolution_hz": 21.5,
+    "time_resolution_ms": 11.6,
+    "resample_latency_ms": 3.88,
+    "log_mel_latency_ms": 4.06,
+    "total_dsp_latency_ms": 7.93
+  },
+  {
+    "name": "Config C (Ultra-Low Latency 16kHz)",
+    "sr": 16000,
+    "window_duration_sec": 0.5,
+    "hop_duration_sec": 0.1,
+    "output_shape": "64 x 32",
+    "freq_resolution_hz": 31.2,
+    "time_resolution_ms": 16.0,
+    "resample_latency_ms": 4.42,
+    "log_mel_latency_ms": 1.75,
+    "total_dsp_latency_ms": 6.17
+  },
+  {
+    "name": "Config D (High-Fidelity 44.1kHz)",
+    "sr": 44100,
+    "window_duration_sec": 1.0,
+    "hop_duration_sec": 0.25,
+    "output_shape": "128 x 44",
+    "freq_resolution_hz": 21.5,
+    "time_resolution_ms": 23.2,
+    "resample_latency_ms": 0.04,
+    "log_mel_latency_ms": 8.27,
+    "total_dsp_latency_ms": 8.31
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "manifest_source": "dataset_manifest_phase21_expanded.csv",
+  "total_approved_recordings": 824,
+  "quarantined_recordings_excluded": 4,
+  "quarantined_files": [
+    "data/phase13_approved/artillery_firing/fs_258205_ylearkisto.mp3",
+    "data/phase15_approved/fireworks/fs_717507_MaoDin204.mp3",
+    "data/phase15_approved/fireworks/wm_Fireworks_in_Rome_14.ogg",
+    "data/phase19_approved/silence_ambience/p19_silence_ambience_2_dpoggioli_4e1f831f.mp3"
+  ],
+  "partition_seed": 42,
+  "fit_split": {
+    "total_files": 634,
+    "explosion_files": 207,
+    "fireworks_files": 202,
+    "nontarget_files": 225,
+    "total_active_windows": 8787,
+    "pos_windows": 4094,
+    "neg_windows": 4693,
+    "neg_fireworks_windows": 2077,
+    "neg_nontarget_windows": 2616,
+    "quarantined_background_windows_purged": 666
+  },
+  "val_split": {
+    "total_files": 190,
+    "explosion_files": 70,
+    "fireworks_files": 60,
+    "nontarget_files": 60,
+    "total_active_windows": 12470,
+    "pos_windows": 2862,
+    "neg_windows": 9608,
+    "neg_fireworks_windows": 2558,
+    "neg_nontarget_windows": 7050,
+    "quarantined_background_windows_purged": 1466
+  },
+  "extraction_parameters": {
+    "sample_rate": 22050,
+    "window_samples": 22050,
+    "hop_samples": 5512,
+    "squelch_dbfs": -45.0,
+    "blast_filter_offset_db": 20.0,
+    "blast_min_dbfs": -44.0,
+    "default_max_neg_wins": 12,
+    "expanded_max_neg_wins": 36,
+    "rare_hard_neg_categories": [
+      "artillery_firing",
+      "vehicle_backfires",
+      "metal_glass_impacts",
+      "industrial_impacts"
+    ]
+  }
+}

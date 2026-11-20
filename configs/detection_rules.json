@@ -1,0 +1,52 @@
+{
+  "version": "1.0.0",
+  "phase": "phase22",
+  "checkpoint": "explosion_detection/models/checkpoints/multiclass_phase21_best_model.pt",
+  "audio_parameters": {
+    "sample_rate": 22050,
+    "window_duration_sec": 1.0,
+    "window_samples": 22050,
+    "hop_duration_sec": 0.25,
+    "hop_samples": 5512,
+    "n_mels": 64,
+    "n_fft": 1024,
+    "hop_length": 512,
+    "expected_time_frames": 44
+  },
+  "alert_rules": {
+    "explosion_threshold": 0.75,
+    "fireworks_threshold": 0.75,
+    "consecutive_windows": 1,
+    "rms_squelch_dbfs": -58.0,
+    "cooldown_seconds": 2.5,
+    "conflict_resolution": "highest_confidence",
+    "conservative_mode": {
+      "consecutive_windows": 2,
+      "explosion_threshold": 0.70,
+      "fireworks_threshold": 0.75,
+      "rms_squelch_dbfs": -58.0
+    }
+  },
+  "validation_performance": {
+    "validation_recordings_count": 37,
+    "before_optimization": {
+      "aggregation": "mean_probabilities",
+      "recording_accuracy": 0.7838,
+      "macro_f1": 0.7537,
+      "explosion_recall": 0.5833,
+      "fireworks_recall": 1.0,
+      "non_target_accuracy": 0.8636,
+      "civilian_false_alarms": 1
+    },
+    "after_optimization": {
+      "aggregation": "rms_squelch_and_alert_thresholds",
+      "recording_accuracy": 0.8649,
+      "macro_f1": 0.8540,
+      "explosion_recall": 0.8333,
+      "fireworks_recall": 1.0,
+      "non_target_accuracy": 0.8636,
+      "civilian_false_alarms": 0
+    }
+  }
+}
+

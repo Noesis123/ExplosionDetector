@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acoustic Explosion & Fireworks Detection</title>
+  <style>
+    :root {
+      --bg-primary: #0b1120;
+      --bg-secondary: #131c31;
+      --bg-card: #1a253c;
+      --bg-card-hover: #22304d;
+      --border-color: #2a3b5c;
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --text-primary: #f8fafc;
+      --text-secondary: #cbd5e1;
+      --text-muted: #94a3b8;
+      --accent-blue: #38bdf8;
+      --accent-blue-bg: rgba(56, 189, 248, 0.12);
+      --threat-safe: #10b981;
+      --threat-safe-bg: rgba(16, 185, 129, 0.15);
+      --threat-fireworks: #f59e0b;
+      --threat-fireworks-bg: rgba(245, 158, 11, 0.2);
+      --threat-explosion: #ef4444;
+      --threat-explosion-bg: rgba(239, 68, 68, 0.25);
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.4);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -4px rgba(0, 0, 0, 0.5);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    body { background-color: var(--bg-primary); color: var(--text-primary); line-height: 1.5; min-height: 100vh; display: flex; flex-direction: column; }
+
+    /* Top Navigation Header */
+    header {
+      background-color: var(--bg-secondary);
+      border-bottom: 1px solid var(--border-color);
+      padding: 0.85rem 1.75rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+    }
+    .brand { display: flex; align-items: center; gap: 0.85rem; }
+    .brand-icon {
+      width: 36px;
+      height: 36px;
+      background: linear-gradient(135deg, #ef4444, #f59e0b);
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.1rem;
+      color: white;
+      box-shadow: 0 2px 8px rgba(239, 68, 68, 0.4);
+    }
+    .brand-title { font-size: 1.15rem; font-weight: 700; letter-spacing: 0.3px; display: flex; align-items: center; gap: 0.5rem; }
+    .brand-subtitle { font-size: 0.72rem; color: var(--text-muted); letter-spacing: 0.4px; text-transform: uppercase; }
+
+    .nav-tabs { display: flex; gap: 0.4rem; background: var(--bg-primary); padding: 0.3rem; border-radius: 8px; border: 1px solid var(--border-color); }
+    .nav-tab {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      padding: 0.45rem 1.1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .nav-tab:hover { color: var(--text-primary); background-color: rgba(255, 255, 255, 0.05); }
+    .nav-tab.active { background-color: var(--bg-card); color: var(--accent-blue); box-shadow: var(--shadow-sm); border: 1px solid var(--border-subtle); }
+
+    .header-actions { display: flex; align-items: center; gap: 0.85rem; }
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 0.95rem;
+      border-radius: 9999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      border: 1px solid transparent;
+      transition: all 0.3s;
+    }
+    .status-pill.idle { background: rgba(148, 163, 184, 0.12); color: var(--text-muted); border-color: rgba(148, 163, 184, 0.25); }
+    .status-pill.active { background: var(--threat-safe-bg); color: var(--threat-safe); border-color: rgba(16, 185, 129, 0.4); }
+    .status-pill.alert-active { background: var(--threat-explosion-bg); color: #fca5a5; border-color: rgba(239, 68, 68, 0.6); animation: pulse-border 1.2s infinite; }
+    .status-dot { width: 8px; height: 8px; border-radius: 50%; background-color: currentColor; }
+    .status-pill.active .status-dot { box-shadow: 0 0 8px currentColor; }
+
+    /* Main Container */
+    main { flex: 1; padding: 1.75rem 2rem; max-width: 1380px; margin: 0 auto; width: 100%; }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; animation: fadeIn 0.2s ease-in; }
+
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(3px); } to { opacity: 1; transform: translateY(0); } }
+
+    /* Alert Hero Banner */
+    .hero-threat-banner {
+      border-radius: 12px;
+      padding: 1.4rem 2rem;
+      margin-bottom: 1.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      border: 1px solid var(--border-color);
+      transition: all 0.3s;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-threat-banner::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 6px;
+    }
+    .hero-threat-banner.normal { background: linear-gradient(90deg, rgba(16, 185, 129, 0.12), rgba(16, 185, 129, 0.03)); border-color: rgba(16, 185, 129, 0.35); }
+    .hero-threat-banner.normal::before { background-color: var(--threat-safe); }
+    .hero-threat-banner.explosion {
+      background: linear-gradient(90deg, rgba(239, 68, 68, 0.35), rgba(239, 68, 68, 0.15));
+      border-color: var(--threat-explosion);
+      animation: pulse-red 1s infinite alternate;
+    }
+    .hero-threat-banner.explosion::before { background-color: var(--threat-explosion); }
+    .hero-threat-banner.fireworks {
+      background: linear-gradient(90deg, rgba(245, 158, 11, 0.3), rgba(245, 158, 11, 0.12));
+      border-color: var(--threat-fireworks);
+      animation: pulse-amber 1s infinite alternate;
+    }
+    .hero-threat-banner.fireworks::before { background-color: var(--threat-fireworks); }
+
+    @keyframes pulse-red { 0% { box-shadow: 0 0 10px rgba(239, 68, 68, 0.3); } 100% { box-shadow: 0 0 25px rgba(239, 68, 68, 0.7); } }
+    @keyframes pulse-amber { 0% { box-shadow: 0 0 10px rgba(245, 158, 11, 0.3); } 100% { box-shadow: 0 0 25px rgba(245, 158, 11, 0.6); } }
+    @keyframes pulse-border { 0% { opacity: 0.8; } 100% { opacity: 1; filter: brightness(1.2); } }
+
+    .hero-content h2 { font-size: 1.6rem; font-weight: 800; letter-spacing: 0.8px; margin-bottom: 0.25rem; display: flex; align-items: center; gap: 0.6rem; }
+    .hero-content p { font-size: 0.92rem; color: var(--text-secondary); max-width: 800px; }
+    .hero-meta { text-align: right; min-width: 200px; }
+    .hero-meta-label { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; }
+    .hero-meta-val { font-size: 1.15rem; font-weight: 700; color: var(--text-primary); font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+
+    /* Overview Primary Control Bar */
+    .overview-control-bar {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.75rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.25rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .control-inputs-group { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; flex: 1; }
+    .control-item { display: flex; flex-direction: column; gap: 0.35rem; }
+    .control-item label { font-size: 0.76rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+
+    select, input[type="text"], input[type="datetime-local"] {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      color: var(--text-primary);
+      padding: 0.6rem 0.85rem;
+      border-radius: 7px;
+      font-size: 0.88rem;
+      transition: border-color 0.2s;
+    }
+    select:focus, input:focus { outline: none; border-color: var(--accent-blue); box-shadow: 0 0 0 2px var(--accent-blue-bg); }
+
+    .btn {
+      background: var(--accent-blue);
+      color: #0b1120;
+      border: none;
+      font-weight: 700;
+      font-size: 0.88rem;
+      padding: 0.62rem 1.4rem;
+      border-radius: 7px;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .btn:hover { filter: brightness(1.12); transform: translateY(-1px); }
+    .btn:active { transform: translateY(0); }
+    .btn-success { background: #10b981; color: #042f2e; }
+    .btn-danger { background: var(--threat-explosion); color: white; }
+    .btn-secondary { background: var(--bg-secondary); border: 1px solid var(--border-color); color: var(--text-primary); }
+    .btn-secondary:hover { background: rgba(255, 255, 255, 0.06); }
+    .btn-sm { padding: 0.4rem 0.85rem; font-size: 0.8rem; }
+
+    /* Top Stats Grid */
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; margin-bottom: 1.75rem; }
+    .stat-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 1.25rem 1.4rem;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .stat-card:hover { border-color: rgba(56, 189, 248, 0.35); }
+    .stat-header { display: flex; justify-content: space-between; align-items: baseline; }
+    .stat-title { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.6px; font-weight: 700; }
+    .stat-badge { font-size: 0.72rem; padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 600; }
+    .stat-value { font-size: 1.85rem; font-weight: 800; margin: 0.35rem 0 0.15rem; letter-spacing: -0.5px; }
+    .stat-desc { font-size: 0.8rem; color: var(--text-secondary); display: flex; align-items: center; gap: 0.4rem; }
+
+    /* Main Dashboard Layout */
+    .dashboard-main-grid { display: grid; grid-template-columns: 1.55fr 1fr; gap: 1.5rem; margin-bottom: 1.75rem; }
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.4rem 1.6rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem; }
+    .card-title { font-size: 1.05rem; font-weight: 700; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem; }
+    .card-subtitle { font-size: 0.78rem; color: var(--text-muted); font-weight: 500; }
+
+    /* Canvas Oscilloscope */
+    .oscilloscope-wrapper {
+      background: #080d1a;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 0.75rem;
+      position: relative;
+      margin-bottom: 1.25rem;
+    }
+    .oscilloscope-canvas { width: 100%; height: 110px; display: block; border-radius: 4px; }
+    .oscilloscope-overlay {
+      position: absolute;
+      top: 0.95rem;
+      right: 1.1rem;
+      font-size: 0.72rem;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      color: var(--text-muted);
+      background: rgba(11, 17, 32, 0.75);
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      pointer-events: none;
+    }
+
+    /* Class Meters */
+    .confidence-meter-group { display: flex; flex-direction: column; gap: 1rem; }
+    .confidence-meter { display: flex; flex-direction: column; gap: 0.35rem; }
+    .meter-label-row { display: flex; justify-content: space-between; font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); }
+    .meter-label-val { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-weight: 700; color: var(--text-primary); }
+    .meter-bar-track { height: 10px; background: rgba(255, 255, 255, 0.06); border-radius: 5px; overflow: hidden; position: relative; }
+    .meter-bar-fill { height: 100%; border-radius: 5px; transition: width 0.2s cubic-bezier(0.1, 0.9, 0.2, 1); }
+    .meter-nt { background: linear-gradient(90deg, #059669, #10b981); }
+    .meter-exp { background: linear-gradient(90deg, #dc2626, #ef4444); }
+    .meter-fw { background: linear-gradient(90deg, #d97706, #f59e0b); }
+    .meter-energy { background: linear-gradient(90deg, #0284c7, #38bdf8); }
+
+    /* Recent Detections Feed */
+    .feed-list { display: flex; flex-direction: column; gap: 0.65rem; max-height: 380px; overflow-y: auto; padding-right: 0.25rem; }
+    .feed-item {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-left: 4px solid var(--threat-safe);
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: transform 0.15s, background 0.15s;
+    }
+    .feed-item:hover { background: var(--bg-card-hover); transform: translateX(2px); }
+    .feed-item.alert-explosion { border-left-color: var(--threat-explosion); background: rgba(239, 68, 68, 0.1); border-color: rgba(239, 68, 68, 0.35); }
+    .feed-item.alert-fireworks { border-left-color: var(--threat-fireworks); background: rgba(245, 158, 11, 0.1); border-color: rgba(245, 158, 11, 0.35); }
+    .feed-title { font-weight: 700; font-size: 0.88rem; display: flex; align-items: center; gap: 0.5rem; }
+    .feed-meta { font-size: 0.76rem; color: var(--text-muted); font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+
+    /* Tables */
+    .table-container { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; overflow-x: auto; box-shadow: var(--shadow-sm); }
+    table { width: 100%; border-collapse: collapse; text-align: left; font-size: 0.85rem; }
+    th {
+      background: var(--bg-secondary);
+      padding: 0.9rem 1.1rem;
+      color: var(--text-muted);
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.74rem;
+      letter-spacing: 0.5px;
+      border-bottom: 1px solid var(--border-color);
+    }
+    td { padding: 0.9rem 1.1rem; border-bottom: 1px solid var(--border-subtle); color: var(--text-secondary); vertical-align: middle; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background-color: rgba(255, 255, 255, 0.02); }
+
+    .badge { display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.25rem 0.65rem; border-radius: 5px; font-weight: 700; font-size: 0.75rem; letter-spacing: 0.3px; }
+    .badge-explosion { background: var(--threat-explosion-bg); color: #fca5a5; border: 1px solid rgba(239, 68, 68, 0.5); }
+    .badge-fireworks { background: var(--threat-fireworks-bg); color: #fde68a; border: 1px solid rgba(245, 158, 11, 0.5); }
+    .badge-safe { background: var(--threat-safe-bg); color: #6ee7b7; border: 1px solid rgba(16, 185, 129, 0.5); }
+    .badge-hardware { background: rgba(56, 189, 248, 0.15); color: #7dd3fc; border: 1px solid rgba(56, 189, 248, 0.35); }
+    .badge-simulation { background: rgba(148, 163, 184, 0.15); color: #cbd5e1; border: 1px solid rgba(148, 163, 184, 0.35); }
+
+    /* Filters Bar */
+    .filter-bar {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.1rem 1.4rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: flex-end;
+      box-shadow: var(--shadow-sm);
+    }
+    .filter-group { display: flex; flex-direction: column; gap: 0.35rem; min-width: 170px; flex: 1; }
+    .filter-group label { font-size: 0.74rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+
+    /* Settings Sliders */
+    .setting-row { display: flex; flex-direction: column; gap: 0.4rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-subtle); }
+    .setting-row:last-child { border-bottom: none; padding-bottom: 0; }
+    .setting-header { display: flex; justify-content: space-between; align-items: baseline; }
+    .setting-label { font-size: 0.88rem; font-weight: 600; color: var(--text-primary); }
+    .setting-value { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 0.95rem; font-weight: 700; color: var(--accent-blue); }
+    .setting-desc { font-size: 0.78rem; color: var(--text-muted); line-height: 1.4; }
+    input[type="range"] {
+      width: 100%;
+      height: 6px;
+      background: var(--border-color);
+      border-radius: 3px;
+      outline: none;
+      -webkit-appearance: none;
+      cursor: pointer;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--accent-blue);
+      cursor: pointer;
+      box-shadow: 0 0 6px rgba(56, 189, 248, 0.6);
+      transition: transform 0.1s;
+    }
+    input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.15); }
+
+    /* Responsive */
+    @media (max-width: 980px) {
+      .dashboard-main-grid { grid-template-columns: 1fr; }
+      header { flex-direction: column; gap: 0.75rem; align-items: flex-start; padding: 1rem; }
+      .header-actions { align-self: flex-end; width: 100%; justify-content: space-between; }
+      .hero-threat-banner { flex-direction: column; align-items: flex-start; text-align: left; }
+      .hero-meta { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Global Header -->
+  <header>
+    <div class="brand">
+      <div class="brand-icon">!</div>
+      <div>
+        <div class="brand-title">
+          <span>Acoustic Threat Detection</span>
+          <span style="font-size: 0.72rem; background: var(--accent-blue-bg); color: var(--accent-blue); border: 1px solid rgba(56,189,248,0.3); padding: 0.15rem 0.5rem; border-radius: 4px;">v2.3 Production</span>
+        </div>
+        <div class="brand-subtitle">AudioMulticlassCNN &bull; Real-Time Continuous Monitoring</div>
+      </div>
+    </div>
+
+    <nav class="nav-tabs">
+      <button class="nav-tab active" onclick="switchTab('overview')">Overview</button>
+      <button class="nav-tab" onclick="switchTab('alerts')">Alerts History (<span id="navAlertCount">0</span>)</button>
+      <button class="nav-tab" onclick="switchTab('settings')">Settings & Policy</button>
+    </nav>
+
+    <div class="header-actions">
+      <div id="statusPill" class="status-pill idle">
+        <span class="status-dot"></span>
+        <span id="statusText">System Idle</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main>
+    <!-- ==================== TAB 1: OVERVIEW (PRIMARY MONITORING & TESTING) ==================== -->
+    <section id="tab-overview" class="tab-content active">
+
+      <!-- Hero Detection Threat Banner -->
+      <div id="heroThreatBanner" class="hero-threat-banner normal">
+        <div class="hero-content">
+          <h2 id="heroThreatTitle">
+            <span id="heroThreatIcon">&#x2714;</span>
+            <span id="heroThreatHeading">ALL CLEAR &mdash; AMBIENT AUDIO</span>
+          </h2>
+          <p id="heroThreatDesc">No detonation shockwaves or pyrotechnic signatures detected. Everyday non-target sounds are actively rejected.</p>
+        </div>
+        <div class="hero-meta">
+          <div class="hero-meta-label">Active Prediction / Latency</div>
+          <div class="hero-meta-val" id="heroMetaText">non_target (0.0 ms)</div>
+        </div>
+      </div>
+
+      <!-- Real Microphone Controls Directly on Overview -->
+      <div class="overview-control-bar">
+        <div class="control-inputs-group">
+          <div class="control-item" style="min-width: 260px;">
+            <label for="selectDeviceOverview">Physical Microphone Device</label>
+            <select id="selectDeviceOverview" onchange="onDeviceSelectChanged()"></select>
+          </div>
+
+          <div class="control-item" style="min-width: 150px;">
+            <label for="selectModeOverview">Audio Capture Mode</label>
+            <select id="selectModeOverview" onchange="toggleOverviewModeInputs()">
+              <option value="hardware">Hardware Microphone</option>
+              <option value="simulation">Simulated Stream (Test File)</option>
+            </select>
+          </div>
+
+          <div class="control-item" id="groupSimFileOverview" style="display: none; min-width: 280px;">
+            <label for="inputSimFileOverview">Simulation File Path</label>
+            <input type="text" id="inputSimFileOverview" placeholder="data/positives/flutie8211-bomb-and-echo-2-540400.mp3">
+          </div>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <button id="btnStartMonitoring" class="btn btn-success" onclick="startMonitoringFromOverview()">
+            <span>&#x25B6;</span> Start Monitoring
+          </button>
+          <button id="btnStopMonitoring" class="btn btn-danger" onclick="stopMonitoringFromOverview()" style="display: none;">
+            <span>&#x25A0;</span> Stop Monitoring
+          </button>
+        </div>
+      </div>
+
+      <!-- Real-Time Metrics & Telemetry Cards -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-header">
+            <span class="stat-title">Monitoring Lifecycle</span>
+            <span id="badgeStreamState" class="stat-badge" style="background: rgba(148,163,184,0.15); color: var(--text-muted);">OFFLINE</span>
+          </div>
+          <div class="stat-value" id="statMonitoringVal">IDLE</div>
+          <div class="stat-desc" id="statDeviceLabel">Device: None connected</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-header">
+            <span class="stat-title">Explosion Alerts</span>
+            <span class="stat-badge badge-explosion">CRITICAL</span>
+          </div>
+          <div class="stat-value" style="color: var(--threat-explosion);" id="statExplosionsCount">0</div>
+          <div class="stat-desc">Confirmed acoustic detonation blasts</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-header">
+            <span class="stat-title">Fireworks Alerts</span>
+            <span class="stat-badge badge-fireworks">WARNING</span>
+          </div>
+          <div class="stat-value" style="color: var(--threat-fireworks);" id="statFireworksCount">0</div>
+          <div class="stat-desc">Pyrotechnic aerial burst signatures</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-header">
+            <span class="stat-title">Audio Energy & Squelch</span>
+            <span id="badgeSquelchGate" class="stat-badge badge-safe">SQUELCH IDLE</span>
+          </div>
+          <div class="stat-value" id="statAudioEnergyVal">-99.9 dBFS</div>
+          <div class="stat-desc">Squelch Gate: <strong id="lblSquelchRef">-42.0 dBFS</strong></div>
+        </div>
+      </div>
+
+      <!-- Live Oscilloscope, Class Probabilities & Recent Events Feed -->
+      <div class="dashboard-main-grid">
+
+        <!-- Left: Real Waveform & Class Probabilities -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">
+                <span>Live Audio Signal & CNN Inference</span>
+              </div>
+              <div class="card-subtitle">Real-time 22,050 Hz continuous audio stream &bull; 1.0s window / 0.25s hop (4 Hz)</div>
+            </div>
+            <div id="inferenceBadge" class="badge badge-hardware" style="font-family: monospace;">
+              Latency: 0.0 ms
+            </div>
+          </div>
+
+          <!-- Live Oscilloscope Canvas -->
+          <div class="oscilloscope-wrapper">
+            <canvas id="waveformCanvas" class="oscilloscope-canvas" width="600" height="110"></canvas>
+            <div class="oscilloscope-overlay" id="oscilloscopeOverlay">RAW INPUT: 0.00 PEAK</div>
+          </div>
+
+          <!-- Class Probabilities Meters -->
+          <div class="confidence-meter-group">
+            <div class="confidence-meter">
+              <div class="meter-label-row">
+                <span>Non-Target Audio (Civilian Ambience / Speech / Music)</span>
+                <span id="valProbNt" class="meter-label-val">100.0%</span>
+              </div>
+              <div class="meter-bar-track">
+                <div id="barProbNt" class="meter-bar-fill meter-nt" style="width: 100%;"></div>
+              </div>
+            </div>
+
+            <div class="confidence-meter">
+              <div class="meter-label-row">
+                <span>Explosion Detonation Signature</span>
+                <span id="valProbExp" class="meter-label-val" style="color: var(--threat-explosion);">0.0%</span>
+              </div>
+              <div class="meter-bar-track">
+                <div id="barProbExp" class="meter-bar-fill meter-exp" style="width: 0%;"></div>
+              </div>
+            </div>
+
+            <div class="confidence-meter">
+              <div class="meter-label-row">
+                <span>Fireworks Pyrotechnic Activity</span>
+                <span id="valProbFw" class="meter-label-val" style="color: var(--threat-fireworks);">0.0%</span>
+              </div>
+              <div class="meter-bar-track">
+                <div id="barProbFw" class="meter-bar-fill meter-fw" style="width: 0%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- System Health Bar -->
+          <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle); display: flex; flex-wrap: wrap; justify-content: space-between; font-size: 0.78rem; color: var(--text-muted);">
+            <div>Model: <strong id="lblModelName" style="color: var(--text-primary);">AudioMulticlassCNN</strong> (<span id="lblModelParams">133,571</span> params)</div>
+            <div>Checkpoint: <code id="lblModelCheckpoint" style="color: var(--accent-blue);">multiclass_phase21_best_model.pt</code></div>
+            <div>Windows Evaluated: <strong id="lblWindowsCount" style="color: var(--text-primary);">0</strong></div>
+          </div>
+        </div>
+
+        <!-- Right: Recent Threat Feed -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">Live Threat Feed</div>
+              <div class="card-subtitle">Real-time alerts broadcast from microphone inference</div>
+            </div>
+            <button class="btn btn-secondary btn-sm" onclick="switchTab('alerts')">View Full History</button>
+          </div>
+
+          <div class="feed-list" id="overviewFeedList">
+            <div id="emptyFeedMessage" style="color: var(--text-muted); font-size: 0.85rem; padding: 2rem 0; text-align: center;">
+              Awaiting live microphone threats... Start monitoring above to begin audio capture.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== TAB 2: ALERTS HISTORY ==================== -->
+    <section id="tab-alerts" class="tab-content">
+      <div class="card-header" style="margin-bottom: 1.25rem;">
+        <div>
+          <h2 style="font-size: 1.35rem; font-weight: 800;">Acoustic Alerts History</h2>
+          <div style="font-size: 0.82rem; color: var(--text-muted);">Persistent SQLite Threat Log (`reports/alerts_history.db`)</div>
+        </div>
+        <div style="display: flex; gap: 0.75rem;">
+          <button class="btn btn-secondary btn-sm" onclick="exportAlertsCSV()">
+            <span>&#x21E9;</span> Export CSV
+          </button>
+          <button class="btn btn-secondary btn-sm" onclick="clearHistoricalAlerts()">
+            <span>&#x2715;</span> Clear History
+          </button>
+        </div>
+      </div>
+
+      <!-- Advanced Filter Toolbar -->
+      <div class="filter-bar">
+        <div class="filter-group" style="flex: 2;">
+          <label for="inputAlertSearch">Search Term</label>
+          <input type="text" id="inputAlertSearch" placeholder="Filter by device, category, or alert type..." oninput="debounceLoadAlerts()">
+        </div>
+
+        <div class="filter-group">
+          <label for="selectAlertTypeFilter">Alert Category</label>
+          <select id="selectAlertTypeFilter" onchange="loadAlerts()">
+            <option value="">All Categories (Explosions & Fireworks)</option>
+            <option value="EXPLOSION_DETECTED">Explosions Only</option>
+            <option value="FIREWORKS_DETECTED">Fireworks Only</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="inputStartDateFilter">From (Start UTC/Local)</label>
+          <input type="datetime-local" id="inputStartDateFilter" onchange="loadAlerts()">
+        </div>
+
+        <div class="filter-group">
+          <label for="inputEndDateFilter">To (End UTC/Local)</label>
+          <input type="datetime-local" id="inputEndDateFilter" onchange="loadAlerts()">
+        </div>
+
+        <button class="btn btn-secondary btn-sm" onclick="resetAlertFilters()" style="margin-bottom: 2px;">Reset</button>
+      </div>
+
+      <!-- Alerts Data Table -->
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 70px;">ID</th>
+              <th style="width: 170px;">Timestamp (UTC)</th>
+              <th style="width: 190px;">Threat Classification</th>
+              <th style="width: 120px;">Confidence</th>
+              <th style="width: 130px;">Peak Energy</th>
+              <th>Audio Device / Source</th>
+              <th style="width: 110px;">Verification</th>
+            </tr>
+          </thead>
+          <tbody id="alertsTableBody">
+            <tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 3rem;">Loading alert database records...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ==================== TAB 3: SETTINGS & POLICY ==================== -->
+    <section id="tab-settings" class="tab-content">
+      <div class="dashboard-main-grid">
+
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">Detection Decision Rules & Policy</div>
+              <div class="card-subtitle">Empirically tuned parameters for false-alarm suppression and alert precision</div>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-top: 0.5rem;">
+            <div class="setting-row">
+              <div class="setting-header">
+                <span class="setting-label">Explosion Confidence Threshold (&tau;<sub>exp</sub>)</span>
+                <span class="setting-value" id="valSetExpTh">0.75</span>
+              </div>
+              <div class="setting-desc">Minimum Softmax probability required for EXPLOSION_DETECTED trigger. Default: 0.75.</div>
+              <input type="range" id="rangeExpTh" min="0.50" max="0.95" step="0.01" value="0.75" oninput="document.getElementById('valSetExpTh').innerText = this.value">
+            </div>
+
+            <div class="setting-row">
+              <div class="setting-header">
+                <span class="setting-label">Fireworks Confidence Threshold (&tau;<sub>fw</sub>)</span>
+                <span class="setting-value" id="valSetFwTh">0.75</span>
+              </div>
+              <div class="setting-desc">Minimum Softmax probability required for FIREWORKS_DETECTED trigger. Default: 0.75.</div>
+              <input type="range" id="rangeFwTh" min="0.50" max="0.95" step="0.01" value="0.75" oninput="document.getElementById('valSetFwTh').innerText = this.value">
+            </div>
+
+            <div class="setting-row">
+              <div class="setting-header">
+                <span class="setting-label">Consecutive Confirmation Windows (k)</span>
+                <span class="setting-value" id="valSetK">1</span>
+              </div>
+              <div class="setting-desc">Number of consecutive 1.0s windows exceeding threshold before triggering an alert. Suppresses single transient thumps and spikes.</div>
+              <input type="range" id="rangeK" min="1" max="5" step="1" value="1" oninput="document.getElementById('valSetK').innerText = this.value">
+            </div>
+
+            <div class="setting-row">
+              <div class="setting-header">
+                <span class="setting-label">Pre-Normalization RMS Squelch Gate</span>
+                <span class="setting-value"><span id="valSetSquelch">-42.0</span> dBFS</span>
+              </div>
+              <div class="setting-desc">Raw waveform amplitude gate. Background audio below this level is silenced to 0.0 before normalization, preventing sensor noise floor spikes. (&ge; 17 dB safety margin below lowest explosion).</div>
+              <input type="range" id="rangeSquelch" min="-60.0" max="-20.0" step="1.0" value="-42.0" oninput="document.getElementById('valSetSquelch').innerText = this.value">
+            </div>
+
+            <div class="setting-row">
+              <div class="setting-header">
+                <span class="setting-label">Refractory Alert Cooldown Period</span>
+                <span class="setting-value"><span id="valSetCooldown">2.5</span> s</span>
+              </div>
+              <div class="setting-desc">Minimum quiet duration between consecutive alerts to prevent flood duplicate logging for a single blast event.</div>
+              <input type="range" id="rangeCooldown" min="1.0" max="10.0" step="0.5" value="2.5" oninput="document.getElementById('valSetCooldown').innerText = this.value">
+            </div>
+
+            <div style="display: flex; gap: 0.75rem; margin-top: 0.5rem;">
+              <button class="btn" onclick="saveSettings()">Save Configuration</button>
+              <button class="btn btn-secondary" onclick="resetDefaultSettings()">Reset to Production Defaults</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Verification Evidence & Architecture -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">Production Validation Baseline</div>
+              <div class="card-subtitle">Active Checkpoint: <code>multiclass_phase21_best_model.pt</code></div>
+            </div>
+          </div>
+
+          <div style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">
+            <p><strong>Acoustic Model:</strong> 2D Lightweight Convolutional Neural Network (<code>AudioMulticlassCNN</code>) with 133,571 parameters.</p>
+            <div style="background: var(--bg-secondary); border-radius: 8px; padding: 1rem; margin: 1rem 0; border: 1px solid var(--border-color);">
+              <div style="font-weight: 700; color: var(--text-primary); margin-bottom: 0.4rem;">Validation Metrics (37 Independent Recordings):</div>
+              <ul style="margin-left: 1.25rem; font-size: 0.82rem; display: flex; flex-direction: column; gap: 0.25rem;">
+                <li>Recording Accuracy: <strong>86.49%</strong> (32/37 recordings)</li>
+                <li>Explosion Recall: <strong>83.33%</strong> (10/12 blasts detected)</li>
+                <li>Fireworks Recall: <strong>100.0%</strong> (3/3 pyrotechnic events)</li>
+                <li>Civilian False Alarms: <strong style="color: var(--threat-safe);">0 false alerts</strong> across speech, music, crowds, traffic, doors, and silence</li>
+              </ul>
+            </div>
+            <p style="margin-top: 0.5rem;"><strong>Squelch Gate Calibrated:</strong> Minimum peak explosion energy is -25.0 dBFS (mean -11.6 dBFS). Squelch at -42.0 dBFS guarantees a 17 dB headroom margin.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- JavaScript Application Controller -->
+  <script>
+    let activeTab = 'overview';
+    let sseSource = null;
+    let debounceTimer = null;
+    let latestWaveform = new Array(64).fill(0.0);
+    let isMonitoringActive = false;
+    let activeAlertState = null;
+
+    // --- Tab Switching ---
+    function switchTab(tabId) {
+      document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+
+      const tabs = Array.from(document.querySelectorAll('.nav-tab'));
+      const activeBtn = tabs.find(b => b.getAttribute('onclick').includes(tabId));
+      if (activeBtn) activeBtn.classList.add('active');
+
+      const targetSection = document.getElementById('tab-' + tabId);
+      if (targetSection) targetSection.classList.add('active');
+      activeTab = tabId;
+
+      if (tabId === 'alerts') loadAlerts();
+      if (tabId === 'settings') loadSettings();
+    }
+
+    // --- Mode Input Toggle ---
+    function toggleOverviewModeInputs() {
+      const mode = document.getElementById('selectModeOverview').value;
+      const simGroup = document.getElementById('groupSimFileOverview');
+      simGroup.style.display = (mode === 'simulation') ? 'flex' : 'none';
+    }
+
+    async function onDeviceSelectChanged() {
+      const devId = parseInt(document.getElementById('selectDeviceOverview').value);
+      console.log('Selected audio device:', devId);
+      if (isMonitoringActive && !isNaN(devId) && devId >= 0) {
+        console.log('Switching physical microphone device live to ID:', devId);
+        await startMonitoringFromOverview();
+      }
+    }
+
+    // --- Device Enumeration ---
+    async function loadDevices() {
+      try {
+        const res = await fetch('/api/devices');
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        const sel = document.getElementById('selectDeviceOverview');
+        sel.innerHTML = '';
+
+        if (!data.devices || data.devices.length === 0) {
+          const opt = document.createElement('option');
+          opt.value = -1;
+          opt.innerText = 'No Microphone Detected (Simulation Available)';
+          sel.appendChild(opt);
+          return;
+        }
+
+        data.devices.forEach(d => {
+          const opt = document.createElement('option');
+          opt.value = d.id;
+          opt.innerText = `${d.name} (${d.channels} ch)`;
+          if (d.id === data.selected_id) opt.selected = true;
+          sel.appendChild(opt);
+        });
+      } catch (e) {
+        console.error('Failed to load audio devices:', e);
+        const sel = document.getElementById('selectDeviceOverview');
+        sel.innerHTML = '<option value="-1">Audio Enumeration Error (Check Permissions)</option>';
+      }
+    }
+
+    // --- Microphone Monitoring Lifecycle ---
+    async function startMonitoringFromOverview() {
+      const mode = document.getElementById('selectModeOverview').value;
+      const deviceId = parseInt(document.getElementById('selectDeviceOverview').value);
+      const isSim = (mode === 'simulation');
+      const simFile = document.getElementById('inputSimFileOverview').value.trim();
+
+      try {
+        const res = await fetch('/api/monitor/start', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({
+            device_id: isNaN(deviceId) ? 0 : deviceId,
+            simulation: isSim,
+            file_path: isSim ? (simFile || null) : null
+          })
+        });
+        const data = await res.json();
+        if (!res.ok || data.status === 'error') {
+          throw new Error(data.error || `HTTP ${res.status}`);
+        }
+        isMonitoringActive = true;
+        document.getElementById('btnStartMonitoring').style.display = 'none';
+        document.getElementById('btnStopMonitoring').style.display = 'inline-flex';
+        document.getElementById('statusPill').className = 'status-pill active';
+        document.getElementById('statusText').innerText = isSim ? 'Simulation Active' : 'Monitoring Live';
+      } catch (e) {
+        alert('Failed to start microphone monitoring: ' + e.message);
+      }
+    }
+
+    async function stopMonitoringFromOverview() {
+      try {
+        const res = await fetch('/api/monitor/stop', { method: 'POST' });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        isMonitoringActive = false;
+        document.getElementById('btnStartMonitoring').style.display = 'inline-flex';
+        document.getElementById('btnStopMonitoring').style.display = 'none';
+        document.getElementById('statusPill').className = 'status-pill idle';
+        document.getElementById('statusText').innerText = 'System Idle';
+      } catch (e) {
+        alert('Failed to stop microphone monitoring: ' + e.message);
+      }
+    }
+
+    // --- Oscilloscope Canvas Visualizer ---
+    function renderWaveformCanvas() {
+      const canvas = document.getElementById('waveformCanvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      const width = canvas.width;
+      const height = canvas.height;
+
+      ctx.clearRect(0, 0, width, height);
+
+      // Center reference baseline
+      ctx.strokeStyle = 'rgba(51, 65, 85, 0.4)';
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(0, height / 2);
+      ctx.lineTo(width, height / 2);
+      ctx.stroke();
+
+      if (!isMonitoringActive || !latestWaveform || latestWaveform.length === 0) {
+        // Idle flatline
+        ctx.strokeStyle = '#475569';
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.moveTo(0, height / 2);
+        ctx.lineTo(width, height / 2);
+        ctx.stroke();
+        document.getElementById('oscilloscopeOverlay').innerText = 'INPUT IDLE &bull; WAITING FOR MIC';
+        return;
+      }
+
+      // Live waveform trace
+      ctx.lineWidth = 2.2;
+      let strokeColor = '#38bdf8';
+      let shadowColor = 'rgba(56, 189, 248, 0.6)';
+
+      if (activeAlertState === 'EXPLOSION_DETECTED') {
+        strokeColor = '#ef4444';
+        shadowColor = 'rgba(239, 68, 68, 0.8)';
+      } else if (activeAlertState === 'FIREWORKS_DETECTED') {
+        strokeColor = '#f59e0b';
+        shadowColor = 'rgba(245, 158, 11, 0.8)';
+      }
+
+      ctx.strokeStyle = strokeColor;
+      ctx.shadowColor = shadowColor;
+      ctx.shadowBlur = 6;
+
+      ctx.beginPath();
+      const step = width / (latestWaveform.length - 1);
+      let peakAmp = 0.0;
+
+      for (let i = 0; i < latestWaveform.length; i++) {
+        const raw = latestWaveform[i] || 0.0;
+        const absVal = Math.abs(raw);
+        if (absVal > peakAmp) peakAmp = absVal;
+
+        // Visual gain scaling for clarity
+        const scaled = Math.max(-1.0, Math.min(1.0, raw * 2.8));
+        const y = (height / 2) - (scaled * (height / 2) * 0.85);
+        const x = i * step;
+
+        if (i === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      }
+      ctx.stroke();
+      ctx.shadowBlur = 0;
+
+      document.getElementById('oscilloscopeOverlay').innerText =
+        `MIC STREAM: PEAK ${peakAmp.toFixed(3)} | 22.05 kHz`;
+    }
+
+    // --- Real-time SSE Stream ---
+    function initSSE() {
+      if (sseSource) sseSource.close();
+      sseSource = new EventSource('/api/stream');
+
+      sseSource.onmessage = (event) => {
+        try {
+          const data = JSON.parse(event.data);
+          updateDashboard(data);
+        } catch (e) {
+          console.error('SSE JSON error:', e);
+        }
+      };
+
+      sseSource.onerror = () => {
+        console.warn('SSE disconnected, retrying in 3s...');
+        document.getElementById('statusPill').className = 'status-pill idle';
+        document.getElementById('statusText').innerText = 'Connecting...';
+        setTimeout(initSSE, 3000);
+      };
+    }
+
+    // --- Dashboard UI Synchronization ---
+    function updateDashboard(data) {
+      if (data.monitoring_active !== undefined) {
+        isMonitoringActive = Boolean(data.monitoring_active);
+      }
+      activeAlertState = data.active_alert || null;
+
+      // 1. Status Pill & Lifecycle Badges
+      const pill = document.getElementById('statusPill');
+      const pillText = document.getElementById('statusText');
+      const badgeStream = document.getElementById('badgeStreamState');
+      const statMonitoringVal = document.getElementById('statMonitoringVal');
+      const btnStart = document.getElementById('btnStartMonitoring');
+      const btnStop = document.getElementById('btnStopMonitoring');
+
+      if (data.system_health === 'ERROR' && data.error) {
+        pill.className = 'status-pill alert-active';
+        pillText.innerText = 'Device Error';
+        console.error('Audio capture error:', data.error);
+      } else if (isMonitoringActive) {
+        if (data.active_alert) {
+          pill.className = 'status-pill alert-active';
+          pillText.innerText = data.active_alert.replace('_', ' ');
+        } else {
+          pill.className = 'status-pill active';
+          pillText.innerText = 'Monitoring Live';
+        }
+        badgeStream.className = 'stat-badge badge-safe';
+        badgeStream.innerText = data.is_simulation ? 'SIMULATION' : 'STREAMING';
+        statMonitoringVal.innerText = 'ACTIVE';
+        statMonitoringVal.style.color = 'var(--threat-safe)';
+        btnStart.style.display = 'none';
+        btnStop.style.display = 'inline-flex';
+      } else {
+        pill.className = 'status-pill idle';
+        pillText.innerText = 'System Idle';
+        badgeStream.className = 'stat-badge';
+        badgeStream.style.background = 'rgba(148,163,184,0.15)';
+        badgeStream.style.color = 'var(--text-muted)';
+        badgeStream.innerText = 'OFFLINE';
+        statMonitoringVal.innerText = 'IDLE';
+        statMonitoringVal.style.color = 'var(--text-muted)';
+        btnStart.style.display = 'inline-flex';
+        btnStop.style.display = 'none';
+      }
+
+      if (data.device_name) {
+        document.getElementById('statDeviceLabel').innerText = 'Device: ' + data.device_name;
+      }
+      const expCount = (data.total_explosions !== undefined) ? data.total_explosions : data.total_explosions_detected;
+      if (expCount !== undefined) {
+        document.getElementById('statExplosionsCount').innerText = expCount;
+      }
+      const fwCount = (data.total_fireworks !== undefined) ? data.total_fireworks : data.total_fireworks_detected;
+      if (fwCount !== undefined) {
+        document.getElementById('statFireworksCount').innerText = fwCount;
+      }
+      if (data.audio_energy_dbfs !== undefined) {
+        document.getElementById('statAudioEnergyVal').innerText = data.audio_energy_dbfs.toFixed(1) + ' dBFS';
+        const squelchRef = (data.settings && data.settings.rms_squelch_dbfs !== undefined)
+          ? data.settings.rms_squelch_dbfs : -58.0;
+        document.getElementById('lblSquelchRef').innerText = squelchRef.toFixed(1) + ' dBFS';
+
+        const squelchBadge = document.getElementById('badgeSquelchGate');
+        if (data.audio_energy_dbfs >= squelchRef && isMonitoringActive) {
+          squelchBadge.className = 'stat-badge badge-hardware';
+          squelchBadge.innerText = 'GATE OPEN (SIGNAL)';
+        } else {
+          squelchBadge.className = 'stat-badge badge-safe';
+          squelchBadge.innerText = isMonitoringActive ? 'GATE CLOSED (QUIET)' : 'SQUELCH IDLE';
+        }
+      }
+
+      // 2. Hero Threat Banner & Notification
+      const hero = document.getElementById('heroThreatBanner');
+      const heroTitle = document.getElementById('heroThreatHeading');
+      const heroIcon = document.getElementById('heroThreatIcon');
+      const heroDesc = document.getElementById('heroThreatDesc');
+      const heroMetaText = document.getElementById('heroMetaText');
+
+      const pred = data.prediction || data.latest_prediction || 'non_target';
+      const conf = (data.confidence !== undefined) ? data.confidence : (data.latest_confidence || 0.0);
+
+      if (data.active_alert === 'EXPLOSION_DETECTED') {
+        hero.className = 'hero-threat-banner explosion';
+        heroIcon.innerHTML = '&#x26A0;';
+        heroTitle.innerText = 'CRITICAL THREAT: EXPLOSION DETECTED';
+        const confPct = (conf * 100).toFixed(1);
+        const timeStr = data.active_alert_timestamp ? data.active_alert_timestamp.substring(11, 19) : 'recent';
+        heroDesc.innerText = `Acoustic detonation blast confirmed at ${timeStr} UTC with ${confPct}% confidence. Threat verified via high-energy low-frequency shockwave coda.`;
+      } else if (data.active_alert === 'FIREWORKS_DETECTED') {
+        hero.className = 'hero-threat-banner fireworks';
+        heroIcon.innerHTML = '&#x2728;';
+        heroTitle.innerText = 'WARNING: FIREWORKS ACTIVITY DETECTED';
+        const confPct = (conf * 100).toFixed(1);
+        heroDesc.innerText = `Pyrotechnic aerial burst signature recognized with ${confPct}% confidence. Distinct from high-explosive blast profiles.`;
+      } else {
+        hero.className = 'hero-threat-banner normal';
+        heroIcon.innerHTML = '&#x2714;';
+        heroTitle.innerText = 'ALL CLEAR &mdash; AMBIENT AUDIO';
+        heroDesc.innerText = isMonitoringActive
+          ? 'Continuous microphone listening active. No detonation or pyrotechnic signatures detected. Everyday sounds safely rejected.'
+          : 'System idle. Select physical microphone and start monitoring to begin acoustic threat classification.';
+      }
+
+      const latencyVal = data.latency_ms !== undefined ? data.latency_ms.toFixed(1) : '0.0';
+      heroMetaText.innerText = `${pred} (${latencyVal} ms)`;
+      document.getElementById('inferenceBadge').innerText = `Latency: ${latencyVal} ms`;
+
+      // 3. Class Probabilities Meters
+      const probs = data.probabilities || data.latest_probabilities;
+      if (probs) {
+        const pNt = (probs.non_target * 100).toFixed(1);
+        const pExp = (probs.explosion * 100).toFixed(1);
+        const pFw = (probs.fireworks * 100).toFixed(1);
+
+        document.getElementById('valProbNt').innerText = pNt + '%';
+        document.getElementById('valProbExp').innerText = pExp + '%';
+        document.getElementById('valProbFw').innerText = pFw + '%';
+
+        document.getElementById('barProbNt').style.width = pNt + '%';
+        document.getElementById('barProbExp').style.width = pExp + '%';
+        document.getElementById('barProbFw').style.width = pFw + '%';
+      }
+
+      // 4. Model Metadata & Windows Counter
+      if (data.model_name) document.getElementById('lblModelName').innerText = data.model_name;
+      if (data.model_checkpoint) document.getElementById('lblModelCheckpoint').innerText = data.model_checkpoint;
+      if (data.model_parameters) document.getElementById('lblModelParams').innerText = Number(data.model_parameters).toLocaleString();
+      if (data.windows_processed !== undefined) document.getElementById('lblWindowsCount').innerText = Number(data.windows_processed).toLocaleString();
+
+      // 5. Waveform Canvas Update
+      if (data.waveform && Array.isArray(data.waveform)) {
+        latestWaveform = data.waveform;
+      }
+      renderWaveformCanvas();
+
+      // 6. Live Feed Append when Alert Fires
+      if (data.active_alert) {
+        prependLiveFeedItem(data.active_alert, conf, data.active_alert_timestamp, data.device_name);
+      }
+    }
+
+    function prependLiveFeedItem(alertType, confidence, timestamp, deviceName) {
+      const feed = document.getElementById('overviewFeedList');
+      const emptyMsg = document.getElementById('emptyFeedMessage');
+      if (emptyMsg) emptyMsg.remove();
+
+      // Prevent duplicate feed items within 1.5 seconds
+      const firstChild = feed.firstElementChild;
+      if (firstChild && firstChild.dataset.alertType === alertType) {
+        const lastTs = parseInt(firstChild.dataset.timestampMs || '0');
+        if (Date.now() - lastTs < 2000) return;
+      }
+
+      const item = document.createElement('div');
+      const isExp = (alertType === 'EXPLOSION_DETECTED');
+      item.className = 'feed-item ' + (isExp ? 'alert-explosion' : 'alert-fireworks');
+      item.dataset.alertType = alertType;
+      item.dataset.timestampMs = Date.now().toString();
+
+      const timeFormatted = timestamp ? timestamp.substring(11, 19) : new Date().toISOString().substring(11, 19);
+      const confPct = ((confidence || 0.95) * 100).toFixed(1);
+
+      item.innerHTML = `
+        <div>
+          <div class="feed-title" style="color: ${isExp ? 'var(--threat-explosion)' : 'var(--threat-fireworks)'};">
+            <span>${isExp ? '&#x26A0;' : '&#x2728;'}</span> ${alertType}
+            <span style="font-size: 0.72rem; color: var(--text-muted); font-weight: 500;">(${confPct}%)</span>
+          </div>
+          <div style="font-size: 0.74rem; color: var(--text-muted); margin-top: 2px;">
+            ${deviceName || 'Microphone'} &bull; Acoustic threat verified
+          </div>
+        </div>
+        <div class="feed-meta">${timeFormatted} UTC</div>
+      `;
+
+      feed.prepend(item);
+      if (feed.children.length > 10) feed.lastElementChild.remove();
+
+      // Also increment nav counter
+      const navCount = document.getElementById('navAlertCount');
+      if (navCount) {
+        navCount.innerText = (parseInt(navCount.innerText || '0') + 1).toString();
+      }
+    }
+
+    // --- Alerts Page Logic ---
+    function debounceLoadAlerts() {
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(loadAlerts, 300);
+    }
+
+    function resetAlertFilters() {
+      document.getElementById('inputAlertSearch').value = '';
+      document.getElementById('selectAlertTypeFilter').value = '';
+      document.getElementById('inputStartDateFilter').value = '';
+      document.getElementById('inputEndDateFilter').value = '';
+      loadAlerts();
+    }
+
+    async function loadAlerts() {
+      const search = document.getElementById('inputAlertSearch').value.trim();
+      const type = document.getElementById('selectAlertTypeFilter').value;
+      const start = document.getElementById('inputStartDateFilter').value;
+      const end = document.getElementById('inputEndDateFilter').value;
+
+      let url = '/api/alerts?limit=100';
+      if (search) url += '&search=' + encodeURIComponent(search);
+      if (type) url += '&alert_type=' + encodeURIComponent(type);
+      if (start) url += '&start_date=' + encodeURIComponent(new Date(start).toISOString());
+      if (end) url += '&end_date=' + encodeURIComponent(new Date(end).toISOString());
+
+      try {
+        const res = await fetch(url);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        const tbody = document.getElementById('alertsTableBody');
+        tbody.innerHTML = '';
+
+        const navCount = document.getElementById('navAlertCount');
+        if (navCount && data.total !== undefined) navCount.innerText = data.total;
+
+        if (!data.alerts || data.alerts.length === 0) {
+          tbody.innerHTML = '<tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 3rem;">No alerts found matching filter criteria.</td></tr>';
+          return;
+        }
+
+        data.alerts.forEach(a => {
+          const tr = document.createElement('tr');
+          const isExp = (a.alert_type === 'EXPLOSION_DETECTED');
+          const badgeClass = isExp ? 'badge-explosion' : 'badge-fireworks';
+          const icon = isExp ? '&#x26A0;' : '&#x2728;';
+          const timeDisplay = a.timestamp.length >= 19 ? a.timestamp.replace('T', ' ').substring(0, 19) : a.timestamp;
+          const deviceDisplay = a.device || a.source || 'Hardware Microphone';
+
+          tr.innerHTML = `
+            <td style="font-family: monospace; font-weight: 700;">#${a.id}</td>
+            <td style="font-family: monospace; color: var(--text-muted);">${timeDisplay}</td>
+            <td><span class="badge ${badgeClass}">${icon} ${a.alert_type}</span></td>
+            <td><strong style="color: var(--text-primary);">${(a.confidence * 100).toFixed(1)}%</strong></td>
+            <td><span style="font-family: monospace;">${a.audio_energy_dbfs} dBFS</span></td>
+            <td><span class="badge badge-hardware">${deviceDisplay}</span></td>
+            <td><span style="color: var(--threat-safe);">&#x25CF;</span> ${a.status || 'Verified'}</td>
+          `;
+          tbody.appendChild(tr);
+        });
+      } catch (e) {
+        console.error('Failed to load alerts:', e);
+        const tbody = document.getElementById('alertsTableBody');
+        tbody.innerHTML = `<tr><td colspan="7" style="text-align: center; color: var(--threat-explosion); padding: 2rem;">Error querying SQLite database: ${e.message}</td></tr>`;
+      }
+    }
+
+    function exportAlertsCSV() {
+      const search = document.getElementById('inputAlertSearch').value.trim();
+      const type = document.getElementById('selectAlertTypeFilter').value;
+      const start = document.getElementById('inputStartDateFilter').value;
+      const end = document.getElementById('inputEndDateFilter').value;
+
+      let url = '/api/alerts/export?';
+      if (search) url += '&search=' + encodeURIComponent(search);
+      if (type) url += '&alert_type=' + encodeURIComponent(type);
+      if (start) url += '&start_date=' + encodeURIComponent(new Date(start).toISOString());
+      if (end) url += '&end_date=' + encodeURIComponent(new Date(end).toISOString());
+
+      window.location.href = url;
+    }
+
+    async function clearHistoricalAlerts() {
+      if (!confirm('Are you sure you want to permanently clear historical alerts from SQLite?')) return;
+      try {
+        const res = await fetch('/api/alerts/clear', { method: 'POST' });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        loadAlerts();
+        const feed = document.getElementById('overviewFeedList');
+        feed.innerHTML = '<div id="emptyFeedMessage" style="color: var(--text-muted); font-size: 0.85rem; padding: 2rem 0; text-align: center;">Alerts history cleared. Awaiting new events...</div>';
+      } catch (e) {
+        alert('Failed to clear alerts: ' + e.message);
+      }
+    }
+
+    // --- Settings & Detection Rules ---
+    async function loadSettings() {
+      try {
+        const res = await fetch('/api/settings');
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const s = await res.json();
+        document.getElementById('rangeExpTh').value = s.explosion_threshold || 0.75;
+        document.getElementById('valSetExpTh').innerText = s.explosion_threshold || 0.75;
+        document.getElementById('rangeFwTh').value = s.fireworks_threshold || 0.75;
+        document.getElementById('valSetFwTh').innerText = s.fireworks_threshold || 0.75;
+        document.getElementById('rangeK').value = s.consecutive_windows || 1;
+        document.getElementById('valSetK').innerText = s.consecutive_windows || 1;
+        document.getElementById('rangeSquelch').value = s.rms_squelch_dbfs || -58.0;
+        document.getElementById('valSetSquelch').innerText = (s.rms_squelch_dbfs || -58.0).toFixed(1);
+        document.getElementById('rangeCooldown').value = s.cooldown_seconds || 2.5;
+        document.getElementById('valSetCooldown').innerText = (s.cooldown_seconds || 2.5).toFixed(1);
+      } catch (e) {
+        console.error('Failed to load settings:', e);
+      }
+    }
+
+    async function saveSettings() {
+      const body = {
+        explosion_threshold: parseFloat(document.getElementById('rangeExpTh').value),
+        fireworks_threshold: parseFloat(document.getElementById('rangeFwTh').value),
+        consecutive_windows: parseInt(document.getElementById('rangeK').value),
+        rms_squelch_dbfs: parseFloat(document.getElementById('rangeSquelch').value),
+        cooldown_seconds: parseFloat(document.getElementById('rangeCooldown').value),
+      };
+      try {
+        const res = await fetch('/api/settings', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify(body)
+        });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        alert('Detection rules successfully updated and applied in real time!');
+      } catch (e) {
+        alert('Failed to update detection rules: ' + e.message);
+      }
+    }
+
+    function resetDefaultSettings() {
+      document.getElementById('rangeExpTh').value = 0.75;
+      document.getElementById('valSetExpTh').innerText = '0.75';
+      document.getElementById('rangeFwTh').value = 0.75;
+      document.getElementById('valSetFwTh').innerText = '0.75';
+      document.getElementById('rangeK').value = 1;
+      document.getElementById('valSetK').innerText = '1';
+      document.getElementById('rangeSquelch').value = -58.0;
+      document.getElementById('valSetSquelch').innerText = '-58.0';
+      document.getElementById('rangeCooldown').value = 2.5;
+      document.getElementById('valSetCooldown').innerText = '2.5';
+      saveSettings();
+    }
+
+    // --- Bootstrap ---
+    window.addEventListener('DOMContentLoaded', () => {
+      loadDevices();
+      loadSettings();
+      initSSE();
+      renderWaveformCanvas();
+    });
+  </script>
+</body>
+</html>

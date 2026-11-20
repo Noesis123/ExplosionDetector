@@ -1,0 +1,370 @@
+{
+  "base_val": {
+    "tp": 59,
+    "fp": 29,
+    "tn": 91,
+    "fn": 11,
+    "precision": 0.6704545454545454,
+    "recall": 0.8428571428571429,
+    "f1": 0.7468354430379747,
+    "accuracy": 0.7894736842105263,
+    "clean_negatives": "91/120 (75.8%)",
+    "fp_by_cat": {
+      "industrial_machinery": 2,
+      "thunder": 3,
+      "vehicle_backfires": 3,
+      "fireworks": 2,
+      "positives": 1,
+      "artillery_firing": 2,
+      "distant": 1,
+      "doors_slamming_falling": 1,
+      "aerial_burst": 6,
+      "firecrackers": 1,
+      "barrage": 2,
+      "gunfire": 2,
+      "construction_impacts": 3
+    }
+  },
+  "base_hist": {
+    "tp": 22,
+    "fp": 19,
+    "tn": 49,
+    "fn": 2,
+    "recall": 0.9166666666666666,
+    "precision": 0.5365853658536586,
+    "f1": 0.676923076923077,
+    "accuracy": 0.7717391304347826,
+    "missed": [
+      [
+        "alex_jauk-distant-explosion-192022.mp3",
+        0.38789188861846924
+      ],
+      [
+        "bbc_demolition_07022510.mp3",
+        0.49961477518081665
+      ]
+    ],
+    "detected": [
+      [
+        "alex_jauk-slow-explosion-190430.mp3",
+        0.8183086514472961
+      ],
+      [
+        "bbc_demolition_07022507.mp3",
+        0.8701604604721069
+      ],
+      [
+        "bbc_demolition_07022508.mp3",
+        0.7022256255149841
+      ],
+      [
+        "bbc_explosions_07023354.mp3",
+        0.7770581245422363
+      ],
+      [
+        "flutie8211-bomb-and-echo-2-540400.mp3",
+        0.8949545621871948
+      ],
+      [
+        "flutie8211-bomb-and-echo-3-590449.mp3",
+        0.8890881538391113
+      ],
+      [
+        "freesound_community-explosion-107629.mp3",
+        0.8612366914749146
+      ],
+      [
+        "freesound_community-explosion-80108.mp3",
+        0.814659595489502
+      ],
+      [
+        "freesound_community-medium-explosion-40472.mp3",
+        0.8529897928237915
+      ],
+      [
+        "ribhavagrawal-bomb-explosion-type-01-265510.mp3",
+        0.9399793744087219
+      ],
+      [
+        "ribhavagrawal-bomb-explosion-type-02-265506.mp3",
+        0.8282642960548401
+      ],
+      [
+        "ribhavagrawal-bomb-explosion-type-04-265508.mp3",
+        0.9059526920318604
+      ],
+      [
+        "scottishperson-sound-effect-ww2-uk-air-raid-bomb-blasts-164347.mp3",
+        0.8764752745628357
+      ],
+      [
+        "scottishperson-sound-effect-ww2-uk-bomb-blast-164351.mp3",
+        0.8818164467811584
+      ],
+      [
+        "soundreality-a-bomb-139689.mp3",
+        0.8643141388893127
+      ],
+      [
+        "soundreality-explosion-fx-343683.mp3",
+        0.8838098645210266
+      ],
+      [
+        "u_xg7ssi08yr-bomb-explosion-2-369633.mp3",
+        0.9003280997276306
+      ],
+      [
+        "u_xg7ssi08yr-bomb-explosion-2-381970.mp3",
+        0.8920717239379883
+      ],
+      [
+        "fs_108641_juskiddink.mp3",
+        0.8866407871246338
+      ],
+      [
+        "fs_367622_fxkid2.mp3",
+        0.7135958671569824
+      ],
+      [
+        "fs_97896_ohrwurm.mp3",
+        0.9232801795005798
+      ],
+      [
+        "fs_323316_alfrodou.mp3",
+        0.7204523682594299
+      ]
+    ],
+    "fp_files": [
+      [
+        "bbc_gunfire---_07034194.mp3",
+        "gunfire",
+        0.8219348788261414
+      ],
+      [
+        "bbc_gunfire---_07034201.mp3",
+        "gunfire",
+        0.791696310043335
+      ],
+      [
+        "bbc_right-whal_nhu0501615.mp3",
+        "bioacoustics",
+        0.8097624778747559
+      ],
+      [
+        "bbc_transport-_07012036.mp3",
+        "vehicle_backfires",
+        0.8461217880249023
+      ],
+      [
+        "fs_410347_inspectorj.mp3",
+        "fireworks",
+        0.8517096638679504
+      ],
+      [
+        "fs_36044_inchadney.mp3",
+        "thunder",
+        0.8716131448745728
+      ],
+      [
+        "fs_195529_klankbeeld.mp3",
+        "thunder",
+        0.886991560459137
+      ],
+      [
+        "fs_161341_qubodup.mp3",
+        "artillery_firing",
+        0.7355098724365234
+      ],
+      [
+        "fs_171475_2887679652.mp3",
+        "artillery_firing",
+        0.9513590931892395
+      ],
+      [
+        "fs_184275_qubodup.mp3",
+        "artillery_firing",
+        0.8002588152885437
+      ],
+      [
+        "fs_184650_Isaac200000.mp3",
+        "artillery_firing",
+        0.7406728863716125
+      ],
+      [
+        "fs_187542_qubodup.mp3",
+        "artillery_firing",
+        0.745281994342804
+      ],
+      [
+        "fs_213925_Diboz.mp3",
+        "gunfire",
+        0.7377069592475891
+      ],
+      [
+        "fs_427597_michorvath.mp3",
+        "gunfire",
+        0.7268186807632446
+      ],
+      [
+        "fs_105351_CeebFrack.mp3",
+        "vehicle_backfires",
+        0.7867048382759094
+      ],
+      [
+        "fs_350672_Dominik_W.mp3",
+        "vehicle_backfires",
+        0.8661553263664246
+      ],
+      [
+        "p19_shouting_screaming_3_halgrimm_44e0bfe0.mp3",
+        "shouting_screaming",
+        0.7825142741203308
+      ],
+      [
+        "p19_silence_ambience_4_frederik_sunne_0e4ca5cf.mp3",
+        "silence_ambience",
+        0.9185855984687805
+      ],
+      [
+        "p19_household_ambience_3_bdunis4_0be312d3.mp3",
+        "household_ambience",
+        0.7401649355888367
+      ]
+    ],
+    "fp_by_cat": {
+      "gunfire": 4,
+      "bioacoustics": 1,
+      "vehicle_backfires": 3,
+      "fireworks": 1,
+      "thunder": 2,
+      "artillery_firing": 5,
+      "shouting_screaming": 1,
+      "silence_ambience": 1,
+      "household_ambience": 1
+    }
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "loss_tot": 3.6731391072273256,
+      "loss_ce": 0.5738914340734482,
+      "loss_pos_margin": 1.458711711068948,
+      "loss_neg_margin": 0.6074529608090719,
+      "loss_anc": 0.0006637228742439068,
+      "val_recall": 0.8428571428571429,
+      "val_precision": 0.6483516483516484,
+      "val_f1": 0.732919254658385,
+      "val_tp": 59,
+      "val_fp": 32,
+      "hist_recall": 0.9166666666666666,
+      "hist_tp": 22,
+      "hist_fp": 21,
+      "hist_precision": 0.5116279069767442,
+      "hist_f1": 0.6567164179104478,
+      "demolition_08_detected": true,
+      "fp_by_cat": {
+        "gunfire": 4,
+        "bioacoustics": 2,
+        "vehicle_backfires": 4,
+        "fireworks": 1,
+        "thunder": 2,
+        "artillery_firing": 5,
+        "shouting_screaming": 1,
+        "silence_ambience": 1,
+        "household_ambience": 1
+      }
+    },
+    {
+      "epoch": 2,
+      "loss_tot": 3.365894271930059,
+      "loss_ce": 0.5855896264314652,
+      "loss_pos_margin": 1.1225833515326182,
+      "loss_neg_margin": 0.7309505249063174,
+      "loss_anc": 0.003855716052930802,
+      "val_recall": 0.8428571428571429,
+      "val_precision": 0.6276595744680851,
+      "val_f1": 0.7195121951219512,
+      "val_tp": 59,
+      "val_fp": 35,
+      "hist_recall": 0.9166666666666666,
+      "hist_tp": 22,
+      "hist_fp": 21,
+      "hist_precision": 0.5116279069767442,
+      "hist_f1": 0.6567164179104478,
+      "demolition_08_detected": true,
+      "fp_by_cat": {
+        "gunfire": 4,
+        "bioacoustics": 2,
+        "vehicle_backfires": 4,
+        "fireworks": 1,
+        "thunder": 2,
+        "artillery_firing": 5,
+        "shouting_screaming": 1,
+        "silence_ambience": 1,
+        "household_ambience": 1
+      }
+    },
+    {
+      "epoch": 3,
+      "loss_tot": 3.3521086593468983,
+      "loss_ce": 0.5899056151509285,
+      "loss_pos_margin": 1.0912023069957892,
+      "loss_neg_margin": 0.7502607961495718,
+      "loss_anc": 0.008371358923614024,
+      "val_recall": 0.8428571428571429,
+      "val_precision": 0.6276595744680851,
+      "val_f1": 0.7195121951219512,
+      "val_tp": 59,
+      "val_fp": 35,
+      "hist_recall": 0.9166666666666666,
+      "hist_tp": 22,
+      "hist_fp": 21,
+      "hist_precision": 0.5116279069767442,
+      "hist_f1": 0.6567164179104478,
+      "demolition_08_detected": true,
+      "fp_by_cat": {
+        "gunfire": 4,
+        "bioacoustics": 2,
+        "vehicle_backfires": 4,
+        "fireworks": 1,
+        "thunder": 2,
+        "artillery_firing": 5,
+        "shouting_screaming": 1,
+        "silence_ambience": 1,
+        "household_ambience": 1
+      }
+    },
+    {
+      "epoch": 4,
+      "loss_tot": 3.1818782726923627,
+      "loss_ce": 0.5734943235913913,
+      "loss_pos_margin": 1.0140236124396325,
+      "loss_neg_margin": 0.7248896236220995,
+      "loss_anc": 0.014091275539249182,
+      "val_recall": 0.8428571428571429,
+      "val_precision": 0.6276595744680851,
+      "val_f1": 0.7195121951219512,
+      "val_tp": 59,
+      "val_fp": 35,
+      "hist_recall": 0.9166666666666666,
+      "hist_tp": 22,
+      "hist_fp": 21,
+      "hist_precision": 0.5116279069767442,
+      "hist_f1": 0.6567164179104478,
+      "demolition_08_detected": true,
+      "fp_by_cat": {
+        "gunfire": 4,
+        "bioacoustics": 2,
+        "vehicle_backfires": 4,
+        "fireworks": 1,
+        "thunder": 2,
+        "artillery_firing": 5,
+        "shouting_screaming": 1,
+        "silence_ambience": 1,
+        "household_ambience": 1
+      }
+    }
+  ],
+  "best_epoch": 0,
+  "best_metrics": null
+}

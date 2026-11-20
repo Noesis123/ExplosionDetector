@@ -1,0 +1,14 @@
+# Core runtime dependencies for Explosion Detection (Python 3.12+)
+# Audio I/O & Signal Processing (Librosa/Numba replaced with Torch/NumPy/SciPy/SoundFile)
+torch>=2.15.0
+numpy>=2.5.0
+scipy>=1.18.0
+soundfile>=0.14.0
+
+# Data Handling & Metrics
+pandas>=3.1.0
+scikit-learn>=1.9.0
+
+# Verification & Testing
+pytest>=9.0.0
+

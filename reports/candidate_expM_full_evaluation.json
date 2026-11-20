@@ -1,0 +1,295 @@
+{
+  "Historical_Benchmark_92": {
+    "expf": {
+      "tp": 22,
+      "fp": 19,
+      "tn": 49,
+      "fn": 2,
+      "recall": 0.9166666666666666,
+      "precision": 0.5365853658536586,
+      "f1": 0.676923076923077,
+      "f2": 0.8029197080291971,
+      "accuracy": 0.7717391304347826,
+      "specificity": 0.7205882352941176,
+      "total_alerts": 120,
+      "fp_by_cat": {
+        "gunfire": 4,
+        "bioacoustics": 1,
+        "vehicle_backfires": 3,
+        "fireworks": 1,
+        "thunder": 2,
+        "artillery_firing": 5,
+        "shouting_screaming": 1,
+        "silence_ambience": 1,
+        "household_ambience": 1
+      },
+      "missed": [
+        "alex_jauk-distant-explosion-192022.mp3",
+        "bbc_demolition_07022510.mp3"
+      ],
+      "elapsed": 35.18454885482788,
+      "latency_ms": 382.4407484220422
+    },
+    "expm": {
+      "tp": 21,
+      "fp": 19,
+      "tn": 49,
+      "fn": 3,
+      "recall": 0.875,
+      "precision": 0.525,
+      "f1": 0.6562500000000001,
+      "f2": 0.7720588235294117,
+      "accuracy": 0.7608695652173914,
+      "specificity": 0.7205882352941176,
+      "total_alerts": 98,
+      "fp_by_cat": {
+        "gunfire": 4,
+        "bioacoustics": 1,
+        "vehicle_backfires": 3,
+        "fireworks": 1,
+        "thunder": 2,
+        "artillery_firing": 5,
+        "shouting_screaming": 1,
+        "silence_ambience": 1,
+        "household_ambience": 1
+      },
+      "missed": [
+        "alex_jauk-distant-explosion-192022.mp3",
+        "bbc_demolition_07022508.mp3",
+        "bbc_demolition_07022510.mp3"
+      ],
+      "elapsed": 61.08359408378601,
+      "latency_ms": 663.9521096063696
+    }
+  },
+  "Source_Isolated_Val_190": {
+    "expf": {
+      "tp": 56,
+      "fp": 28,
+      "tn": 92,
+      "fn": 14,
+      "recall": 0.8,
+      "precision": 0.6666666666666666,
+      "f1": 0.7272727272727272,
+      "f2": 0.7692307692307692,
+      "accuracy": 0.7789473684210526,
+      "specificity": 0.7666666666666667,
+      "total_alerts": 319,
+      "fp_by_cat": {
+        "industrial_machinery": 2,
+        "thunder": 3,
+        "vehicle_backfires": 3,
+        "fireworks": 2,
+        "positives": 1,
+        "artillery_firing": 2,
+        "distant": 1,
+        "doors_slamming_falling": 1,
+        "aerial_burst": 6,
+        "firecrackers": 1,
+        "barrage": 2,
+        "gunfire": 2,
+        "construction_impacts": 2
+      },
+      "missed": [
+        "freesounds-4u-explosion-2-422785.mp3",
+        "exp_fs_014_fs_336011_Rudmer_Rotteveel.wav",
+        "exp_fs_051_fs_660463_guillermochicasonido.wav",
+        "exp_fs_058_fs_857247_inspire153.wav",
+        "exp_fs_059_fs_863981_j_soundeffects.wav",
+        "exp_new_002_fs_608788_Delta12Studio.wav",
+        "exp_new_003_fs_365149_Jack_Freedom5712.wav",
+        "exp_new_006_fs_667658_DeltaCode.wav",
+        "exp_new_015_fs_153112_mlteenie.wav",
+        "exp_new_029_fs_645844_Annesy.wav",
+        "exp_new_037_fs_40969_dobroide.wav",
+        "exp_new_048_fs_556367_diakunik.wav",
+        "exp_fast_005_fs_402007_eardeer.wav",
+        "exp_fast_023_fs_140727_j1987.wav"
+      ],
+      "elapsed": 56.158785581588745,
+      "latency_ms": 295.57255569257234
+    },
+    "expm": {
+      "tp": 56,
+      "fp": 27,
+      "tn": 93,
+      "fn": 14,
+      "recall": 0.8,
+      "precision": 0.6746987951807228,
+      "f1": 0.7320261437908497,
+      "f2": 0.7713498622589532,
+      "accuracy": 0.7842105263157895,
+      "specificity": 0.775,
+      "total_alerts": 284,
+      "fp_by_cat": {
+        "industrial_machinery": 2,
+        "heavy_equipment": 1,
+        "thunder": 3,
+        "vehicle_backfires": 2,
+        "fireworks": 2,
+        "positives": 1,
+        "artillery_firing": 2,
+        "distant": 1,
+        "doors_slamming_falling": 1,
+        "aerial_burst": 5,
+        "firecrackers": 1,
+        "barrage": 2,
+        "gunfire": 2,
+        "construction_impacts": 2
+      },
+      "missed": [
+        "freesounds-4u-explosion-2-422785.mp3",
+        "exp_fs_014_fs_336011_Rudmer_Rotteveel.wav",
+        "exp_fs_051_fs_660463_guillermochicasonido.wav",
+        "exp_fs_058_fs_857247_inspire153.wav",
+        "exp_fs_059_fs_863981_j_soundeffects.wav",
+        "exp_new_002_fs_608788_Delta12Studio.wav",
+        "exp_new_003_fs_365149_Jack_Freedom5712.wav",
+        "exp_new_006_fs_667658_DeltaCode.wav",
+        "exp_new_015_fs_153112_mlteenie.wav",
+        "exp_new_029_fs_645844_Annesy.wav",
+        "exp_new_037_fs_40969_dobroide.wav",
+        "exp_new_048_fs_556367_diakunik.wav",
+        "exp_fast_005_fs_402007_eardeer.wav",
+        "exp_fast_023_fs_140727_j1987.wav"
+      ],
+      "elapsed": 81.13733744621277,
+      "latency_ms": 427.038618137962
+    }
+  },
+  "Codex_Reserved_Set2_60": {
+    "expf": {
+      "tp": 13,
+      "fp": 10,
+      "tn": 35,
+      "fn": 2,
+      "recall": 0.8666666666666667,
+      "precision": 0.5652173913043478,
+      "f1": 0.6842105263157895,
+      "f2": 0.7831325301204819,
+      "accuracy": 0.8,
+      "specificity": 0.7777777777777778,
+      "total_alerts": 35,
+      "fp_by_cat": {
+        "thunder": 5,
+        "engines": 3,
+        "mechanical_impulses": 1,
+        "traffic": 1
+      },
+      "missed": [
+        "shared_191_INL_20220811_03_1637622022_explosion.wav",
+        "shared_302_INL_20220714_07_1806169311_explosion.wav"
+      ],
+      "elapsed": 7.792653799057007,
+      "latency_ms": 129.87756331761676
+    },
+    "expm": {
+      "tp": 14,
+      "fp": 8,
+      "tn": 37,
+      "fn": 1,
+      "recall": 0.9333333333333333,
+      "precision": 0.6363636363636364,
+      "f1": 0.7567567567567568,
+      "f2": 0.853658536585366,
+      "accuracy": 0.85,
+      "specificity": 0.8222222222222222,
+      "total_alerts": 28,
+      "fp_by_cat": {
+        "thunder": 4,
+        "engines": 2,
+        "mechanical_impulses": 1,
+        "traffic": 1
+      },
+      "missed": [
+        "shared_302_INL_20220714_07_1806169311_explosion.wav"
+      ],
+      "elapsed": 10.545095205307007,
+      "latency_ms": 175.7515867551168
+    }
+  },
+  "Codex_Test_Set1_86": {
+    "expf": {
+      "tp": 4,
+      "fp": 22,
+      "tn": 44,
+      "fn": 16,
+      "recall": 0.2,
+      "precision": 0.15384615384615385,
+      "f1": 0.17391304347826086,
+      "f2": 0.18867924528301888,
+      "accuracy": 0.5581395348837209,
+      "specificity": 0.6666666666666666,
+      "total_alerts": 52,
+      "fp_by_cat": {
+        "gunfire": 2,
+        "engines": 5,
+        "thunder": 9,
+        "mechanical_impulses": 3,
+        "construction_impacts": 1,
+        "speech": 2
+      },
+      "missed": [
+        "shared_075_INL_20220811_03_1637622024_explosion.wav",
+        "shared_281_NNSS_1637610019_explosion.wav",
+        "shared_025_INL_20220811_02_1637622026_explosion.wav",
+        "shared_259_INL_20210930_05_1637681007_explosion.wav",
+        "shared_103_NNSS_1637610022_explosion.wav",
+        "shared_178_INL_20220818_09_1637622026_explosion.wav",
+        "shared_188_INL_20210723_06_1637681005_explosion.wav",
+        "shared_065_NNSS_1637610019_explosion.wav",
+        "shared_242_NNSS_1637610011_explosion.wav",
+        "shared_166_INL_20201001_04_1637681005_explosion.wav",
+        "shared_175_NNSS_1637610011_explosion.wav",
+        "shared_212_INL_20220811_03_1637622028_explosion.wav",
+        "shared_086_INL_20210723_03_1637681003_explosion.wav",
+        "shared_187_INL_20220811_07_1637622022_explosion.wav",
+        "shared_321_INL_20201001_03_1637681009_explosion.wav",
+        "shared_239_NNSS_1637610018_explosion.wav"
+      ],
+      "elapsed": 11.155967473983765,
+      "latency_ms": 129.72055202306703
+    },
+    "expm": {
+      "tp": 4,
+      "fp": 18,
+      "tn": 48,
+      "fn": 16,
+      "recall": 0.2,
+      "precision": 0.18181818181818182,
+      "f1": 0.1904761904761905,
+      "f2": 0.19607843137254907,
+      "accuracy": 0.6046511627906976,
+      "specificity": 0.7272727272727273,
+      "total_alerts": 49,
+      "fp_by_cat": {
+        "gunfire": 2,
+        "engines": 5,
+        "thunder": 7,
+        "mechanical_impulses": 2,
+        "construction_impacts": 1,
+        "speech": 1
+      },
+      "missed": [
+        "shared_075_INL_20220811_03_1637622024_explosion.wav",
+        "shared_281_NNSS_1637610019_explosion.wav",
+        "shared_025_INL_20220811_02_1637622026_explosion.wav",
+        "shared_259_INL_20210930_05_1637681007_explosion.wav",
+        "shared_103_NNSS_1637610022_explosion.wav",
+        "shared_178_INL_20220818_09_1637622026_explosion.wav",
+        "shared_188_INL_20210723_06_1637681005_explosion.wav",
+        "shared_065_NNSS_1637610019_explosion.wav",
+        "shared_242_NNSS_1637610011_explosion.wav",
+        "shared_166_INL_20201001_04_1637681005_explosion.wav",
+        "shared_175_NNSS_1637610011_explosion.wav",
+        "shared_212_INL_20220811_03_1637622028_explosion.wav",
+        "shared_086_INL_20210723_03_1637681003_explosion.wav",
+        "shared_187_INL_20220811_07_1637622022_explosion.wav",
+        "shared_321_INL_20201001_03_1637681009_explosion.wav",
+        "shared_239_NNSS_1637610018_explosion.wav"
+      ],
+      "elapsed": 15.40858769416809,
+      "latency_ms": 179.16962435079176
+    }
+  }
+}
